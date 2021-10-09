@@ -1,4 +1,4 @@
-#Web Programming
+# Web Programming
 These are the tasks that you are supposed to do for this session:
 * Create a GitHub account
 * Enter your ID on the chat section
