@@ -5,6 +5,7 @@
     <title>Ali Nakhaee Sharif</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/19_index.js"></script>
 </head>
 <body>
     <div class="container">
@@ -66,22 +67,23 @@
         <br>
         <br>
         <p style="direction: rtl; text-align: right;">به سوالات زیر پاسخ دهید</p>
-        <div class="bg-dark p-3 rounded-3">
+        <div id="question_div" class="bg-dark p-3 rounded-3">
             <p style="direction: rtl; text-align: right;" class="text-white">برای اینکه محتوا در صورت زیاد بودن از قالب خود بیرون نزند چگونه باید جای خالی را پر کنیم</p>
             <p style="direction: rtl; text-align: right;" class="text-white">< div style={overflow: .....}>< /div> </p>
-            <input type="radio" id="age1" name="overflow" value="hidden">
-            <label class="text-white" for="age1">hidden</label><br>
 
-            <input type="radio" id="age2" name="overflow" value="auto">
-            <label class="text-white" for="age2">auto</label><br>
+            <input type="radio" id="rd1" name="overflow" value="hidden">
+            <label class="text-white" for="rd1">hidden</label><br>
 
-            <input type="radio" id="age3" name="overflow" value="scroll">
-            <label class="text-white" for="age3">scroll</label><br>
+            <input type="radio" id="rd2" name="overflow" value="auto">
+            <label class="text-white" for="rd2">auto</label><br>
 
-            <input type="radio" id="age4" name="overflow" value="visible">
-            <label class="text-white" for="age4">visible</label><br><br>
+            <input type="radio" id="rd3" name="overflow" value="scroll">
+            <label class="text-white" for="rd3">scroll</label><br>
 
-            <input class="btn-primary" type="submit" value="Submit">
+            <input type="radio" id="rd4" name="overflow" value="visible">
+            <label class="text-white" for="rd4">visible</label><br><br>
+
+            <input class="btn-primary" type="submit" value="Submit" onclick="check_answer()">
 
         </div>
     </div>
