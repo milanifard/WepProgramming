@@ -1,0 +1,118 @@
+
+body {
+    font-family: IRANSans;
+}
+.blog {
+    margin-top: 80px;
+    outline: rgb(224, 224, 224) solid 1px ;
+    border-radius: 10px;
+    padding: 50px 50px;
+}
+.blog .breadcrumb {
+    color: gray;
+}
+.breadcrumb-item+.breadcrumb-item::after {
+    float: right;
+    padding-left: .5rem;
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, "/");
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-right: 0;
+    content: var(--bs-breadcrumb-divider, "");
+}
+.blog .breadcrumb i {
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.blog-image {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.blog-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.badge {
+    padding: 8px 15px;
+}
+.author {
+    display:inline-block;
+    padding-left: 20px;
+}
+.author .thumbnail {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.publisher .publish-date {
+    padding-left: 20px;
+}
+.statistics {
+    text-align: left;
+}
+.statistics div {
+    display: inline-block;
+    margin-left: 10px;
+}
+.statistics div:last-child {
+    margin-left: 0;
+}
+.questions {
+    background-color: rgb(231, 231, 231);
+    padding: 50px;
+    border-radius: 5px;
+}
+
+
+p {
+    direction: rtl;
+    float: right;
+}
+
+.show {
+    padding: 8px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #cecece;
+    height: 160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.show-button {
+    padding: 8px;
+    position: absolute;
+    border-radius: 24px;
+    right: 0;
+    bottom: 4px;
+    width: 124px;
+    background-color: black;
+    color: white;
+}
+.send-button {
+    position: absolute;
+    left: 4px;
+    padding: 8px;
+    position: absolute;
+    border-radius: 24px;
+    right: 0;
+    bottom: 4px;
+    width: 124px;
+    background-color: darkgreen;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    margin: 0;
+    width: 100%;
+}
+
