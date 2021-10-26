@@ -106,9 +106,8 @@
     </div>
     
     <script>
-        var choice = $('input[name=radio-choice]:checked').val();
         function showAnswer1() {
-            if(choice === document.getElementById('option-1-2').value){
+            if(document.getElementById('option-1-2').checked){
                 alert("Correct!");
             }
             else {
@@ -118,7 +117,7 @@
         }
 
         function showAnswer2() {
-            if(choice === document.getElementById('option-2-3').value){
+            if(document.getElementById('option-2-3').checked){
                 alert("Correct!");
             }
             else {
@@ -128,7 +127,7 @@
         }
 
         function showAnswer3() {
-            if(choice === document.getElementById('option-3-4').value){
+            if(document.getElementById('option-3-4').checked){
                 alert("Correct!");
             }
             else {
