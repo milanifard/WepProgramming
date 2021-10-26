@@ -1,35 +1,35 @@
 const quizData = [
   {
-    question: 'Which language runs in a web browser?',
-    a: 'Java',
-    b: 'C',
-    c: 'Python',
-    d: 'JavaScript',
-    correct: 'd',
-  },
-  {
-    question: 'What does CSS stand for?',
-    a: 'Central Style Sheets',
-    b: 'Cascading Style Sheets',
-    c: 'Cascading Simple Sheets',
-    d: 'Cars SUVs Sailboats',
-    correct: 'b',
-  },
-  {
-    question: 'What does HTML stand for?',
-    a: 'Hypertext Markup Language',
-    b: 'Hypertext Markdown Language',
-    c: 'Hyperloop Machine Language',
-    d: 'Helicopters Terminals Motorboats Lamborginis',
+    question: 'برای اضافه کردن فایلی به مخزن کد از کدام دستور استفاده می شود؟',
+    a: 'git add filename',
+    b: 'git merge branchname',
+    c: 'git fetch',
+    d: 'git push origin master',
     correct: 'a',
   },
   {
-    question: 'What year was JavaScript launched?',
-    a: '1996',
-    b: '1995',
-    c: '1994',
-    d: 'none of the above',
-    correct: 'b',
+    question: 'برای بررسی وضعیت فایل هایی که تغییر داشته اند از کدام دستور استفاده می شود؟',
+    a: 'git status',
+    b: 'git ls-files',
+    c: 'git ls-remote',
+    d: 'git log --oneline',
+    correct: 'a',
+  },
+  {
+    question: 'برای افزودن تمام فایل های تغییر داشته به مخزن کد از کدام دستور زیر استفاده می شود؟',
+    a: 'git merge branchname',
+    b: 'git config --global user.name "username"',
+    c: 'git add .',
+    d: 'git clone remote-url .',
+    correct: 'c',
+  },
+  {
+    question: 'برای مشاهده تاریخچه تغییرات مخزن کد از کدام دستور زیر استفاده می شود؟',
+    a: 'git pull -u origin main',
+    b: 'git switch -c branchname',
+    c: 'git cherrypick',
+    d: 'git log --oneline',
+    correct: 'd',
   },
 ]
 
@@ -78,8 +78,8 @@ submitButton.addEventListener('click', () => {
     if (currentQuiz < quizData.length) loadQuiz()
     else {
       quiz.innerHTML = `  
-         <h2>You answered ${score}/${quizData.length} questions correctly</h2>  
-         <button onclick="history.go(0)" class="btn btn-success">Quiz Again</button>  
+         <h2 class="text-success text-center">شما به ${score} از ${quizData.length} پاسخ صحیح داده اید</h2>  
+         <button onclick="history.go(0)" class="btn btn-success my-2">آزمون مجدد</button>  
        `
     }
   }
@@ -91,12 +91,12 @@ submit1Button.addEventListener('click', () => {
   if (question.value === 'title') {
     longQuiz.innerHTML = `  
          <h2 class="text-success text-center">پاسخ صحیح است</h2>  
-         <button onclick="history.go(0)" class="btn btn-success my-2">Quiz Again</button>  
+         <button onclick="history.go(0)" class="btn btn-success my-2">ازمون مجدد</button>  
        `
   } else {
     longQuiz.innerHTML = `  
          <h2 class="text-danger text-center">پاسخ صحیح نمی باشد</h2>  
-         <button onclick="history.go(0)" class="btn btn-success my-2">Quiz Again</button>  
+         <button onclick="history.go(0)" class="btn btn-success my-2">ازمون مجدد</button>  
        `
   }
 })

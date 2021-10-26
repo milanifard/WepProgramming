@@ -65,6 +65,15 @@
             <code>Git add filename</code>
             می باشد
           </p>
+          <div>
+            <div class="banner">
+              <img
+                src="images/git-add.png"
+                alt=""
+                class="img-fluid img-fluid"
+              />
+            </div>
+          </div>
           <p class="text-end">
             زمانیکه فایل اضافه شد در صورتیکه محتوا آن تغییر کند با دستور
             <code>Git Status</code>
@@ -74,6 +83,20 @@
             <div class="banner">
               <img
                 src="images/git-status.png"
+                alt=""
+                class="img-fluid img-fluid"
+              />
+            </div>
+          </div>
+          <p class="text-end">
+            برای مشاهده تاریخچه تغییرات مخزن کد باید از دستور 
+            <code>Git log</code>
+            استفاده کرد
+          </p>
+          <div>
+            <div class="banner">
+              <img
+                src="images/git-log.png"
                 alt=""
                 class="img-fluid img-fluid"
               />
@@ -160,50 +183,50 @@
           <div class="main" id="quiz">
             <h2 class="font-25 font-bold text-center my-4">آزمون چهار گزینه ای</h2>
             <div class="card-body">
-              <h5 class="card-text text-start font-bold" dir="ltr" id="question"></h5>
+              <h5 class="card-text text-end font-bold" dir="ltr" id="question"></h5>
             </div>
 
             <div class="col-md-12 p-4" id="options">
-              <div class="row text-start">
-                <div class="col-12" dir="ltr">
+              <div class="row text-end">
+                <div class="col-12" dir="rtl">
                   <input
                     type="radio"
                     class="btn btn-outline-success text-end option my-2 answer"
                     name="answer"
                     id="a"
                   />
-                  <label for="a" id="a_text">Answer...</label>
+                  <code for="a" id="a_text">Answer...</code>
                 </div>
-                <div class="col-12" dir="ltr">
+                <div class="col-12" dir="rtl">
                   <input
                     type="radio"
                     class="btn btn-outline-success text-start option my-2 answer"
                     name="answer"
                     id="b"
                   />
-                  <label for="b" id="b_text">Answer...</label>
+                  <code for="b" id="b_text">Answer...</code>
                 </div>
-                <div class="col-12" dir="ltr">
+                <div class="col-12" dir="rtl">
                   <input
                     type="radio"
                     class="btn btn-outline-success text-start option my-2 answer"
                     name="answer"
                     id="c"
                   />
-                  <label for="c" id="c_text">Answer...</label>
+                  <code for="c" id="c_text">Answer...</code>
                 </div>
-                <div class="col-12" dir="ltr">
+                <div class="col-12" dir="rtl">
                   <input
                     type="radio"
                     class="btn btn-outline-success text-start option my-2 answer"
                     name="answer"
                     id="d"
                   />
-                  <label for="d" id="d_text">Answer...</label>
+                  <code for="d" id="d_text">Answer...</code>
                 </div>
                 <div class="col-12">
                   <button id="submit" class="btn btn-success option my-2">
-                    Submit
+                    تایید
                   </button>
                 </div>
               </div>
@@ -220,7 +243,7 @@
                 <code>&lt;p</code> <input type="text" id="long-question-text"> <code>="About W3Schools" AAA &gt;p</code>
               </pre>
               <div>
-                <button type="submit" id="submit1" class="btn btn-success">Submit</button>
+                <button type="submit" id="submit1" class="btn btn-success">تایید</button>
               </div>
           </div>
 
