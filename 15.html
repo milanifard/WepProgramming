@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
-            integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe"
-            crossorigin="anonymous">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/iranian-sans" rel="stylesheet">                
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>JS part8</title>
     <style>
         * {
             font-family: 'Iranian Sans', sans-serif;
@@ -23,9 +21,10 @@
             flex-flow: row wrap;
             justify-content: start;
         }
+
     </style>
 </head>
-<body style="padding: 8px; padding-bottom: 10%; font-size: 16px;">
+<body style="padding: 8px; padding-bottom: 10%; font-size: 16px; font-family: 'Iranian Sans', sans-serif;">
     <header>
         <div class="container">
             <a href="home.html" class="text-muted">
@@ -37,20 +36,20 @@
             </a>
             &nbsp; / &nbsp;
             <a href="15.html" class="text-muted">
-                <div class="nav-item"><i class="fas fa-home"></i>&nbsp;اسکوپ‌هادر Ecmascript</div>
+                <div class="nav-item"><i class="fas fa-home"></i>&nbsp;اسکوپ‌ها و تعریف متغیر</div>
             </a>
             <!-- underline ro az bein bebar -->
         </div>
     </header>
-    <span class="badge badge-pill badge-warning">آموزش javascript</span>
-    <div class="row">
-        <div class="col-sm-2">مریم عمادیان</div>
-        <div class="col-sm-2">آخرین به روزرسانی: ۱۴۰۰/۸/4</div>
-        <div class="col-sm-2"><span class="glyphicon glyphicon-comment"></span> 0 </div>
-        <div class="col-sm-4"><span class="glyphicon glyphicon-bookmark"></span>خواندن این مطلب یک دقیقه زمان
-                میبرد.</div>
+    <span class="badge badge-pill badge-warning" style="background-color: #f1c320;">آموزش javascript</span>
+    <div class="row" style="font-size: 14px;">
+        <div class="col-lg publisher">
 
-</div>
+            <span>مریم عمادیان</span>
+            <span class="publish-date" >۱۴۰۰/۰۸/۰۴   </span>
+            <span class="update-date"> آخرین به روزرسانی ۱۴۰۰/۰۸/۰۴ </span>
+        </div>
+    </div>
 
 <!-- 
     <table align="right">
@@ -72,32 +71,87 @@
         </tr>
     </table> -->
     <br>
-    <br>
 
-    <h1 dir=“rtl style="text-align: right;">اسکوپ‌ها در اکما اسکریپت</h1>
+
+    <h1 dir=“rtl style="text-align: right; font-family: 'Iranian Sans', sans-serif;">قلمرو اعتبار متغیرها</h1>
+    <br>
     <p dir=“rtl” style="text-align: right;">
         
-        در جاوا اسکرپت تنها دو نوع اسکوپ داریم : اسکوپ گلوبال و اسکوپ داخل فانکشن
+        <h3><a href="https://www.w3schools.com/js/js_variables.asp">متغیرها</a> در جاوااسکریپت</h3>
+        Javascript تنها دو نوع متغیر گلوبال و درون <a href="https://www.w3schools.com/js/js_functions.asp">function</a> دارد.
+            <ul>
+                <li>وقتی متغیر درون بدنه‌ی script تعریف شود، متغیر global خواهد بود.</li>
+                <li>اگر متغیر درون function تعریف شود، فقط در <a href="https://www.w3schools.com/js/js_scope.asp">اسکوپ</a> function اعتبار خواهد داشت.</li>
+            </ul>
         <br>
-        وقتی در بدنه ی script یک متغیر تعریف شود، به شکل global خواهد بود. اما اگر در function تعریف شود، فقط درون function خواهد بود.
-        <br>
-        در جاوااسکریپت مفهومی به اسم <b> hosting</b> وجود دارد که اگر متغیری بعد از فراخوانی تعریف شود، جاوااسکریپت کد تعریف متغیر را به قبل از فراخوانی آن متغیر انتقال ‌می‌دهد. تعاریف همواره در ابتدای کد اجرا می‌شوند.
+        <h3>Hoisting</h3>
+        دستورات declaration متغیرها همواره در ابتدای اجرای برنامه، اجرا می‌شوند.
+        به بیان دیگر، خطوط ابتدایی برنامه، میزبان دستورات مربوط به تعریف متغیر می‌شود.
         <br>
             تفاوت بین declaration و initialization متغیرها
             <ul>
-                <li>پدیده‌ی hosting فقط برای declaration رخ می‌دهد. اگر آن متغیر مقداردهی شده باشد، مقدار مورد نظر host نمیشود و متغیر undefined می‌ماند.</li>
+                <li>پدیده‌ی <a href="https://www.w3schools.com/js/js_hoisting.asp">hoisting</a> فقط برای declaration رخ می‌دهد. اگر آن متغیر مقداردهی شده باشد، مقدار مورد نظر hoist نمیشود و متغیر undefined می‌ماند.</li>
             </ul>
         <br>
-        <h4>کلمه کلیدی let</h4>
+        <h3>کلمه کلیدی <a href="https://www.w3schools.com/js/js_let.asp">let</a></h3>
 
         <ul>
             <li>اگر بخواهیم یک متغیر فقط درون یک block تعریف شود و بیرون از آن نامعتبر باشد، از کلمه کلیدی let استفاده میکنیم.</li>
             <li>کلمه کلیدی let برای متغیرهای فانکشن و گلوبال تغییر خاصی ایجاد نمیکند.</li>
+            <li>درون یک اسکوپ، نمیتوان اول از let و بعد از var استفاده کرد. زیرا خطای redeclaration رخ میدهد.</li>
         </ul>
             
         <br>
             
 
        </p>
+
+
+
+
+
+       <div>
+        <fieldset>
+            <legend>آزمونک</legend>
+            <p class="questions" id="question1">
+                1- اگر یک متغیر بعد از فراخوانی در یک تابع تعریف شود، به خطا برمی‌خوریم؟</p>
+            <input type="radio" name="answer1" value="wrong">بله <br>
+            <input type="radio" name="answer1" value="correct">خیر <br>
+            <hr>
+      
+            <p class="questions" id="question2">
+                2- پدیده‌ی hoisting برای کدام حالت زیر رخ می‌دهد؟</p>
+            <input type="radio" name="answer2" value="correct">declaration <br>
+            <input type="radio" name="answer2" value="wrong">initialization <br>
+            <hr>
+      
+            <p class="questions" id="question3">
+                3- کلمه‌ی کلیدی let، یک متغیر را فقط درون یک بلاک تعریف می‌کند؟</p>
+            <input type="radio" name="answer3" value="correct">بله <br>
+            <input type="radio" name="answer3" value="wrong">خیر <br>
+            <hr>
+
+            <button id="submit-form" type="button" class="btn btn-primary">ارسال پاسخ</button>
+            <span id="score"></span>
+        </fieldset>
+    </div>
+
+    <script>
+        console.log($('input[name="test-1"]:checked').val());
+        $('#submit-form').click(() => {
+            let score = 3;
+            ;
+            if ($('input[name="answer1"]:checked').val() !== "correct") {
+                score--;
+            }
+            if ($('input[name="answer2"]:checked').val() !== "correct") {
+                score--;
+            }
+            if ($('input[name="answer3"]:checked').val() !== "correct") {
+                score--;
+            }
+            $('#score').text(`امتیاز شما از این آزمون برابر ${score} از ۳ است.`);
+        })
+    </script>
 </body>
 </html>
