@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class="container">
+            
+                <div><i class="fas fa-home pull-right"></i> <span class="pull-right">Basics and installation/GIT خانه/آموزش</span>
+                </div>
+                    <div>
+                    <br><br>
+                <span class="bg-warning pull-right rounded-3 text-white">
+                    GIT آموزش
+                </span>
+                <br>
+                <div class="pull-right">
+                <picture><img src="pfp.png" class="col-sm-1 rounded-circle img-fluid pull-right"></picture>سروش فعال 26-10-2021 آخرین به روز رسانی 26-10-2021
+                </div>
+                <br>
+                <img src="basics.png">
+                <br>
+                <a href="https://git-scm.com/"><img src="installation.png"></a>
+                </div>
+                <ol>
+                    <li>How to install GIT?</li>
+                    <input type="radio" name="q1" value="vu">https://vu.um.ac.ir/
+                    <input type="radio" name="q1" value="git">https://git-scm.com/
+                    <input type="radio" name="q1" value="aparat">https://www.aparat.com/milanifard.o
+                    <input type="radio" name="q1" value="epicgames">https://www.epicgames.com/account/personal
+                    <li>Which one of these states are not one of the three states files reside in?</li>
+                    <input type="radio" name="q2" value="staged">staged
+                    <input type="radio" name="q2" value="modified">modified
+                    <input type="radio" name="q2" value="commited">commited
+                    <input type="radio" name="q2" value="frozen">frozen
+                    <li>Which state will file reside in when we commit it?</li>
+                    <input type="radio" name="q3" value="staged">staged
+                    <input type="radio" name="q3" value="modified">modified
+                    <input type="radio" name="q3" value="commited">commited
+                    <input type="radio" name="q3" value="frozen">frozen
+                </ol>
+                
+                <input type="submit" onclick="javascript: check()">
+        </div>
+
+        <script language=javascript>
+            function check(){
+                var counter = 0;
+                var qone = document.getElementsByName("q1");
+                var qtwo = document.getElementsByName("q2");
+                var qthree = document.getElementsByName("q3");
+                console.log(qone[0]);
+                if(qone[1].checked){
+                    counter++;
+                }
+                if(qtwo[3].checked){
+                    counter++;
+                }
+                if(qthree[2].checked){
+                    counter++;
+                }
+                if(counter==0){
+                    alert("Try more");
+                }
+                if(counter==1){
+                    alert("not good");
+                
+                }
+                if(counter==2){
+                    alert("good");
+                }
+                if(counter==3){
+                    alert("perfect");
+                }
+            }     
+        </script>
+    </body>
+</html>
