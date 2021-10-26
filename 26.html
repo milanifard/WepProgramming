@@ -14,12 +14,18 @@
             direction: rtl;
             margin-top: 1vh;
         }
+        .mar-botom {
+            margin-bottom: 10px;
+        }
+        body {
+            padding-bottom: 20px;
+        }
         #testForm {
             background-color: rgba(189, 183, 107, 0.555);
             border-radius: 15px;
             padding-top: 10px;
             padding-right: 15px;
-            padding-bottom: 50px;
+            padding-bottom: 40px;
         }
 
         .list-item {
@@ -74,6 +80,12 @@
             }
             else {
                 document.getElementById('num-2').style.backgroundColor = 'red';
+            }
+            if (document.getElementById('q3-padding').checked){
+                document.getElementById('num-3').style.backgroundColor = 'green';
+            }
+            else {
+                document.getElementById('num-3').style.backgroundColor = 'red';
             }
         }
     </script>
@@ -177,14 +189,14 @@
             </div>
             <div class="container">
                 <form id="testForm">
-                    <div class="row">
+                    <div class="row mar-botom">
                         <div class="col">
                             <span id="num-1"> 1.</span>
                             برای متعلق کردن یک استایل به یک المنت خاص از ویژگی
                             <input type="text" name="q1" id="q1-ans"> استفاده میکنیم.
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mar-botom">
                         <div class="col">
                             <span id="num-2">2.</span>
                              به چند روش میتوان استایل دهی کرد؟
@@ -199,9 +211,24 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="row text-end">
+                    <div class="row mar-botom">
                         <div class="col">
-                            <input type="button" class="btn btn-light text-primary" value="بررسی پاسخ"
+                            <span id="num-3">3.</span>
+                             فاصله ی بین متن و border را با کدام property میتوان کنترل نمود؟
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <div class="li"><input type="radio" name="q3" id="q3-outlet"> outlet </div>
+                                <div class="li"><input type="radio" name="q3" id="q3-padding"> padding </div>
+                                <div class="li"><input type="radio" name="q3" id="q3-margin"> margin </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row text-end">
+                        <div class="col" style="margin-top: 15px;">
+                            <input type="button" class="btn text-white bg-success" value="بررسی پاسخ"
                                 onclick="javascript: checkQuize()">
                         </div>
                     </div>
