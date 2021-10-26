@@ -1,0 +1,20 @@
+.jumbotron{
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.main-content{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.white-div{
+    background-color: #ffffff;
+    width: 50px;
+    height: 35px;
+}
+
+#result, #result2 {
+    color: green;
+}
