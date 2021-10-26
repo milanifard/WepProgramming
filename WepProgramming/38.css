@@ -21,7 +21,10 @@ input{
     text-align: right;
     color: #bebebf;
 }
-
+.linkText{
+    font-size: 15px;
+    color: peru;
+}
 #mainDiv{
     border: 1px solid rgba(200, 200, 200, 0.5);
     margin: 150px 100px;
