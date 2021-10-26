@@ -64,7 +64,24 @@
                     &nbsp; &nbsp;
                     <p class="small text-end"><i class="fas fa-bookmark"></i>&nbsp خواندن این مطلب ۱۰ دقیقه زمان می‌برد.</p>                    
                 </div>
-                <div class="container" style="margin-top: 2vw;">
+                <div class="container" dir="ltr">
+                    <h3>Contents</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active link-secondary" href="#attributes">Attributes</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link link-secondary" href="#encryption-types">Encryption Types</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link link-secondary" href="#forms">Forms</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link link-warning" href="#test">Test</a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="container" style="margin: 2vw 0 0;">
                     <article>
                         <div dir="ltr">
                             <h3 id="attributes">Attributes</h3>
@@ -95,15 +112,44 @@
                             </ul>
                         </div>
                         <div dir="ltr">
-                            <h3>Forms</h3>
+                            <h3 id="forms">Forms</h3>
                             <ul>
-                                <li><Strong>formaction:</Strong>
+                                <li><Strong>Formaction:</Strong>
                                 Specifies the URL of a file that will process the input control when the form is submitted.
                                 <u>Overrides</u> the action attribute of the <code>&ltform&gt</code> element; and is used with
                                 <code>type="submit"</code> and <code>type="image"</code>.
+                                <img src="./images/14/formaction.png" alt="formaction" class="img-fluid d-block">
+                                <Strong>Output: </Strong>
+                                <img src="./images/14/formaction-ex.png" alt="formaction example" class="img-fluid d-block">
                                 </li>
-                                <li><strong>multipart/form-data</strong> No characters are encoded.
-                                This value is required when you are using forms that have a file upoad control.</li>
+                                <li><Strong>List:</Strong>
+                                The list attribute refers to a <code>&ltdatalist&gt</code> element that contains 
+                                a list of options for an input control.
+                                <img src="./images/14/list.png" alt="list" class="img-fluid d-block">
+                                <Strong>Output: </Strong>
+                                <img src="./images/14/list-ex.png" alt="list example" class="img-fluid d-block">
+                                </li>
+                                <li><Strong>Multiple:</Strong>
+                                Specifies that the user is allowed to enter more than one calue in the
+                                <code>&ltinput&gt</code> field. Works with the <i>email</i> and <i>file</i> input types.
+                                <img src="./images/14/multiple.png" alt="multiple" class="img-fluid d-block">
+                                <Strong>Output: </Strong>
+                                <img src="./images/14/multiple-ex.png" alt="multiple example" class="img-fluid d-block">
+                                </li>
+                                <li><Strong>Pattern:</Strong>
+                                Specifies a 
+                                <a class="link-info" href="https://en.wikipedia.org/wiki/Regular_expression" target="_blank">regular expression</a>
+                                to check the pattern against.
+                                <p class="text-muted">Use global <a class="link-info" href="https://www.w3schools.com/tags/att_global_title.asp" target="_blank">
+                                title</a> for describing the pattern to help the user.</p>
+                                </li>
+                                <li><Strong>Placeholder:</Strong>
+                                Specifies a hint that descibres the expected value of an input field.
+                                </li>
+                                <li>
+                                <strong>Required</strong> specifies that an input field is required (must be filled out).
+                                </li>
+                                
                             </ul>
                         </div>
                     </article>
