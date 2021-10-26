@@ -49,10 +49,10 @@
 </div>
 
 <p style="text-align: right; direction: rtl">گزینه مناسب را انتخاب نمایید</p>
-<div style="background-color: #6c757d">
+<div id="grayBox" style="background-color: #6c757d ">
     <p style="text-align: right; direction: rtl">کار این دستور گیت چیست؟</p>
 
-    <form action="/action_page.php">
+    <form id="myForm">
         <p>git checkout -b [branch-name]</p>
           <input type="radio" id="html" name="fav_language" value="HTML">
           <label style="direction: rtl" for="html">جابجا شدن به برنچ branchName</label><br>
@@ -60,9 +60,32 @@
           <label style="direction: rtl" for="css">چک کردن برنچ branchName</label><br>
           <input type="radio" id="javascript" name="fav_language" value="JavaScript">
             <label style="direction: rtl" for="javascript">مقایسه کردن برنچ فعلی با برنچ branchName</label>
+    </form>
 <br>
-    <button type="submit">ثبت</button>
+    <button type="submit" onclick="checkResp()">ارسال پاسخ</button>
 
 </div>
+
+<script language="JavaScript">
+    function $(id) {
+        return document.getElementById(id);
+    }
+    function checkResp() {
+        var radios = document.getElementById('myForm');
+
+        //find selected radio button
+        for (var i = 0, length = radios.length; i < length; i++) {
+            var selectedRadio;
+            if (radios[i].checked) {
+                selectedRadio = i;
+                break;
+            }
+        }
+        if(selectedRadio === 0){
+            alert("آفرین");
+            document.getElementById("grayBox").style.backgroundColor= lawngreen;
+        }
+    }
+</script>
 </body>
 </html>
