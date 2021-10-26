@@ -23,6 +23,17 @@
         img{
             margin-bottom: 20px;
         }
+        .fa-home:hover{
+            color: #0a53be;
+            cursor: pointer;
+        }
+        h4::before {
+            display: block;
+            content: "";
+            border-top: 0.2rem solid #0b5ed7;
+            width: 70vw;
+            transform: translateY(-1rem);
+        }
     </style>
 </head>
 <body>
@@ -55,7 +66,7 @@
         <br>
         <p style="direction: rtl; text-align: right;">سرریز هنگامی اتفاق میافتد که content از container فضای بیشتری اشغال کند و container نتواند تمام آن را شامل شود</p>
         <br>
-        <p style="direction: rtl; text-align: right;">معمولا سرریز هنگامی اتفاق میافتد که ما برای container های خود، عرض یا ارتفاع ثابت کردیم.</p>
+        <p style="direction: rtl; text-align: right;">معمولا سرریز هنگامی اتفاق میافتد که ما برای container های خود، عرض یا ارتفاع ثابت تعیین کردیم.</p>
         <p style="direction: rtl; text-align: right;">به طور مثال جدول زیر یک ارتفاع ثابت 200 پیکسل دارد اما محتوای آن ارتفاع بیشتری را طلب میکند و مطالب روی هم ریخته میشوند.</p>
         <img src="images/19-1.png" class="rounded mx-auto d-block">
         <p style="direction: rtl; text-align: right;">برای اینکه سرریز را مدیریت کنیم از ویژگی overflow در css استفاده میکنیم.</p>
@@ -69,7 +80,7 @@
         <br>
         <br>
         <p style="direction: rtl; text-align: right;">این ویژگی برای تعیین شناور بودن یک المنت در صفحه است. با استفاده از این ویژگی ما میتوانیم مکان شیء و فرمت آن را نشان دهیم</p>
-        <p style="direction: rtl; text-align: right;">مقادیری که برای این ویژگی میتوان ست کرد، left و right هستند و وقتی این مقادیر ست شود، آنگاه جای قبلی این المنت ها خالی میشود و بقیه المنت ها میتوانند در آن جا قرار بگیرند.</p>
+        <p style="direction: rtl; text-align: right;">مقادیری که برای این ویژگی میتوان ست کرد، left و right و none هستند و وقتی این مقادیر ست شود، آنگاه جای قبلی این المنت ها خالی میشود و بقیه المنت ها میتوانند در آن جا قرار بگیرند.</p>
         <p style="direction: rtl; text-align: right;">به طور مثال صفحه ای با مشخصات زیر را در نظر بگیرید:</p>
         <img src="images/19-4.png" class="rounded mx-auto d-block">
         <p style="direction: rtl; text-align: right;">اکنون اگر ما به المنت image یا همان عکس مقدار float: left را بدهیم، خروجی ما به شکل زیر خواهد شد:</p>
