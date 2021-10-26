@@ -46,6 +46,123 @@
 
             </div>
             <br>
+            <p> بررسی تگ های جدید HTML5.</p>
+            <hr>
+            <h2>&lt section &gt</h2>
+            میتوانیم بخش های مختلف صفحه وبسایت خود را در سکشن های متفاوت گروه بندی کنیم برای مثال میتوانیم بخش پروفایل صفحه وب خود را در سکشن مخصوص قرار دهیم این تگ از لحاظ ظاهری تغییری ایجاد نمیکند. اما در موتور های جست و جو برای پیدا کردن محتوای مناسب و مورد نظر
+            کاربرد دارد
+
+            <br>
+            <br>
+
+            <hr>
+            <h2>&lt article &gt</h2>
+            یک بخش مستقل در متن را مشخص میکند. این بخش باید به تنهایی معنا دار باشد و بتوانیم به صورت مجزا آن را منتشر کنیم . برای مثال بیان مطالب مورد علاقه خود در صفحه وبسایت میتوانیم آن هر کدام را در بخش article مورد نظر خود بنویسیم . هر artile میتواند درون خود
+            تگ های جداگانه هدر و فوتر و ... داشته باشد
+
+
+            <br>
+            <br>
+
+
+            <hr>
+            <h2>&lt aside &gt</h2>
+            برای محتوا هایی از متن که جزو بخش اصلی حساب نمیشوند/ برای مثال بیان یک توضیح درباره اصطلاحات علمی استفاده شده در پروفایل شخصی . این مطالب حاشیه ای هستند . از نظر ظاهری نیز تفاوت چندانی با محتوای اصلی ندارد . میتوان با کوچک کردن سایز فونت اهمیت این نوشته
+            را کمتر کرد در ظاهر .
+
+            <br>
+            <br>
+
+            <hr>
+            <h2>&lt details &gt</h2>
+            گاهی اوقات نمیخواهیم تمام جزییات یک بخش در صفحه اصلی وب باشد . میخواهیم بخشی از جزییات hide باشد و زمانی که کاربر کلیک کرد نمایش داده شود .
+            <br>
+            <br>
+
+            <div class="jumbotron">
+                <img alt="detials" src="images/html11.png" style="max-width: 100%; max-height: 100%;">
+            </div>
+            میتوانیم با استفاده از تگ &lt; summary &gt برچسب details را از بخش مخفی سازی به هر اسمی که میخواهیم تغییر بدهیم
+            <br>
+            <br>
+            <br>
+            <H2>سوالات</H2>
+            سوالات زیر را بادقت پاسخ دهید.
+            <br>
+            <br>
+
+            <div class="jumbotron" id="q1">
+                1. کدام تگ برای گروه بندی کردن بخش های مختلف داکیومنت به کار میرود ؟
+                <br>
+                <input type="radio" name="qq1" id="r1"><code>&#60h1&#62</code>
+                <br>
+                <input type="radio" name="qq1" id="r2"><code>&#60article&#62</code></input>
+                <br>
+                <input type="radio" name="qq1" id="r3"><code>&#60details&#62</code></input>
+                <br>
+                <input type="radio" name="qq1" id="r4"><code>&#60section&#62</code></input>
+                <div id="d1" style="opacity: 0%;">گزینه یک پاسخ درست است.</div>
+                </input>
+            </div>
+            <div class="jumbotron" id="q2">
+                ۲. کدام تگ برای مشخص کردن یک بخش مستقل معنا دار استفاده میشود ؟
+                <br>
+                <input type="radio" name="qq2" id="rr1"><code>&#60br&#62</code></input>
+                <br>
+                <input type="radio" name="qq2" id="rr2"><code>&#60Section&#62</code></input>
+                <br>
+                <input type="radio" name="qq2" id="rr3"><code>&#60article&#62</code></input>
+                <br>
+                <input type="radio" name="qq2" id="rr4"><code>&#60details&#62</code></input>
+                <div id="d2" style="opacity: 0%;">گزینه چهار پاسخ درست است.</div>
+                </input>
+
+            </div>
+            <div class="jumbotron" id="q3">
+                ۳. برای تغییر نام details در تگ details از کدام گزینه استفاده میشود ؟
+                <br>
+                <input type="radio" name="qq3" id="rrr1"><code>&#60section&#62</code></input>
+                <br>
+                <input type="radio" name="qq3" id="rrr2"><code>&#60summary&#62</code></input>
+                <br>
+                <input type="radio" name="qq3" id="rrr3"><code>&#60details&#62</code></input>
+                <br>
+                <input type="radio" name="qq3" id="rrr4">هیچ کدام</input>
+                <div id="d3" style="opacity: 0%;">گزینه دو پاسخ درست است.</div>
+                </input>
+
+            </div>
+            <div class="container-fluid" style="align-self: center;">
+                <a onclick="javascript: evaluation();" class="btn btn-info" role="button">ثبت تمام پاسخ ها</a>
+            </div>
+            <script lang="JavaScript">
+                function evaluation() {
+                    var score = 0;
+                    if (document.getElementById('r4').checked) {
+                        document.getElementById('q1').style.backgroundColor = "green";
+                        score++;
+                    } else {
+                        document.getElementById('q1').style.backgroundColor = "rgb(195, 76, 76)";
+                    }
+                    if (document.getElementById('rr3').checked) {
+                        document.getElementById('q2').style.backgroundColor = "green";
+                        score++;
+                    } else {
+                        document.getElementById('q2').style.backgroundColor = "rgb(195, 76, 76)";
+                    }
+                    if (document.getElementById('rrr2').checked) {
+                        document.getElementById('q3').style.backgroundColor = "green";
+                        score++;
+                    } else {
+                        document.getElementById('q3').style.backgroundColor = "rgb(195, 76, 76)";
+                    }
+                    document.getElementById('d1').style.opacity = "100%";
+                    document.getElementById('d2').style.opacity = "100%";
+                    document.getElementById('d3').style.opacity = "100%";
+                    let text = "امتیاز شما " + String(score) + "/3" + " میباشد.";
+                    alert(text);
+                }
+            </script>
 
 
 
