@@ -93,7 +93,7 @@ submit1Button.addEventListener('click', () => {
          <h2>Correct</h2>  
          <button onclick="history.go(0)" class="btn btn-success">Quiz Again</button>  
        `
-    }else{
+    } else {
       longQuiz.innerHTML = `  
          <h2>Incorrect</h2>  
          <button onclick="history.go(0)" class="btn btn-success">Quiz Again</button>  

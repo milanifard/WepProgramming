@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'IRANSans';
-  src: url('/font/IRANSans.ttf') format('ttf');
+  src: url('/fonts/IRANSans.ttf') format('ttf');
 }
 
 body {
@@ -118,4 +118,8 @@ li {
 
 ul{
     list-style: none;
+}
+
+.pre code{
+    background-color: #444000;
 }
