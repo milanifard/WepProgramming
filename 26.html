@@ -14,6 +14,13 @@
             direction: rtl;
             margin-top: 1vh;
         }
+        #testForm {
+            background-color: rgba(189, 183, 107, 0.555);
+            border-radius: 15px;
+            padding-top: 10px;
+            padding-right: 15px;
+            padding-bottom: 50px;
+        }
 
         .list-item {
             color: rgb(151, 140, 44);
@@ -54,6 +61,22 @@
             border-radius: 5px;
         }
     </style>
+    <script languaue="JavaScript">
+        const checkQuize = () => {
+            if (document.getElementById('q1-ans').value === 'id') {
+                document.getElementById('num-1').style.backgroundColor = 'green';
+            }
+            else {
+                document.getElementById('num-1').style.backgroundColor = 'red';
+            }
+            if (document.getElementById('q2-3').checked){
+                document.getElementById('num-2').style.backgroundColor = 'green';
+            }
+            else {
+                document.getElementById('num-2').style.backgroundColor = 'red';
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -82,7 +105,7 @@
             <div class="d-inline-flex p-2 align-items-center justify-content-between">
                 <img src="./images/picture.jpg" id="pic" class="rounded-circle">
                 &nbsp;
-                <p class="mid small"> امید میلانی فرد</p>
+                <p class="mid small">مائده نادهی</p>
                 &nbsp; &nbsp; &nbsp;
                 <p class="mid small">26/10/2021</p>
                 &nbsp; &nbsp;
@@ -148,46 +171,41 @@
                 <img src="./images/class.png" alt="class" class="img-fluid d-block">
             </div>
         </div>
-        <!-- <div>
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت
-            مطلب چرت و پرت
-            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
-
-        </div> -->
-        <div class="row quiz">
+        <div class="row">
             <div class="sticky">
                 <h3>QUIZ</h3>
             </div>
             <div class="container">
-                <div class="row" id="Q1"></div>
-                <div class="row" id="Q2"></div>
-                <div class="row" id="Q3"></div>
+                <form id="testForm">
+                    <div class="row">
+                        <div class="col">
+                            <span id="num-1"> 1.</span>
+                            برای متعلق کردن یک استایل به یک المنت خاص از ویژگی
+                            <input type="text" name="q1" id="q1-ans"> استفاده میکنیم.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span id="num-2">2.</span>
+                             به چند روش میتوان استایل دهی کرد؟
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <div class="li"><input type="radio" name="q2" id="q2-2"> 2 </div>
+                                <div class="li"><input type="radio" name="q2" id="q2-3"> 3 </div>
+                                <div class="li"><input type="radio" name="q2" id="q2-4"> 4 </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row text-end">
+                        <div class="col">
+                            <input type="button" class="btn btn-light text-primary" value="بررسی پاسخ"
+                                onclick="javascript: checkQuize()">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
