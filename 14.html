@@ -5,15 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA_Compatible" content="ie=edge">
     <title>HTML #14</title>
-    <!-- <link rel="icon" type="image/png" href="./images/favicon-32x32.png"> -->
+    <link rel="icon" type="image/png" href="./images/14/favicon.png">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/iranian-sans" rel="stylesheet">                
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script languaue="JavaScript">
+        function createAlert(type="Success", message){
+                var alert = document.createElement("div");
+                alert.className = "alert alert-" + type;
+                alert.innerHTML = message;
+                alert.style.marginTop = "1rem";
+                return alert;
+            }
+        const testCheck = () => {
+            var score = 0;
+            const email = document.getElementById('q1-email');
+            const text = document.getElementById('q1-text');
+            const number = document.getElementById('q1-number');
+            const file = document.getElementById('q1-file');
+            score += (email.checked === true && file.checked === true
+            && text.checked === false && number.checked===false)? 1 : 0;
+            const ans2 = document.getElementById('q2-ans').value;
+            if (ans2.toLowerCase() === 'ascii hex') score += 1;
+            const ans3 = document.getElementById('q3-submit').checked;
+            if (ans3 === true) score += 1;
+            const testbox = document.getElementById('testbox');
+            const alert = createAlert(score === 3 ? 'success' : (score === 2 ? 'warning' : 'danger'),
+            `Your score is ${score} out of 3.`);
+            testbox.appendChild(alert);
+            setTimeout(() => {
+                testbox.removeChild(alert);
+            }, 5000);
+            
+        }
+    </script>
     <style>
         * {
             font-family: 'Iranian Sans', sans-serif;
+        }
+        body {
+            background-color: #e6e6e6;
         }
         a {
             text-decoration: none;
@@ -26,14 +59,14 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container p-5 rounded bg-white">
         <div class="navbar text-muted">
             <a href="./index.html" class="text-muted">
                 
                 <div class="nav-item"><i class="fas fa-home"></i>&nbsp;خانه</div>
             </a>
             &nbsp; / &nbsp;
-            <a href="./html.html" class="text-muted">
+            <a href="./1.html" class="text-muted">
                 <div class="nav-item">آموزش HTML</div>
             </a>
             &nbsp; / &nbsp; 
@@ -43,26 +76,26 @@
 
         </div>
         <div class="d-grid gap-2 d-md-block" style="margin: 1em;">
-            <button type="button" class="btn btn-warning btn-sm" style="color:white;">آموزش HTML</button>
+            <button type="button" class="btn btn-warning btn-sm text-white">آموزش HTML</button>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <h1>Input Attributes</h1>
-                <div class="d-inline-flex p-2 align-items-center justify-content-between">
+                <div class="d-inline-flex p-2 align-items-center ">
                     <img src="./images/14/AZ.jpg" class="rounded-circle" style="display: inline; width: 2em;" 
                         alt="Profile image with A.Z. letters white on black">
                     &nbsp;
-                    <p class="small">آفرین زمانیان</p>
+                    <p class="h6">آفرین زمانیان</p>
                     &nbsp; &nbsp; &nbsp;
-                    <p class="small">۲۶/۱۰/۲۰۲۱</p>
+                    <p class="h6">۲۶/۱۰/۲۰۲۱</p>
                     &nbsp; &nbsp;
-                    <p class="small">آخرین به‌روز‌رسانی: ۲۶/۱۰/۲۰۲۱</p>
+                    <p class="h6">آخرین به‌روز‌رسانی: ۲۶/۱۰/۲۰۲۱</p>
                     &nbsp; &nbsp; &nbsp;
                     &nbsp; &nbsp; &nbsp;
                     <!-- left align a heading 6 -->
-                    <p class="small text-end"><i class="fas fa-comments"></i>&nbsp ۰</p>
+                    <p class="h6 text-end"><a href="#comments" class="text-black"><i class="fas fa-comments"></i>&nbsp ۰</p></a>
                     &nbsp; &nbsp;
-                    <p class="small text-end"><i class="fas fa-bookmark"></i>&nbsp خواندن این مطلب ۱۰ دقیقه زمان می‌برد.</p>                    
+                    <p class="h6 text-end"><i class="fas fa-bookmark"></i>&nbsp خواندن این مطلب ۱۰ دقیقه زمان می‌برد.</p>                    
                 </div>
                 <div class="container" dir="ltr">
                     <h3>Contents</h3>
@@ -153,6 +186,54 @@
                             </ul>
                         </div>
                     </article>
+                    <div dir="ltr">
+                        <div class="bg-primary p-4 text-white rounded" id="testbox">
+                            <h3 id="test">Test</h3>
+                            <form id="testForm">
+                                <div class="row">
+                                    <div class="col">
+                                        1. Which input types can be used with the <code class="text-warning">multiple</code> property?
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <ul>
+                                            <div class="li"><input type="checkbox" name="q1" id="q1-email"> email </div>
+                                            <div class="li"><input type="checkbox" name="q1" id="q1-text"> text</div>
+                                            <div class="li"><input type="checkbox" name="q1" id="q1-file"> file </div>
+                                            <div class="li"><input type="checkbox" name="q1" id="q1-number"> number </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        2. In the default encryption type, special characters are converted to 
+                                        <input type="text" name="q2" id="q2-ans"> values.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        3. Which of the following can be used with <code class="text-warning">formaction</code>?
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <ul>
+                                            <div class="li"><input type="radio" name="q3" id="q3-email"> email </div>
+                                            <div class="li"><input type="radio" name="q3" id="q3-submit"> submit</div>
+                                            <div class="li"><input type="radio" name="q3" id="q3-datalist"> datalist </div>
+                                            <div class="li"><input type="radio" name="q3" id="q3-number"> number </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row text-end">
+                                    <div class="col d-grid gap-2">
+                                        <input type="button" class="btn btn-light text-primary" value="Submit" onclick="javascript: testCheck()">
+                                    </div>
+                                </div>                                
+                            </form>
+                        </div>
+                    </div>                        
                 </div>
                 <p>
                 </p>
