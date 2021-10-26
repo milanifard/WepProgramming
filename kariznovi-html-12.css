@@ -21,8 +21,18 @@ border-radius: 0.5rem;
 
 }
 
+.cover-img{
+    display: flex;
+    justify-content: center;
+}
 .image{
 
     width: 40rem;
     height: auto;
+}
+
+.question{
+    background-color: gray;
+    padding: 1rem;
+    height: 3rem;
 }
