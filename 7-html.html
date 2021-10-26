@@ -64,7 +64,6 @@
         <div style="background-color:rgb(196, 210, 240); padding: 30px;">
             <p> برای ایجاد یک ستون به صورت header کدام گزینه درست است؟ </p>
             </p>
-            <p></p>
             <form style="text-align: left;">
                 <input type="radio" id="th" value="th" onclick=" javascript :exer1()">
                 <label for="th">th</label><br>
@@ -76,11 +75,31 @@
             <p id="solve1"></p>
         </div>
         <div style="background-color:rgb(196, 210, 240); padding: 30px;">
-            <p>سوال دوم </p>
+            <p>برای ادغام دو سطر باید از کدام گزینه استفاده کرد؟</p>
             </p>
+            <form style="text-align: left;">
+                <input type="radio" id="colspan" value="colspan">
+                <label for="th">colspan</label><br>
+                <input type="radio" id="rowspan" value="rowspan" onclick=" javascript :exer2()">
+                <label for="td">rowspan</label><br>
+                <input type="radio" id="collaps" value="collaps">
+                <label for="tr">collaps</label>
+            </form>
+            <p id="solve2"></p>
         </div>
         <div style="background-color:rgb(196, 210, 240); padding: 30px;">
-            <p>سوال سوم </p>
+            <p>برای ادغام دو ستون باید از کدام گزینه استفاده کرد؟</p>
+
+            <form style="text-align: left;">
+                <input type="radio" id="colspan" value="colspan" onclick=" javascript :exer3()">
+                <label for="th">colspan</label><br>
+                <input type="radio" id="rowspan" value="rowspan">
+                <label for="td">rowspan</label><br>
+                <input type="radio" id="collaps" value="collaps">
+                <label for="tr">collaps</label>
+            </form>
+            <p id="solve3"></p>
+            </p>
             </p>
         </div>
 
@@ -89,6 +108,12 @@
 <script>
     function exer1() {
         document.getElementById("solve1").innerHTML = "آفرین .گزینه اول درست است";
+    }
+    function exer2() {
+        document.getElementById("solve2").innerHTML = "آفرین .گزینه دوم درست است";
+    }
+    function exer3() {
+        document.getElementById("solve3").innerHTML = "آفرین .گزینه اول درست است";
     }
 </script>
 
