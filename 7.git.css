@@ -1,0 +1,19 @@
+.title{
+    color: gray;
+}
+#title2{
+    width: 125px;
+    border-radius: 20px;
+    background-color: orange;
+}
+.header{
+    display: flex;
+    text-align: justify;
+}
+.image{
+    height: 500px;
+    width: 600px;
+}
+.form{
+    background-color: darkgrey;
+}
