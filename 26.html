@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML 4</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link href="http://fonts.cdnfonts.com/css/iranian-sans" rel="stylesheet">
@@ -14,6 +13,13 @@
             font-family: 'Iranian Sans';
             direction: rtl;
             margin-top: 1vh;
+        }
+        #pic {
+            width: 40%;
+        }
+        .mid {
+            margin-top: auto;
+            margin-bottom: auto;
         }
     </style>
 </head>
@@ -39,10 +45,12 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-3">امیدمیلانی فرد</div>
-            <div class="col-md-4">2018-11-28 آخرین تغییر</div>
-            <div class="col-md-4">
+            <div class="col-md-1"> 
+                <img id="pic" src="./images/download.png" alt="Omid Milanifard Picture" class=".rounded-circle">
+            </div>
+            <div class="col-md-3 mid">امیدمیلانی فرد</div>
+            <div class="col-md-4 mid">2018-11-28 آخرین تغییر</div>
+            <div class="col-md-4 mid">
                 <i class="fa fa-bookmark" aria-hidden="true"></i>
                 خواندن این مطلب 5 دقیقه زمان میبرد
             </div>
@@ -55,9 +63,11 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p>برای این استفاده میشه که ما به رازیبیمه چطوری المنت‌های html از نظر ظاهری و صفحه نشون بده</p>
                 <p>
-                    : سال می‌تونیم به سه شکل در صفحه مون اد کنیم:
+                    css برای زیبایی و نظم بخشیدن به المنت های html استفاده میشود.
+                </p>
+                <p>
+                   به سه شکل میتوان css به صفحه ی خود اضافه کرد:
                 </p>
                 <ul>
                     <li>Inline</li>
@@ -67,7 +77,7 @@
                 <h3>CSS font</h2>
                     <p>
                         <ul>
-                            <li>CSS color رنگ متن رو مشخص میکنه</li>
+                            <li>CSS color رنگ متن رو مشخص میکند</li>
                             <li>CSS font-family فونت را مشخص میکند</li>
                             <li>CSS font size سایز متن را مشخص میکند</li>
                         </ul>
