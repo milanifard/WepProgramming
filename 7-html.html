@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="source/css/7-html.css">
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/shabnam-font@v5.0.1/dist/font-face.css" rel="stylesheet"
         type="text/css" />
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0/dist/font-face.css">
+    <link rel="stylesheet" href="source/font">
 
 </head>
 
@@ -30,23 +33,63 @@
         <img class="mx-auto d-block" src="/source/images/table-html.gif" alt="html structure "
             style="width:600px;height:300px;">
     </div>
-    <div>
-        <h2 style="margin-top: 50px;">HTML ساخت جداول در </h2>
-        <p>جدول را با تگ table ایجاد کرده و که داخل آن با تگ tr هر سطر آن را ایجاد میکنند و داخل آن با تگ های th یا td
-            به هر بلوک
-            ستون از سطر مقدار داده میشود که th آن مقدار را درشت تر نشان میدهد و به عنوان header نشان داده میشود.</p>
-        <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3">از این لینک میتوانید بیشتر مطالعه
-            کنید</a>
-        <p>میتوانیم از boarder collaps برای یکی شدن Boarder های سطر ها و ستون ها و خود جداول استفاده کنیم.</p>
-        <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colspan2" target="_blank"></a>
-        <p>اگر بخواهیم متن داخل جدول به مثلا سمت چپ برود از text-align استفاده کنیم.</p>
-        <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3" target="_blank"></a>
-        <p>برای ادغام دو ستون از جدول از colspan استفاده میشود.</p>
-        <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3" target="_blank"></a>
-        <p>برای ادغام دو سطر از جدول از rowspan استفاده میشود.</p>
-        <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3" target="_blank"></a>
+    <br>
+    <h2 style="margin-top: 50px;">HTML ساخت جداول در </h2>
+    <p>جدول را با تگ table ایجاد کرده و که داخل آن با تگ tr هر سطر آن را ایجاد میکنند و داخل آن با تگ های th یا td
+        به هر بلوک
+        ستون از سطر مقدار داده میشود که th آن مقدار را درشت تر نشان میدهد و به عنوان header نشان داده میشود.</p>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3">از این لینک میتوانید بیشتر مطالعه
+        کنید</a>
+    <br></br>
+    <p>میتوانیم از boarder collaps برای یکی شدن Boarder های سطر ها و ستون ها و خود جداول استفاده کنیم.</p>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_collapse" target="_blank">از این لینک
+        میتوانید بیشتر مطالعه کنید</a>
+    <br></br>
+    <p>برای انتخاب نوع boarder میتوانید از boarder-style استفاده کنید که مثلا نقطه چین یا خط صاف و یا .. باشد</p>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_border_dotted" target="_blank">از این
+        لینک میتوانید بیشتر مطالعه کنید</a>
+    <br></br>
+    <p>برای ادغام دو ستون از جدول از colspan استفاده میشود.</p>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colspan2" target="_blank">از این لینک
+        میتوانید بیشتر مطالعه کنید</a>
+    <br></br>
+    <p>برای ادغام دو سطر از جدول از rowspan استفاده میشود.</p>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_rowspan2" target="_blank">از این لینک
+        میتوانید بیشتر مطالعه کنید</a>
     </div>
+    <br></br>
+    <br></br>
+    <div class="exercise mx-auto d-block">
+        <p style="font-size: 20px;">برای آمادگی بیشتر تمارین زیر را حل کنید</p>
+        <div style="background-color:rgb(196, 210, 240); padding: 30px;">
+            <p> برای ایجاد یک ستون به صورت header کدام گزینه درست است؟ </p>
+            </p>
+            <p></p>
+            <form style="text-align: left;">
+                <input type="radio" id="th" value="th" onclick=" javascript :exer1()">
+                <label for="th">th</label><br>
+                <input type="radio" id="td" value="td">
+                <label for="td">td</label><br>
+                <input type="radio" id="tr" value="tr">
+                <label for="tr">tr</label>
+            </form>
+            <p id="solve1"></p>
+        </div>
+        <div style="background-color:rgb(196, 210, 240); padding: 30px;">
+            <p>سوال دوم </p>
+            </p>
+        </div>
+        <div style="background-color:rgb(196, 210, 240); padding: 30px;">
+            <p>سوال سوم </p>
+            </p>
+        </div>
 
+    </div>
 </body>
+<script>
+    function exer1() {
+        document.getElementById("solve1").innerHTML = "آفرین .گزینه اول درست است";
+    }
+</script>
 
 </html>
