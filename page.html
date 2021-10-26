@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>آموزش HTML</title>
+
+    <link href="https://github.com/milanifard/WepProgramming/blob/main/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        body{
+            margin-left: 15%;
+            margin-right: 15%;
+            font-weight: bold;
+        }
+        .question{
+            font-weight: 600;
+        }
+        .answers {
+            margin-bottom: 20px;
+        }
+        #submit{
+            font-family: "B Nazanin";
+            font-size: 20px;
+            background-color: #297;
+            color: #fff;
+            border: 2px;
+            border-radius: 3px;
+            padding: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            margin-right: 15px;
+        }
+        #submit:hover{
+            background-color: #3a8;
+        }
+
+    </style>
+
+
+
+</head>
+<body style="text-align: right ; position: relative ; font-family: 'B Nazanin' ; float: right">
+
+    <div style="font-size: 18px">  <a href="https:www.bing.com">خانه</a> / <a href="https:www.bing.com">آموزش</a> / <a href="https:www.bing.com">آموزش مقدماتی وب</a> <i class="fa fa-home" aria-hidden="true"></i></div>
+    <h1>لینک ها</h1>
+    <span style=" border-radius: 50px ; background: gold ;padding: 8px; align-content: center;  font-size: 20px; float: right ; text-align: right">آموزش HTML</span>
+
+
+    <img src="imagemiddle.png" height="500px" width="750px">
+    <h2>زبان نشانه گذاری یا مارکآپ چیست</h2>
+    <div style="position: static ; font-size: 12px ; color: gray ; margin-right: 20px">
+
+        <span> تاریخ:10-26-2021</span>♦
+        <span>  نوشته شده توسط: برنا کلهر</span>
+        <img src="random_user.jpg" width="22px" height="22px">
+
+    </div>
+    <p>
+
+        زبان برنامه نویسی ابزاری قدرتمند است که به وسیله آن می‌توانیم با کامپیوترها حرف بزنیم. زبان‌های برنامه نویسی به کمک دستورالعمل‌هایی که برای کامپیوتر قابل فهم هستند با آن‌ها ارتباط برقرار کرده و به طور عمده از ساختارهای کنترلی و شرطی استفاده می‌کنند. سخت افزار برای این که درست کار کند نیاز به یک سری دستورالعمل دارد. این دستورالعمل‌ها توسط برنامه نویس و زبانی که برای کامپیوتر قابل فهم باشد، به سخت افزار داده می‌شود.
+
+        انواع مختلفی از زبان نشانه گذاری وجود دارد که معروف‌ترین آن HTML است. اگر به اسم زبان نشانه گذاری دقت کنید، متوجه مفهوم آن خواهید شد. در زبان‌های نشانه گذاری خبری از ساختارهای رایج برنامه‌نویسی مثل شرط، حلقه، تکرار و غیره وجود ندارد و شما داخل متن خود از یک سری نشانه استفاده می‌کنید. در حقیقت در این زبان‌ها شما به کمک این نشانه‌ها متن را از سایر عناصر صفحه جدا می‌کنید تا به کمک آن‌ها المان‌های مختلف را داخل یک صفحه وب قرار داده و ساختار صفحه را مشخص کنید.
+
+
+        <span style="color:blue; text-decoration: none"><a href="https://blog.faradars.org/object-oriented-programming-explained/">ادامه مطلب</a> </span></p>
+    <div>
+
+        <h2>سوال های چهارگزینه ای</h2>
+        <p>لطفا به پرسش های زیر پاسخ دهید.</p>
+
+        <div id="quiz"></div>
+        <button id="submit">ارسال و نمایش نتایج</button>
+        <div id="results"></div>
+
+        <script>
+            const myQuestions = [
+                {
+                    question: "اچ تی ام ل مخفف چیست؟",
+                    answers: {
+                        a: 'hypertext styling language',
+                        b: 'hypertext markup language',
+                        c: 'hypertext transport protocol'
+                    },
+                    correctAnswer: 'b'
+                },
+                {
+                    question: "گیت جیست",
+                    answers: {
+                        a: 'زبان برنامه نویسی',
+                        b: 'نام فریم ورک',
+                        c: 'ورژن کنترل'
+                    },
+                    correctAnswer: 'c'
+                }
+            ];
+
+            var quizContainer = document.getElementById('quiz');
+            var resultsContainer = document.getElementById('results');
+            var submitButton = document.getElementById('submit');
+
+            generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
+            function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+
+                function showQuestions(questions, quizContainer){
+                    var output = [];
+                    var answers;
+
+
+                    for(var i=0; i<questions.length; i++){
+
+
+                        answers = [];
+                        for(letter in questions[i].answers){
+
+                            answers.push(
+                                '<label>'
+                                + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+                                + letter + ': '
+                                + questions[i].answers[letter]
+                                + '</label>'
+                            );
+                        }
+
+                        output.push(
+                            '<div class="question">' + questions[i].question + '</div>'
+                            + '<div class="answers">' + answers.join('') + '</div>'
+                        );
+                    }
+
+                    quizContainer.innerHTML = output.join('');
+                }
+
+
+                function showResults(questions, quizContainer, resultsContainer){
+                    var answerContainers = quizContainer.querySelectorAll('.answers');
+
+
+
+
+                    var userAnswer = '';
+                    var numCorrect = 0;
+
+                    for(var i=0; i<questions.length; i++){
+
+
+                        userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+
+                        if(userAnswer===questions[i].correctAnswer){
+
+                            numCorrect++;
+
+                            answerContainers[i].style.color = 'lightgreen';
+                        }
+
+                        else{
+
+                            answerContainers[i].style.color = 'red';
+                        }
+                    }
+                    resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+                }
+
+                showQuestions(questions, quizContainer);
+
+                submitButton.onclick = function(){
+                    showResults(questions, quizContainer, resultsContainer);
+                }
+            }
+
+
+        </script>
+    </div>
+</body>
+</html>
