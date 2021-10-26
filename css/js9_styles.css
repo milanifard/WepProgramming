@@ -1,20 +1,48 @@
-.jumbotron{
+body {
+    font-family: "Iran", serif;
+}
+
+.jumbotron {
     background-color: lightgray;
     border-radius: 10px;
     padding: 10px;
 }
 
-.main-content{
+.main-content {
     border: 1px solid lightgray;
     border-radius: 5px;
 }
 
-.white-div{
+.white-div {
     background-color: #ffffff;
     width: 50px;
     height: 35px;
 }
 
-#result, #result2 {
+#result, #result2, #result3 {
     color: green;
+}
+
+.display-btn {
+    background-color: #1a1e21;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+.submit-btn {
+    color: #ffffff;
+    background-color: #119058;
+    border-radius: 15px;
+    border: none;
+}
+
+@font-face {
+    font-family: 'Iran';
+    src: url(Iranian_Sans.ttf);
+}
+
+.avatar {
+    width: 40px;
+    height: 50px;
+    border-radius: 25px;
 }
