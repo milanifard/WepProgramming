@@ -1,10 +1,68 @@
-<html lang="en">
+<html lang="en" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/behzad-quiz.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/behzad-main.css">
+    <link rel="stylesheet" href="css/behzad-header.css" />
 </head>
+
 <body>
-    <p>behzad :)</p>
+    <!-- header -->
+    <div class="container">
+        <div class="header">
+            <div class="breadcrumb">
+                <i class="fa fa-home"></i>
+                <span>خانه / آموزش Git / برنچ ها</span>
+            </div>
+            <div class="tag">آموزش Git</div>
+            <h1>برنچ ها</h1>
+            <div class="description">
+                <div class="right">
+                    <i class="fa fa-user"></i>
+                    <span class="name">بهزاد عارف نیا</span>
+                    <span class="date">2018-11-28</span>
+                    <span class="last-change">اخرین به روز رسانی: 24-06-2021</span>
+                </div>
+                <div class="left">
+                    <i class="fa fa-wechat"></i>
+                    <span>0</span>
+                    <i class="fa fa-bookmark"></i>
+                    <span>خواندن این مطلب ۱۱ دقیقه زمان میبرد</span>
+                </div>
+            </div>
+        </div>
+        <!-- main -->
+        <div class="mainDiv">
+            <h3>مفهموم HEAD</h3>
+            <p>گیت یک نشانه گر یا پوینتر خاص به نام <a href="https://www.javatpoint.com/git-head">Head</a> نگه می دارد . این نشانگر به شاخه ی محلی فعلی که روی آن کار می کنید اشاره می کند</p>
+            <p>درواقع HEAD به آخرین commit در شعبه پرداخت فعلی اشاره می کند. این مانند یک اشاره به هر مرجعی است. HEAD را می توان به عنوان "شاخه فعلی" درک کرد. وقتی شعبه‌ها را با «پرداخت» عوض می‌کنید، HEAD به شعبه جدید منتقل می‌شود.</p>
+            <img src="images/slide1.png" alt="slide1" class="responsive">
+            <h3>تعویض برنچ</h3>
+            <p>هنگام کار در مخزن محلی خود، ممکن است بخواهید به جای خط کد اصلی، کد شعبه را بررسی کرده و روی آن کار کنید. درست مانند خط کد اصلی، وقتی کد شاخه را به Bitbucket Cloud پوش می کنید، آن شاخه را برای شما ردیابی می کند. برای مشاهده اینکه شما یا سایرین در فضای کاری خود کدام شاخه ها را پوش کرده اید، به فهرست شاخه ها در مخزن خود مراجعه کنید.</p>
+            <img src="images/slide2.png" alt="slide1" class="responsive">
+            <h3>ادغام شاخه ها</h3>
+            <p>ادغام روشی است که <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">Git merge</a> برای گردآوری مجدد یک تاریخچه دوشاخه‌ای دوباره به هم می‌رساند. دستور  git به شما امکان می دهد خطوط توسعه مستقل ایجاد شده توسط git branch را بگیرید و آنها را در یک شاخه واحد ادغام کنید.
+                توجه داشته باشید که تمام دستورات ارائه شده در زیر در شاخه فعلی ادغام می شوند. شاخه فعلی به‌روزرسانی می‌شود تا ادغام را منعکس کند، اما شاخه هدف کاملاً بی‌تأثیر خواهد بود. باز هم، این بدان معنی است که ادغام git اغلب همراه با git checkout برای انتخاب شاخه فعلی و git branch -d برای حذف شاخه هدف منسوخ استفاده می شود.</p>
+            <img src="images/slide5.png" alt="slide1" class="responsive">
+            <h3>ریورت</h3>
+            <p>دستور <a href="https://www.atlassian.com/git/tutorials/undoing-changes/git-revert">git revert</a> را می توان یک دستور از نوع 'undo' در نظر گرفت، با این حال، این یک عملیات undo سنتی نیست. به جای حذف commit از تاریخچه پروژه، نحوه معکوس کردن تغییرات ایجاد شده توسط commit را مشخص می کند و یک commit جدید با محتوای معکوس حاصله اضافه می کند. این مانع از دست دادن تاریخچه Git می شود که برای یکپارچگی تاریخچه بازبینی شما و همکاری قابل اعتماد مهم است.</p>
+            <img src="images/slide4.png" alt="slide1" class="responsive">
+        </div>
+
+
+        <!-- quiz -->
+        <div style="background-color: #dee2e6; border-radius: 30px; padding: 25px; margin-top: 8px;">
+            <div id="quiz"></div>
+            <button id="submit">ارسال پاسخ</button>
+            <div id="results"></div>
+            <script type="text/javascript" src="js/behzad-quiz.js"></script>
+        </div>
+    </div>
 </body>
+
 </html>
