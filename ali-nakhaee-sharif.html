@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ali Nakhaee Sharif</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row flex-row">
+            <i class="fas fa-home d-inline"></i>
+            <span>
+                <p style="font-size: 0.8rem; direction: rtl">
+                    خانه/ آموزش CSS/ ویژگی های overflow، clear و float
+                </p>
+            </span>
+        </div>
+        <div class="bg-warning justify-content-center rounded-3 justify-content-center float-end" style="width: 100px;" >
+            <p style="font-size: 0.8rem; direction: rtl; text-align: center;">آموزش CSS</p>
+        </div>
+        <br>
+        <br>
+        <h3 style="direction: rtl">ویژگی های overflow، clear و float</h3>
+        <div class="m-3">
+            <span class="float-end">
+                <img src="images/download.png" class="rounded" width="40px" height="40px">
+            </span>
+            <p class="float-end" style="align-self: center; font-size: 0.8rem">امید میلانی فرد  -  2018-11-28  -  آخرین به روز رسانی: 24-06-2021</p>
+        </div>
+        <br>
+        <br>
+        <h4 class="float-end" style="direction: rtl; margin-top: 5px">overflow</h4>
+        <br>
+        <br>
+        <p style="direction: rtl; text-align: right;">سرریز هنگامی اتفاق میافتد که content از container فضای بیشتری اشغال کند و container نتواند تمام آن را شامل شود</p>
+        <br>
+        <p style="direction: rtl; text-align: right;">معمولا سرریز هنگامی اتفاق میافتد که ما برای container های خود، عرض یا ارتفاع ثابت کردیم.</p>
+        <p style="direction: rtl; text-align: right;">به طور مثال جدول زیر یک ارتفاع ثابت 200 پیکسل دارد اما محتوای آن ارتفاع بیشتری را طلب میکند و مطالب روی هم ریخته میشوند.</p>
+        <img src="images/19-1.png" class="rounded mx-auto d-block">
+        <p style="direction: rtl; text-align: right;">برای اینکه سرریز را مدیریت کنیم از ویژگی overflow در css استفاده میکنیم.</p>
+        <p style="direction: rtl; text-align: right;">به طور مثال اگر مقدار آن را برابر با hidden قرار دهیم، محتوای اضافه تر از container نمایش داده نمیشود. به شکل زیر:</p>
+        <img src="images/19-2.png" class="rounded mx-auto d-block">
+        <p style="direction: rtl; text-align: right;">اما خب طبیعتا این چیزی نیست که ما میخواهیم و نمیتوانیم تمام مطالب را ببینیم. برای اینکار میتوانیم از مقدار scroll استفاده کنیم. این مقدار باعث میشود که مرورگر خود به خود برای ما قابلیت scroll کردن را فراهم کند و بین مطالب جا به جا شویم به نحوی که از چهارچوب container خارج نشویم. به شکل زیر:</p>
+        <img src="images/19-3.png" class="rounded mx-auto d-block">
+        <p style="direction: rtl; text-align: right;">مشکلی که روش بالا دارد این است که حتی اگر محتوای ما به اندازۀ container باشد باز هم نوار scroll به ما نمایش داده میشود. برای اینکه فقط در صورت نیاز این نوار نمایش داده شود میتوانیم از مقدار auto برای overflow استفاده کنیم.</p>
+        <br>
+        <h4 class="float-end" style="direction: rtl; margin-top: 5px">floating</h4>
+        <p style="direction: rtl; text-align: right;">این ویژگی برای تعیین شناور بودن یک المنت در صفحه است. با استفاده از این ویژگی ما میتوانیم مکان شیء و فرمت آن را نشان دهیم</p>
+        <p style="direction: rtl; text-align: right;">مقادیری که برای این ویژگی میتوان ست کرد، left و right هستند و وقتی این مقادیر ست شود، آنگاه جای قبلی این المنت ها خالی میشود و بقیه المنت ها میتوانند در آن جا قرار بگیرند.</p>
+        <p style="direction: rtl; text-align: right;">به طور مثال صفحه ای با مشخصات زیر را در نظر بگیرید:</p>
+        <img src="images/19-4.png" class="rounded mx-auto d-block">
+        <p style="direction: rtl; text-align: right;">اکنون اگر ما به المنت image یا همان عکس مقدار float: left را بدهیم، خروجی ما به شکل زیر خواهد شد:</p>
+        <img src="images/19-5.png" class="rounded mx-auto d-block">
+        <br>
+        <h4 class="float-end" style="direction: rtl; margin-top: 5px">clear</h4>
+        <br>
+        <br>
+        <p style="direction: rtl; text-align: right;">به وسیلۀ این ویژگی ما میتوانیم مشخص کنیم که عنصر از سمت چپ یا از سمت راست اجازۀ شناوری هیچ دستور دیگه ای را نداشته باشد</p>
+        <p style="direction: rtl; text-align: right;">برای دیدن کارکرد دستور clear به این <span>
+            <a class="btn-link" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_clear">
+            لینک
+            </a>
+        </span> مراجعه کنید</p>
+
+        <br>
+        <br>
+    </div>
+
+</body>
+</html>
