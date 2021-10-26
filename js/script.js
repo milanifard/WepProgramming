@@ -87,16 +87,15 @@ submitButton.addEventListener('click', () => {
 
 submit1Button.addEventListener('click', () => {
   console.log(question.value)
-  longQuiz.innerHTML = ''
   if (question.value === 'title') {
     longQuiz.innerHTML = `  
          <h2 class="text-success text-center">پاسخ صحیح است</h2>  
-         <button onclick="history.go(0)" class="btn btn-success my-2">ازمون مجدد</button>  
+         <button onclick="history.go(0)" class="btn btn-success my-2">آزمون مجدد</button>  
        `
   } else {
     longQuiz.innerHTML = `  
          <h2 class="text-danger text-center">پاسخ صحیح نمی باشد</h2>  
-         <button onclick="history.go(0)" class="btn btn-success my-2">ازمون مجدد</button>  
+         <button onclick="history.go(0)" class="btn btn-success my-2">آزمون مجدد</button>  
        `
   }
 })
