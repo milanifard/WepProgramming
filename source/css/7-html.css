@@ -1,0 +1,13 @@
+body {
+    text-align: right;
+    margin: 50px 50px 50px 50px;
+}
+
+.btn-title {
+    background-color: yellow;
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
