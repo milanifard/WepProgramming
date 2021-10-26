@@ -143,13 +143,14 @@
         <div class="jumbotron" id="q1">
                 ۱. از کدام سرتگ برای سرتیتر با بالاترین مقدار اهمیت استفاده میشود؟
                 <br>
-                <input type="radio" name="qq1" id="r1"><code>&#60h1&#62</code></input>
+                <input type="radio" name="qq1" id="r1"><code>&#60h1&#62</code>
                 <br>
                 <input type="radio" name="qq1" id="r2"><code>&#60h2&#62</code></input>
                 <br>
                 <input type="radio" name="qq1" id="r3"><code>&#60h3&#62</code></input>
                 <br>
                 <input type="radio" name="qq1" id="r4"><code>&#60h4&#62</code></input>
+                <div id="d1" style="opacity: 0%;">گزینه یک پاسخ درست است.</div></input>
         </div>
         <div class="jumbotron" id="q2">
                 ۲. برای نوشتن یک پاراگراف از کدام تگ استفاده میکنیم؟
@@ -161,6 +162,8 @@
                 <input type="radio" name="qq2" id="rr3"><code>&#60hr&#62</code></input>
                 <br>
                 <input type="radio" name="qq2" id="rr4"><code>&#60p&#62</code></input>
+                <div id="d2" style="opacity: 0%;">گزینه چهار پاسخ درست است.</div></input>
+
         </div>
         <div class="jumbotron" id="q3">
                 ۳. برای عوض کردن متن به رنگ آبی کدام گزینه درست است
@@ -172,6 +175,8 @@
                 <input type="radio" name="qq3" id="rrr3"><code>style="font:blue;"</code></input>
                 <br>
                 <input type="radio" name="qq3" id="rrr4"><code>style="text:blue;"</code></input>
+                <div id="d3" style="opacity: 0%;">گزینه دو پاسخ درست است.</div></input>
+
         </div>
         <div class="container-fluid" style="align-self: center;">
                 <a onclick="javascript: evaluation();" class="btn btn-info" role="button">ثبت تمام پاسخ ها</a>
@@ -183,20 +188,23 @@
                                 document.getElementById('q1').style.backgroundColor = "green";
                                 score++;
                         } else {
-                                document.getElementById('q1').style.backgroundColor = "red";
+                                document.getElementById('q1').style.backgroundColor = "rgb(195, 76, 76)";
                         }
                         if (document.getElementById('rr4').checked) {
                                 document.getElementById('q2').style.backgroundColor = "green";
                                 score++;
                         } else {
-                                document.getElementById('q2').style.backgroundColor = "red";
+                                document.getElementById('q2').style.backgroundColor = "rgb(195, 76, 76)";
                         }
                         if (document.getElementById('rrr2').checked) {
                                 document.getElementById('q3').style.backgroundColor = "green";
                                 score++;
                         } else {
-                                document.getElementById('q3').style.backgroundColor = "red";
+                                document.getElementById('q3').style.backgroundColor = "rgb(195, 76, 76)";
                         }
+                        document.getElementById('d1').style.opacity = "100%";
+                        document.getElementById('d2').style.opacity = "100%";
+                        document.getElementById('d3').style.opacity = "100%";
                         let text = "امتیاز شما " + String(score) + "/3" + " میباشد.";
                         alert(text);
                 }
