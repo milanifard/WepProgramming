@@ -15,56 +15,92 @@
             margin-top: 1vh;
         }
 
-        #pic {
-            width: 40%;
+        .list-item {
+            color: rgb(151, 140, 44);
+            font-weight: bolder;
+        }
+
+        .margin {
+            margin-top: 25px;
         }
 
         .mid {
             margin-top: auto;
             margin-bottom: auto;
         }
+
+        #pic {
+            display: inline;
+            width: 8%;
+            max-width: 75px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header {
+            display: flex;
+            justify-content: start;
+            flex-flow: row wrap;
+        }
+
+        .sticky {
+            padding-right: 10px;
+            width: 100%;
+            background-color: khaki;
+            position: sticky;
+            top: 0px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-                <a href="./home.html" class="text-muted">
-                    <i class="fa fa-home" aria-hidden="true"></i>
-                    خانه/
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a href="./html.html" class="text-muted">
-                    <div class="nav-item">آموزش HTML/</div>
-                </a>
-            </div>
-            <div class="col-md-2">
-                <a href="./26.html" class="text-muted">
-                    <div class="nav-item">مقدمات CSS</div>
-                </a>
-            </div>
+        <div class="header text-muted">
+            <a href="./home.html" class="text-muted">
+
+                <div class="nav-item">
+                    <i class="fas fa-home"></i>
+                    &nbsp;خانه
+                </div>
+            </a>
+            &nbsp; / &nbsp;
+            <a href="./html.html" class="text-muted">
+                <div class="nav-item">آموزش HTML</div>
+            </a>
+            &nbsp; / &nbsp;
+            <a href="./14.html" class="text-muted">
+                <div class="nav-item">مقدمات CSS</div>
+            </a>
+        </div>
+        <div class="d-grid gap-2 d-md-block" style="margin: 1em;">
+            <button type="button" class="btn btn-warning btn-sm" style="color:white;">آموزش HTML</button>
         </div>
         <div class="row">
-            <div class="col-md-1">
-                <img id="pic" src="./images/download.png" alt="Omid Milanifard Picture" class=".rounded-circle">
-            </div>
-            <div class="col-md-3 mid">امیدمیلانی فرد</div>
-            <div class="col-md-4 mid">2018-11-28 آخرین تغییر</div>
-            <div class="col-md-4 mid">
-                <i class="fa fa-bookmark" aria-hidden="true"></i>
-                خواندن این مطلب 5 دقیقه زمان میبرد
+            <div class="d-inline-flex p-2 align-items-center justify-content-between">
+                <img src="./images/picture.jpg" id="pic" class="rounded-circle">
+                &nbsp;
+                <p class="mid small"> امید میلانی فرد</p>
+                &nbsp; &nbsp; &nbsp;
+                <p class="mid small">26/10/2021</p>
+                &nbsp; &nbsp;
+                <p class="mid small">آخرین به‌روز‌رسانی 26/10/2021</p>&nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;
+                <p class="mid small text-end"><i class="fas fa-comments"></i>&nbsp 0</p>
+                &nbsp; &nbsp;
+                <p class="mid small text-end"><i class="fas fa-bookmark"></i>&nbsp خواندن این مطلب 5 دقیقه زمان می‌برد.
+                </p>
             </div>
         </div>
+
+        <h2>HTML 4</h2>
         <div class="row">
             <div class="col-md-12">
-                <h1>HTML 4</h1>
-                <h2>مقدمات CSS</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+                <div class="sticky">
+                    <h3>مقدمات CSS</h3>
+                </div>
                 <p>
                     css برای زیبایی و نظم بخشیدن به المنت های html استفاده میشود.
                 </p>
@@ -72,31 +108,82 @@
                     به سه شکل میتوان css به صفحه ی خود اضافه کرد:
                 </p>
                 <ol>
-                    <li>Inline</li>
-                    <li>Internal</li>
-                    <li>External</li>
+                    <li><span class="list-item">Inline</span> : با استفاده از ویژگی style در المنت های html</li>
+                    <li><span class="list-item">Internal</span> : با استفاده از تگ style در سکشن head
+                    </li>
+                    <li><span class="list-item">External</span> : با استفاده از یک فایل css خارجی</li>
                 </ol>
-                <h3>CSS font</h2>
-                    <p>
-                        <ul>
-                            <li>CSS color رنگ متن رو مشخص میکند</li>
-                            <li>CSS font-family فونت را مشخص میکند</li>
-                            <li>CSS font size سایز متن را مشخص میکند</li>
-                        </ul>
-                    </p>
-                    <h3>CSS (Cont.)</h2>
-                        <p>CSS border مرز یا border اطراف المنت html را مشخص میکند.</p>
-                        <p>CSS padding فاصله بین متن و border رامشخص میکند.</p>
-                        <p>CSS margin فاصله ی خارج ازborder با سایر المنت هارا مشخص میکند.</p>
+                <div class="sticky">
+                    <h3>CSS font</h3>
+                </div>
+                <p>
+                    <ul>
+                        <li>CSS color رنگ متن رو مشخص میکند</li>
+                        <li>CSS font-family فونت را مشخص میکند</li>
+                        <li>CSS font size سایز متن را مشخص میکند</li>
+                    </ul>
+                </p>
+                <div class="sticky">
+                    <h3>CSS (Cont.)</h3>
+                </div>
+                <p>CSS border مرز یا border اطراف المنت html را مشخص میکند.</p>
+                <img src="./images/border.png" alt="border" class="img-fluid d-block">
+                <p>CSS padding فاصله بین متن و border رامشخص میکند.</p>
+                <img src="./images/padding.png" alt="padding" class="img-fluid d-block">
+                <p>CSS margin فاصله ی خارج ازborder با سایر المنت هارا مشخص میکند.</p>
+                <img src="./images/margin.png" alt="margin" class="img-fluid d-block">
+                <div class="sticky">
                     <h3>CSS (id attribute)</h3>
-                    <p>برای متعلق کردن یک استایل به یک المنت خاص از ویژگی <span class="text-primary .font-weight-bold">id</span>  استفاده میکنیم.</p>
-                    <p class="text-danger">توجه شود که id باید یونیک باشد یعنی فقط متعلق به یک المنت در صفحه باشد </p>
+                </div>
+                <p>برای متعلق کردن یک استایل به یک المنت خاص از ویژگی <span
+                        class="text-primary .font-weight-bold">id</span> استفاده میکنیم.</p>
+                <p class="text-danger">توجه شود که id باید یونیک باشد یعنی فقط متعلق به یک المنت در صفحه باشد
+                </p>
+                <img src="./images/id.png" alt="id" class="img-fluid d-block">
+                <div class="sticky">
                     <h3>CSS (class attribute)</h3>
-                    <p>برای متعلق کردن یک استایل به دسته ی مشخصی از المنت ها از <span class="text-primary">class </span> استفاده میکنیم</p>
+                </div>
+                <p>برای متعلق کردن یک استایل به دسته ی مشخصی از المنت ها از <span class="text-primary">class
+                    </span> استفاده میکنیم</p>
+                <img src="./images/class.png" alt="class" class="img-fluid d-block">
             </div>
         </div>
+        <!-- <div>
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت
+            مطلب چرت و پرت
+            مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت مطلب چرت و پرت
+
+        </div> -->
         <div class="row quiz">
-            <h3>QUIZ</h3>
+            <div class="sticky">
+                <h3>QUIZ</h3>
+            </div>
             <div class="container">
                 <div class="row" id="Q1"></div>
                 <div class="row" id="Q2"></div>
