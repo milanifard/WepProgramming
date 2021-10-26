@@ -68,25 +68,35 @@
         correctAnswer: "c"
       },
       {
-        question: "حالت چطوره؟",
+        question: "برای اینکه بخواهیم تصویر پشت زمینه(background) کل صفحه را بپوشاند باید چه کار کنیم؟",
         answers: {
-          a: "خوب",
-          b: "بد",
-          c: "عالی",
-          d: "ناجور"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "حالت چطوره؟",
-        answers: {
-          a: "خوب",
-          b: "بد",
-          c: "عالی",
-          d: "ناجور"
+          a: "background-image: 100px 100px",
+          b: "background-image: 100 100",
+          c: "background-image: 100vh 100vh",
+          d: "background-image: 100% 100%"
         },
         correctAnswer: "d"
-      }
+      },
+      {
+        question: "کدام یک از گزینه های زیر درست است؟",
+        answers: {
+          a: "همیشه یک عنصر img را به عنوان فرزند عنصر picture باید قرار داد",
+          b: "همیشه یک عنصر picture را به عنوان فرزند عنصر img باید قرار داد",
+          c: "هیچکدام",
+          d: " گزینه یک و دو درست است"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "img-map چیست؟",
+        answers: {
+          a: "تصویری است که ناحیه قابل کلیک دارد",
+          b: "همان تصویر است با قابلیت های بیشتر",
+          c: "همان تگ picture است",
+          d: "هیچکدام درست نمی باشد"
+        },
+        correctAnswer: "a"
+      },
     ];
   
     // Kick things off
