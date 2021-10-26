@@ -14,12 +14,12 @@
                 <input type="radio" name="question${questionNumber}" value="${letter}">
                 ${letter} :
                 ${currentQuestion.answers[letter]}
-              </label><br>`
+              </label>`
             );
           }
   
           output.push(
-            `<br><div class="question"> ${currentQuestion.question} </div>
+            `<div class="question"> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join('')} </div>`
           );
         }
