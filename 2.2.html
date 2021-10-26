@@ -32,20 +32,38 @@
             ازاین قابلیت گیت زمانی استفاده میشود که میخواهید فایل های خاصی را <input type="text" id="s"> بگیرید
             
             در فایل گیت ایگنور میتوانیم برای نادیده گرفتن فایل هایی با الگوی خاص از چه چیزی استفاده کنیم؟
-            <label class="radio-inline"><input type="radio" name="optradio" checked>regular expresion</label><label class="radio-inline"><input type="radio" name="optradio">label</label><label class="radio-inline"><input type="radio" name="optradio">Options</label>
+            <label class="radio-inline"><input id="a" type="radio" name="optradio" checked>regular expresion</label><label class="radio-inline"><input id="b" type="radio" name="optradio">label</label><label class="radio-inline"><input  id="c" type="radio" name="optradio">Options</label>
         </pre>
-        <button onclick="javascript :test(); ">ثبت شود</button>
+        <button onclick="javascript :test(); "> سوال1 ثبت شود</button>
+        <button onclick="javascript :check_answer(); "> سوال3گزینهای ثبت شود</button>
+
 
     </body>
     <script language="JavaScript">
 
         function test(){
-            var obj = document.getElementById("s")
+            var obj = document.getElementById('s')
             if(obj.ariaValueText=="نادیده")
             obj.style.backgroundColor="green";
             else
             obj.style.backgroundColor="red";
         }
+        function check_answer(){
+            const A = document.getElementById('a')
+            const B = document.getElementById('b')
+            const C = document.getElementById('c')
+
+            if(A.checked === true){
+                A.style.backgroundColor = "green";
+            }
+            else {
+                A.style.backgroundColor = "red";
+                }
+        }
+
+
+
+
 
     </script>
 </html>
