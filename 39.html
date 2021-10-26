@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/39.css">
+    <link rel="stylesheet" href="js/popper.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>بخش 2 - CSS - Alireza Bagherzadeh Chaharjouee</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="header-cnt">
+            <p>رسپانسیو</p>
+            <span>
+                /
+            </span>
+            <p>CSS آموزش</p>
+            <span>
+                /
+            </span>
+            <p>خانه</p>
+            <span>
+                /
+            </span>
+            <img src="./images/home.png" alt="">
+        </div>
+        <div class="title-cnt">
+            <div class="title-tag">
+                آموزش CSS
+            </div>
+            <p class="title">رسپانسیو</p>
+        </div>
+        <div class="info-cnt">
+            <div class="info" style="justify-content: flex-start">
+                <p>خواندن این مطلب 1 دقیقه زمان می‌برد</p>
+                <span></span>
+                <i class="fas fa-bookmark"></i>
+                <p>0</p>
+                <span></span>
+                <i class="fas fa-comments"></i>
+            </div>
+            <div class="info" style="justify-content: flex-end">
+                <p>آخرین بروزرسانی: 24-06-2021</p>
+                <span></span>
+                <p>2018-11-28</p>
+                <span></span>
+                <p>علیرضا باقرزاده چهارجویی</p>
+                <span></span>
+                <img class="avatar" src="https://placekitten.com/200/300" alt=""> 
+            </div>
+        </div>
+        <div class="content-cnt">
+            <img src="/images/img_temp_band.jpg" alt="">
+            <div class="content">
+                <p class="title">رسپانسیو چیست؟</p>
+                <div>
+                    .رسپانسیو به مفهومی در طراحی سایت می‌گویند که صفحات طراحی شده توسط ما در هر رزولوشن در هر دستگاهی، استایل ها و آرایش خود را از دست ندهند
+                </div>
+                <span class="break"></span>
+                <div>
+                    به طوری که ما در صفحه موبایل، تبلت و مانیتورها با سایزهای متفاوت، تصاویر را به صورت مرتب نمایش دهیم.
+                </div>
+                <span class="break"></span>
+                <div>
+                    برای دستیابی به این مهم، می‌توانیم طول و عرض دیویژن ها را به صورت درصدی تعریف کنیم.
+                </div>
+                <span class="break"></span>
+                <div>
+                    بعضی از کلاس های سی اس اس در اندازه صفحه های مختلف باید یه تغییراتی بکنند که ما توانیم از قطعه کد زیر اندازه صفحه را بدست آورده و تغییرات مورد نظر را بدهیم.
+                </div>
+                <span class="break"></span>
+                <div>
+                    @media screen and (max-width: 800px) {
+                        .left, .main, .right {
+                            background: red;
+                        }
+                      }
+                </div>
+                <span class="break"></span>
+                <div>
+                    در اینجا کلاس های مین، لفت و رایت در اندازه صفحه کوچک تر از 800 بکگراند قرمز خواهند.
+                </div>
+            </div>
+        </div>
+        <p> رنگ کلاس زیر را بر صفحه‌ای با حداقل طول 480 آبی کنید.</p>
+        <div class="question-cnt">
+            <div>
+                @media screen and (<input id="answer">: 480px) {
+                    .container {
+                      background: blue;
+                    }
+                  }
+            </div>
+            <div class="show-answer-cnt">
+                <button type="button" class="btn btn-dark" onclick="showAnswer()">نمایش پاسخ</button>
+            </div>
+        </div>
+        <div style="width: 100%; display: flex; padding: 15px 0px;">
+            <button type="button" class="btn btn-success" onclick="submitAnswer()">ارسال پاسخ</button>
+        </div>
+    </div>
+</body>
+<script>
+    function showAnswer(){
+        document.getElementById("answer").value = "min-width";
+        document.getElementById("answer").style.color = "blue";
+    }
+    function submitAnswer(){
+        var anw = document.getElementById("answer").value;
+        if (anw === 'min-width'){
+            document.getElementById("answer").style.color = "green";
+            alert("جواب درست است.")
+        }else {
+            document.getElementById("answer").style.color = "red";
+            alert("جواب غلط است.")
+        }
+        console.log(anw)
+    }
+</script>
+</html>
