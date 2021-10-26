@@ -99,6 +99,8 @@ input{
   border: rgb(195, 216, 218) 2px solid;
   border-radius: 1%;
   padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .imageDiv{

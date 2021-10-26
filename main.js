@@ -58,12 +58,12 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "حالت چطوره؟",
+        question: "اگر سایز بک گراند از عنصر کوچک تر باشد، راهکار آن چیست؟",
         answers: {
-          a: "خوب",
-          b: "بد",
-          c: "عالی",
-          d: "ناجور"
+          a: "به اندازه فرزند کوچک می شود",
+          b: "به اندازه والد بزرگ می شود",
+          c: "تکرار می شود",
+          d: "هیچ کدام"
         },
         correctAnswer: "c"
       },
