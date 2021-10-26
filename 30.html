@@ -117,7 +117,7 @@
                                 <h1 style="color:blue;">آبی</h1>
                         </div>
                         <div class="col-md" dir="ltr">
-                                <h1>style="color:blue;"</h1>
+                                <code><h1>style="color:blue;"</h1></code>
                         </div>
                 </div>
                 <div class="row">
@@ -125,7 +125,7 @@
                                 <h1 style="font-family:verdana;">فونت متفاوت</h1>
                         </div>
                         <div class="col-md" dir="ltr">
-                                <h1>style="font-family:verdana;"</h1>
+                                <code><h1>style="font-family:verdana;"</h1></code>
                         </div>
                 </div>
         </div>
@@ -135,7 +135,65 @@
         <br>
         <br>
 
-        <div class="jumbotron">
-
+        <div class="jumbotron" id="q1">
+                ۱. از کدام سرتگ برای سرتیتر با بالاترین مقدار اهمیت استفاده میشود؟
+                <br>
+                <input type="radio" name="qq1" id="r1"><code>&#60h1&#62</code></input>
+                <br>
+                <input type="radio" name="qq1" id="r2"><code>&#60h2&#62</code></input>
+                <br>
+                <input type="radio" name="qq1" id="r3"><code>&#60h3&#62</code></input>
+                <br>
+                <input type="radio" name="qq1" id="r4"><code>&#60h4&#62</code></input>
         </div>
+        <div class="jumbotron" id="q2">
+                ۲. برای نوشتن یک پاراگراف از کدام تگ استفاده میکنیم؟
+                <br>
+                <input type="radio" name="qq2" id="rr1"><code>&#60br&#62</code></input>
+                <br>
+                <input type="radio" name="qq2" id="rr2"><code>&#60h3&#62</code></input>
+                <br>
+                <input type="radio" name="qq2" id="rr3"><code>&#60hr&#62</code></input>
+                <br>
+                <input type="radio" name="qq2" id="rr4"><code>&#60p&#62</code></input>
+        </div>
+        <div class="jumbotron" id="q3">
+                ۳. برای عوض کردن متن به رنگ آبی کدام گزینه درست است
+                <br>
+                <input type="radio" name="qq3" id="rrr1"><code>style="font-family:verdana;"</code></input>
+                <br>
+                <input type="radio" name="qq3" id="rrr2"><code>style="color:blue;"</code></input>
+                <br>
+                <input type="radio" name="qq3" id="rrr3"><code>style="font:blue;"</code></input>
+                <br>
+                <input type="radio" name="qq3" id="rrr4"><code>style="text:blue;"</code></input>
+        </div>
+        <div class="container-fluid" style="align-self: center;">
+                <a onclick="javascript: evaluation();" class="btn btn-info" role="button">ثبت تمام پاسخ ها</a>
+        </div>
+        <script lang="JavaScript">
+                function evaluation() {
+                        var score = 0;
+                        if (document.getElementById('r1').checked) {
+                                document.getElementById('q1').style.backgroundColor = "green";
+                                score++;
+                        } else {
+                                document.getElementById('q1').style.backgroundColor = "red";
+                        }
+                        if (document.getElementById('rr4').checked) {
+                                document.getElementById('q2').style.backgroundColor = "green";
+                                score++;
+                        } else {
+                                document.getElementById('q2').style.backgroundColor = "red";
+                        }
+                        if (document.getElementById('rrr2').checked) {
+                                document.getElementById('q3').style.backgroundColor = "green";
+                                score++;
+                        } else {
+                                document.getElementById('q3').style.backgroundColor = "red";
+                        }
+                        let text = "امتیاز شما " + String(score) + "/3" + " میباشد.";
+                        alert(text);
+                }
+        </script>
 </body>
