@@ -1,17 +1,3 @@
-var count = 0
-var marks = 0
-var answer = []
-var prev = document.getElementById('prev')
-var next = document.getElementById('next')
-var result = document.getElementById('result')
-var examContainer = document.getElementById('main')
-var question = document.getElementById('question')
-var option1 = document.getElementById('option1')
-var option2 = document.getElementById('option2')
-var option3 = document.getElementById('option3')
-var option4 = document.getElementById('option4')
-var option = document.querySelector('.option')
-
 const quizData = [
   {
     question: 'Which language runs in a web browser?',
@@ -46,7 +32,9 @@ const quizData = [
     correct: 'b',
   },
 ]
+
 const quiz = document.getElementById('quiz')
+const longQuiz = document.getElementById('long-quiz')
 const answerElements = document.querySelectorAll('.answer')
 const questionElement = document.getElementById('question')
 const a_text = document.getElementById('a_text')
@@ -54,6 +42,8 @@ const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
 const submitButton = document.getElementById('submit')
+const submit1Button = document.getElementById('submit1')
+const question = document.getElementById('qu1')
 let currentQuiz = 0
 let score = 0
 
@@ -93,4 +83,20 @@ submitButton.addEventListener('click', () => {
        `
     }
   }
+})
+
+submit1Button.addEventListener('click', () => {
+  const answer = 4
+  if (question.value == 4)
+    if (answer) {
+      longQuiz.innerHTML = `  
+         <h2>Correct</h2>  
+         <button onclick="history.go(0)" class="btn btn-success">Quiz Again</button>  
+       `
+    }else{
+      longQuiz.innerHTML = `  
+         <h2>Incorrect</h2>  
+         <button onclick="history.go(0)" class="btn btn-success">Quiz Again</button>  
+       `
+    }
 })
