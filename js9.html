@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/js9_styles.css">
+    <link rel="stylesheet" href="images/font-awesome.min.css">
+    <script>
+
+        function displayCorrectValue() {
+            document.getElementById("result").innerHTML = "{ : : }";
+        }
+
+        function displayCorrectValue2() {
+            document.getElementById("result2").innerHTML = "همه موارد";
+        }
+
+        function displayCorrectValue3() {
+            document.getElementById("result3").innerHTML = "بستگی به اسکوپ متغییر دارد";
+        }
+
+        function checkAnswers() {
+            displayCorrectValue()
+            displayCorrectValue2()
+            displayCorrectValue3()
+            const target = document.getElementById('totalResult');
+            const ele = document.getElementsByTagName('input');
+            let correctCount = 0;
+            for (let i = 0; i < ele.length; i++) {
+                if (ele[i].type === "radio") {
+                    if (ele[i].name === "q1") {
+                        if (ele[i].checked) {
+                            if (ele[i].value === "a") {
+                                correctCount = correctCount + 1;
+                            }
+                        }
+                    }
+                    if (ele[i].name === "q2") {
+                        if (ele[i].checked) {
+                            if (ele[i].value === "d") {
+                                correctCount++;
+                            }
+                        }
+                    }
+                    if (ele[i].name === "q3") {
+                        if (ele[i].checked) {
+                            if (ele[i].value === "d") {
+                                correctCount++;
+                            }
+                        }
+                    }
+
+                }
+            }
+            target.innerHTML = "تعداد جواب‌‌های درست شما = "
+            target.innerHTML += correctCount;
+
+        }
+
+
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="main-content p-3 my-3" dir="rtl">
+        <div style="color: gray">
+            <i class="fa fa-home"></i>
+            خانه / آموزش js / شی
+        </div>
+        <div class="mt-3">
+            <p style="background-color: yellow; border-radius: 10px; width: fit-content; padding: 3px 10px;">آموزش js</p>
+        </div>
+        <h1>شی در جاوااسکریپت</h1>
+        <div class="d-flex justify-content-between align-items-center my-2">
+            <div style="font-size: 14px">
+                <img alt="image" class="img-fluid avatar" src="images/js9_author.jpg" >
+                علیرضا رحیمی ۲۶−۱۰−۲۰۲۱ آخرین بروزرسانی: ۲۶−۱۰−۲۰۲۱
+            </div>
+            <div style="font-size: 14px">
+                <i class="fa fa-comments"></i> 0
+                <i class="fa fa-bookmark"></i>
+                خواندن این مطلب ۱ دقیقه زمان میبرد.
+            </div>
+
+        </div>
+        <ul>
+            <li>شی‌ها در جاوااسکریپت به صورت زیر تعریف می‌شوند:</li>
+            <div class="d-flex justify-content-center">
+                <img src="images/object_image.png" alt="image">
+            </div>
+            <li>می‌توان تابع را در متغیر ریخت.</li>
+            <li>محدوده‌ی قابل استفاده برای تابعی که در متغییر تعریف شده است بستگی به محدوده‌ی متغییر دارد.</li>
+            <li>متغییری که تابعی تابع در آن است را می‌توان به تابعی دیگر پاس داد.</li>
+
+        </ul>
+
+
+    </div>
+    <div class="jumbotron my-2" dir="rtl">
+        اطلاعات بیشتر در: <a href="https://www.w3schools.com/js/js_functions.asp">این لینک</a> و <a href="">این لینک</a>
+    </div>
+    <div class="d-flex flex-column">
+        <div class="jumbotron">
+            <h3 dir="rtl">سوال ۱</h3>
+            <p dir="rtl">جای خالی را پر کنید.</p>
+            <div class="d-flex flex-row">
+                <p>var person =</p>
+                <div class="white-div mx-2"></div>
+            </div>
+            <div class="d-flex flex-row">
+                <p>name </p>
+                <div class="white-div mx-2"></div>
+                <p>Ali,</p>
+            </div>
+            <div class="d-flex flex-row">
+                <p>lastName </p>
+                <div class="white-div mx-2"></div>
+                <p>Zade</p>
+            </div>
+            <div class="white-div mx-2"></div>
+            <div>
+
+                <input type="radio" name="q1" value="a">{ : : }
+                <br>
+                <input type="radio" name="q1" value="b">: ; ; :
+                <br>
+                <input type="radio" name="q1" value="c">' ; ; '
+                <br>
+                <input type="radio" name="q1" value="d">{ ; ; }
+
+                <div class="d-flex justify-content-end ">
+                    <button type="button" onclick="displayCorrectValue()" class="display-btn px-3">
+                        نمایش پاسخ
+                    </button>
+                </div>
+
+                <div id="result"></div>
+            </div>
+        </div>
+        <div class="jumbotron my-2">
+            <h3 dir="rtl">سوال ۲</h3>
+            <p dir="rtl">کدام یک می‌تواند خروجی تابع باشد</p>
+            <div>
+
+                <input type="radio" name="q2" value="a">عدد
+                <br>
+                <input type="radio" name="q2" value="b">رشته
+                <br>
+                <input type="radio" name="q2" value="c">تابع
+                <br>
+                <input type="radio" name="q2" value="d">همه موارد
+
+                <div class="d-flex justify-content-end">
+                    <button type="button" onclick="displayCorrectValue2()" class="display-btn px-3">
+                        نمایش پاسخ
+                    </button>
+                </div>
+
+                <div id="result2"></div>
+
+            </div>
+        </div>
+        <div class="jumbotron mb-2">
+            <h3 dir="rtl">سوال ۳</h3>
+            <p dir="rtl">تابعی را در درون متغییری قرار می‌دهیم، این تابع در کجا قابل دسترسی است؟</p>
+            <div>
+
+                <input type="radio" name="q3" value="a">شي
+                <br>
+                <input type="radio" name="q3" value="b">تابع
+                <br>
+                <input type="radio" name="q3" value="c">همه‌جا
+                <br>
+                <input type="radio" name="q3" value="d">بستگی به اسکوپ متغییر دارد
+
+                <div class="d-flex justify-content-end">
+                    <button type="button" onclick="displayCorrectValue3()" class="display-btn px-3">
+                        نمایش پاسخ
+                    </button>
+                </div>
+
+                <div id="result3"></div>
+            </div>
+
+        </div>
+        <div id="totalResult"></div>
+    </div>
+    <div class="d-flex justify-content-between mt-2">
+    </div>
+    <div class="mb-3">
+        <button type="button" onclick="return checkAnswers()" class="submit-btn p-3">
+            ارسال پاسخ
+        </button>
+    </div>
+</div>
+</body>
+</html>
