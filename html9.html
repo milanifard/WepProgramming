@@ -1,99 +1,191 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="rtl" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css" />
-    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0/dist/font-face.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn.rawgit.com/rastikerdar/sahel-font/v1.0.0/dist/font-face.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>آموزش html بخش 9</title>
 </head>
 
-<body>
-<div class="topnav">
+<body onload="NextQuestion(0)">
+    <div class="topnav">
 
-    <a href="#main">
-        <i class="fas fa-home"></i>
-        خانه/
-    </a>
-    <a href="#html">آموزش HTML/</a>
-    <a class="active" href="#html9">بخش 9</a>
-</div>
-<br />
-<br />
-<button type="button" style="align-self: start; background-color: #ffc107">آموزش html</button>
-<br />
-<br /><br />
-<div style="text-align: right">
-    <p>
-        در این قسمت از آموزش در مورد دو مفهوم مهم در html صحبت می شود. المنت‌های بلاک و این لاین. به عبارتی دو نوع
-        نمایشی مختلف متن ها در html که بلاک و اینلاین هستند و بر همین اساس المنت‌ها براساس اینکه پیش فرض آن ها بلاک
-        هست یا این لاین ، به دو دسته بلاک لول و این لاین تقسیم می شوند
-    </p>
-    <b>
-        تفاوت های المنت های بلاک و این لاین
-    </b>
-    <p>
-        زمانی که المنتی نوع نمایش آن پلاک هست یا اصطلاحا بلاک لول هست،همیشه شروعش از یک خط جدید هست یعنی زمانی که
-        بروزر به اون تگ می رسد برای اجرا یک خط جدید ایجاد می کند و از سر خط جدید المنت رو شروع به نمایش دادن می کند.
-        و زمانی که نمایش داده می شود تمام عرض قابل گرفته شدن در صفحه را برای آن المنت استفاده می کتد. به عبارت دیگه
-        اجازه نمی دهد که هیچ المنت دیگری در کنار آن قرار بگیرد اما این لاین‌ها به این شکل نیستند. دقیقا همان فضایی
-        را که نیاز دارند اشغال می کنند و در کنار عناصر قبلی و بعدی خود قرار می‌گیرند.
-    </p>
-    <p>
+        <a href="#main">
+            <i class="fas fa-home"></i>
+            خانه/
+        </a>
+        <a href="#html">آموزش HTML/</a>
+        <a class="active" href="#html9">بخش 9</a>
+    </div>
+    <br />
+    <br />
+    <button type="button" style="align-self: start; background-color: #ffc107">آموزش html</button>
+    <br />
+    <br /><br />
+    <div style="text-align: right">
+        <p>
+            در این قسمت از آموزش در مورد دو مفهوم مهم در html صحبت می شود. المنت‌های بلاک و این لاین. به عبارتی دو نوع
+            نمایشی مختلف متن ها در html که بلاک و اینلاین هستند و بر همین اساس المنت‌ها براساس اینکه پیش فرض آن ها بلاک
+            هست یا این لاین ، به دو دسته بلاک لول و این لاین تقسیم می شوند
+        </p>
+        <b>
+            تفاوت های المنت های بلاک و این لاین
+        </b>
+        <p>
+            زمانی که المنتی نوع نمایش آن پلاک هست یا اصطلاحا بلاک لول هست،همیشه شروعش از یک خط جدید هست یعنی زمانی که
+            بروزر به اون تگ می رسد برای اجرا یک خط جدید ایجاد می کند و از سر خط جدید المنت رو شروع به نمایش دادن می کند.
+            و زمانی که نمایش داده می شود تمام عرض قابل گرفته شدن در صفحه را برای آن المنت استفاده می کتد. به عبارت دیگه
+            اجازه نمی دهد که هیچ المنت دیگری در کنار آن قرار بگیرد اما این لاین‌ها به این شکل نیستند. دقیقا همان فضایی
+            را که نیاز دارند اشغال می کنند و در کنار عناصر قبلی و بعدی خود قرار می‌گیرند.
+        </p>
+        <p>
 
-        :برخی المنت بلاک لول:
-
-
-        table, div, dl, form, h1-h6, ol, p, pre, ul
-    </p>
-    <p>
-
-        برخی المنت این لاین:
+            :برخی المنت بلاک لول:
 
 
-        a, b, i, img, span
+            table, div, dl, form, h1-h6, ol, p, pre, ul
+        </p>
+        <p>
 
-    </p>
-    <b>
-        مثال 1:
-    </b>
-    <br>
-    <img src="images/ex1.png" style="width: 800px; height: 400px">
-    <p>
-        در مثال بالا در المنت ایمیج که به صوزت این لاین هست،اگر قبل و بعد از آن المنت های دیگری قرار گیرند، می بینیم به تگ ایمیح همان اندازه‌ای که نیاز بوده فضا اختصاص داده شده و وقتی هم به محتوای بعدی رسیده دقیقا به آن چسبانده شده نمایش داده شده است
-    </p>
-    <b>
-        مثال 2:
-    </b>
-    <br>
-    <img src="images/ex2.png" style="width: 800px; height: 400px">
-    <p>
-        بریم سراغ بلاک لول بعدی که در عکس بالا داریم و اگر مانند مثال 1 عمل کنیم می بینیم که به چه شکل قرار میگیرد و با اینکه محتوا به آن چسبیده است، به خط بعد رفته است.و از خط بعد شروع کرده است به نمایش المنت ما و تا جایی که توانسته این فصای خط را به آن تخصیص داده یعنی اینکه اینکه محتوا ها را دقیقا قبل و بعد ازآن قرارا دادیم این حالت به وجود آمده است
+            برخی المنت این لاین:
+
+
+            a, b, i, img, span
+
+        </p>
+        <b>
+            مثال 1:
+        </b>
         <br>
-        با این حال ممکن است فکر کنید به علت width="100%" باشد اما با تغییر آن به عددی دیگر مثلا پنجاه درصد متوجه می شویم که با اینکه نیمی از فضا را اشغال می کتد، اجاره نمی دهد مختوای بعدی در همان خط قرار گیرد.(شکل پایین)
-    </p>
-    <img src="images/ex3.png" style="width: 800px; height: 400px">
-    <p>
-        برای وسط چین کردن المنت های این لاین مانند ایمیج نمی توان از allign استفاده کرده و باید display آ« را block در نظر گرفته و سپس margin ـ« را از هر دو سمت به صورت اتومات در نظر گرفت
-    </p>
-    <b>
-        <a href="https://www.w3schools.com/tags/tag_div.ASP">
-        تگ div:
-        </a>
-    </b>
-    <p>
-        تگ div یا دایو یا دیو که از کلمه ( Division ) گرفته شده ، یکی از تگ های پرکاربرد در طراحی صفحات وب می باشد که با استفاده از آن میتوان یک یا چندین بخش را در یک صفحه ی وب ایجاد کرد. (بطور کلی برای لایه بندی یا بخش بندی میتوان از این تگ استفاده نمود)
-    </p>
-    <b>
-        <a href="https://www.w3schools.com/tags/tag_span.asp">
-        تگ span:
-        </a>
-    </b>
-    <p>
-        از تگ span در HTML به منظور دسته بندی کردن عناصر درون خطی و اعمال استایل یا ویژگی خاص روی آن ها استفاده می‌‌شود.
-    </p>
-</div>
+        <img src="images/ex1.png" style="width: 800px; height: 400px">
+        <p>
+            در مثال بالا در المنت ایمیج که به صوزت این لاین هست،اگر قبل و بعد از آن المنت های دیگری قرار گیرند، می بینیم
+            به تگ ایمیح همان اندازه‌ای که نیاز بوده فضا اختصاص داده شده و وقتی هم به محتوای بعدی رسیده دقیقا به آن
+            چسبانده شده نمایش داده شده است
+        </p>
+        <b>
+            مثال 2:
+        </b>
+        <br>
+        <img src="images/ex2.png" style="width: 800px; height: 400px">
+        <p>
+            بریم سراغ بلاک لول بعدی که در عکس بالا داریم و اگر مانند مثال 1 عمل کنیم می بینیم که به چه شکل قرار میگیرد و
+            با اینکه محتوا به آن چسبیده است، به خط بعد رفته است.و از خط بعد شروع کرده است به نمایش المنت ما و تا جایی که
+            توانسته این فصای خط را به آن تخصیص داده یعنی اینکه اینکه محتوا ها را دقیقا قبل و بعد ازآن قرارا دادیم این
+            حالت به وجود آمده است
+            <br>
+            با این حال ممکن است فکر کنید به علت width="100%" باشد اما با تغییر آن به عددی دیگر مثلا پنجاه درصد متوجه می
+            شویم که با اینکه نیمی از فضا را اشغال می کتد، اجاره نمی دهد مختوای بعدی در همان خط قرار گیرد.(شکل پایین)
+        </p>
+        <img src="images/ex3.png" style="width: 800px; height: 400px">
+        <p>
+            برای وسط چین کردن المنت های این لاین مانند ایمیج نمی توان از allign استفاده کرده و باید display آ« را block
+            در نظر گرفته و سپس margin ـ« را از هر دو سمت به صورت اتومات در نظر گرفت
+        </p>
+        <b>
+            <a href="https://www.w3schools.com/tags/tag_div.ASP">
+                تگ div:
+            </a>
+        </b>
+        <p>
+            تگ div یا دایو یا دیو که از کلمه ( Division ) گرفته شده ، یکی از تگ های پرکاربرد در طراحی صفحات وب می باشد
+            که با استفاده از آن میتوان یک یا چندین بخش را در یک صفحه ی وب ایجاد کرد. (بطور کلی برای لایه بندی یا بخش
+            بندی میتوان از این تگ استفاده نمود)
+        </p>
+        <b>
+            <a href="https://www.w3schools.com/tags/tag_span.asp">
+                تگ span:
+            </a>
+        </b>
+        <p>
+            از تگ span در HTML به منظور دسته بندی کردن عناصر درون خطی و اعمال استایل یا ویژگی خاص روی آن ها استفاده
+            می‌‌شود.
+        </p>
+    </div>
+    <br>
+    <br>
+
+    <h1>سوالات:</h1>
+    <div>
+        <main>
+            <div class="modal-container" id="score-modal">
+                <div class="modal-content-container">
+                    <h1>اتمام سوالات</h1>
+                    <div class="grade-details">
+                        <p>تعداد سوالات : 4</p>
+                        <p>پاسخ اشتباه : <span id="wrong-answers"></span></p>
+                        <p>پاسخ درست : <span id="right-answers"></span></p>
+                        <p>نمره : <span id="grade-percentage"></span>%</p>
+                        <p><span id="remarks"></span></p>
+                    </div>
+
+                    <div class="modal-button-container">
+                        <button onclick="closeScoreModal()">ادامه</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="game-quiz-container">
+
+                <div class="game-details-container">
+                    <h1>امتیاز : <span id="player-score"></span> / 4</h1>
+                    <h1> سوال : <span id="question-number"></span> / 4</h1>
+                </div>
+
+                <div class="game-question-container">
+                    <h1 id="display-question"></h1>
+                </div>
+
+                <div class="game-options-container">
+
+                    <div class="modal-container" id="option-modal">
+
+                        <div class="modal-content-container">
+                            <h1>Please Pick An Option</h1>
+
+                            <div class="modal-button-container">
+                                <button onclick="closeOptionModal()">Continue</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <span>
+                        <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                        <label for="option-one" class="option" id="option-one-label"></label>
+                    </span>
+
+
+                    <span>
+                        <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                        <label for="option-two" class="option" id="option-two-label"></label>
+                    </span>
+
+
+                    <span>
+                        <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                        <label for="option-three" class="option" id="option-three-label"></label>
+                    </span>
+
+                    <span>
+                        <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                        <label for="option-four" class="option" id="option-four-label"></label>
+                    </span>
+
+                </div>
+
+                <div class="next-button-container">
+                    <button onclick="handleNextQuestion()">سوال یعد</button>
+                </div>
+
+            </div>
+        </main>
+        <script src="quiz.js"></script>
+    </div>
 </body>
 
 </html>
