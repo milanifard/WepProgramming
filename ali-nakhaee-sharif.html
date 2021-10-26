@@ -90,7 +90,7 @@
         <p style="direction: rtl; text-align: right;">به سوالات زیر پاسخ دهید</p>
         <div id="question_div" class="bg-dark p-3 rounded-3 mb-3">
             <p style="direction: rtl; text-align: right;" class="text-white">برای اینکه محتوا در صورت زیاد بودن از قالب خود بیرون نزند چگونه باید جای خالی را پر کنیم</p>
-            <p style="direction: rtl; text-align: right;" class="text-white">< div style={overflow: .....}>< /div> </p>
+            <p style="direction: ltr; text-align: right;" class="text-info">< div style={overflow: .....}>< /div> </p>
 
             <input type="radio" id="rd1" name="overflow" value="hidden">
             <label class="text-white" for="rd1">hidden</label><br>
@@ -105,7 +105,18 @@
             <label class="text-white" for="rd4">visible</label><br><br>
 
             <input class="btn-primary" type="submit" value="Submit" onclick="check_answer()">
+        </div>
 
+        <div id="question_div_2" class="bg-dark p-3 rounded-3 mb-3">
+            <p style="direction: rtl; text-align: right;" class="text-white">برای اینکه قبل و بعد از یک المنتی که float شده چیزی قرار نگیرد، کدام مقدار مناسب است</p>
+            <p style="direction: ltr; text-align: right;" class="text-info">< div style={
+                <input type="text" id="rd21" placeholder="write the property...">
+                :
+                <input type="text" id="rd22" placeholder="write the value...">
+                }>< /div>
+            </p>
+
+            <input class="btn-primary" type="submit" value="Submit" onclick="check_answer_2()">
         </div>
     </div>
 
