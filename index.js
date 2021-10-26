@@ -4,16 +4,24 @@ const quizData = [
     a: "null == undefined",
     b: "''==0",
     c: "''===0",
-    d: "",
-    correct: "d",
+    d: "1==true",
+    correct: "b",
   },
   {
-    question: "What does CSS stand for?",
-    a: "Central Style Sheets",
-    b: "Cascading Style Sheets",
-    c: "Cascading Simple Sheets",
-    d: "Cars SUVs Sailboats",
+    question: "کدام گزینه ternary را درست بیان کرده؟",
+    a: "a ?? 0",
+    b: "a ? b : c",
+    c: "a : 0",
+    d: "هیچ کدام",
     correct: "b",
+  },
+  {
+    question: "کدام گزینه ساختار شرطی را در جاوا اسکریپت درست بیان کرده",
+    a: "{}if(expression)",
+    b: ":if expression",
+    c: "{}if expression",
+    d: ":if (expression)",
+    correct: "a",
   },
 ];
 const quiz = document.getElementById("quiz");
@@ -61,6 +69,18 @@ submitButton.addEventListener("click", () => {
   }
 });
 
-var toottipContainer = document.getElementById("tooltip-para");
+var tooltipInput = document.getElementById("tooltipInput");
 
-toottipContainer.innerHTML = "<p>   <p>";
+var btnSubmitToltip = document.getElementById("btnSubmitToltip");
+
+btnSubmitToltip.addEventListener("click", function () {
+  console.log("value :");
+  console.log(tooltipInput.value);
+  if (tooltipInput.value != "") {
+    if (tooltipInput.value == "Hello") {
+      alert("Correct ... ");
+    } else {
+      alert("Wrong ... ");
+    }
+  }
+});
