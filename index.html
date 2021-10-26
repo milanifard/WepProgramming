@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>آموزش</title>
+
+	<link href="https://cdn.jsdelivr.net/gh/rastikerdar/shabnam-font@v5.0.1/dist/font-face.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="breadcrumbs">
+			<a href="#">
+				<img class="icon" width="12" height="12" src="img/home.png" alt="home">
+				خانه
+			</a>
+			<span class="seperator">/</span>
+			<a href="#">
+				آموزش HTML
+			</a>
+			<span class="seperator">/</span>
+			فرمت‌دهی به متن‌ها در HTML 
+		</div>
+
+		<div class="category">فرمت‌دهی</div>
+
+		<h1 class="page-title">فرمت‌دهی به متن‌ها در HTML </h1>
+
+		<div class="post-header">
+			<div class="post-header-right">
+				<div class="post-meta">
+					<img src="img/avatar.jpg" alt="mahta afkhami" class="post-author-avatar">
+					<div class="post-author-name">سیده مهتا افخمی</div>
+				</div>
+				<div class="post-meta">
+					1400/4/8
+				</div>
+				<div class="post-meta">
+					آخرین به روز رسانی: 1400-7-5
+				</div>
+			</div>
+			<div class="post-header-left">
+				<div class="post-meta">
+					<img width="12" height="12" src="img/comments.png" alt="comments" class="post-meta-icon">
+					5
+				</div>
+				<div class="post-meta">
+					<img width="12" height="12" src="img/bookmark.png" alt="comments" class="post-meta-icon">
+					خواندن این مطلب ۱ دقیقه زمان می برد
+				</div>
+			</div>
+		</div>
+
+		<div class="post-thumbnail">
+			<img src="img/thumbnail.jpg" alt="thumbnail">
+		</div>
+
+		<div class="post-content">
+
+			<p>در زبان HTML می‌توانیم با استفاده از تگ‌هایی خاص، متن را فرم‌دهی کنیم. از جمله مهمترین این تگ‌ها می‌توان به:
+			</p>
+
+			<pre class="code"><code>&lt;b&gt; bold text 
+&lt;strong&gt; Important text 
+&lt;i&gt; Italic text 
+&lt;em&gt; Emphasized text 
+&lt;mark&gt; Marked text 
+&lt;small&gt; Small text 
+&lt;del&gt; Deleted text 
+&lt;ins&gt; Inserted text </code></pre>
+
+
+
+			<p>و … اشاره کرد.</p>
+
+
+
+			<h2>کامنت گذاری در HTML</h2>
+
+			<p>اگر تا کنون تجربه برنامه نویسی داشته‌اید، مطمئنا تا به حال برایتان پیش آمده است که به کدتان کامنت‌هایی را
+				اضافه کنید و آن را مستندسازی کنید. خوشبختانه این امکان در HTML هم وجود دارد.<br>برای استفاده از قابلیت کامنت
+				گذاری در HTML باید از تگ زیر استفاده کنید:
+			</p>
+
+
+
+			<pre class="code"><code>&lt;!- - - متن دلخواهتان - - - &gt;</code></pre>
+
+			<h2>استفاده از رنگ‌ها در HTML</h2>
+
+			<p>
+				برای استفاده از رنگ‌ها دو قابلیت پیش رویتان قرار دارد. یکی از آنها استفاده از نام خود رنگ است و دیگری استفاده
+				از یک عدد RGB و انتخاب سه رنگ برای میزان شدت و رنگ آن است و با ترکیب آنها رنگ دلخواهتان را بسازید.<br>برای
+				استفاده از رنگ‌ها می‌توانید از مثال زیر استفاده کنید:
+			</p>
+
+			<pre class="code"><code>&lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+&lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;</code></pre>
+
+			<p>سپاسگزاریم که تا اینجای مطلب همراه من بودید. امید است برای شما مفید بوده باشد.</p>
+		</div>
+
+
+		<div class="quiz">
+			<div class="quiz-title">یک tooltip به پاراگراف زیر اضافه کنید که متن سلام را نشان دهد:</div>
+			<div class="quiz-text">
+				&lt;p <input id="q1" class="quiz-input" />="About Us"&gt;hello.&lt;/p&gt;
+				<button class="quiz-show" onclick="showAnswer(1, 'q1', 'title')">نمایش پاسخ</button>
+			</div>
+			<div class="quiz-footer">
+				<button class="quiz-submit" onclick="checkAnswer(1, 'q1', 'title')">ارسال پاسخ</button>
+			</div>
+		</div>
+
+		<div class="quiz">
+			<div class="quiz-title">یک مقدار برای لینک زیر بگذارید تا در تب جدید باز شود:</div>
+			<div class="quiz-text">
+				&lt;a target="<input id="q2" class="quiz-input" />"&gt;Link to new tab&lt;/a&gt;
+				<button class="quiz-show" onclick="showAnswer(2, 'q2', '_blank')">نمایش پاسخ</button>
+			</div>
+			<div class="quiz-footer">
+				<button class="quiz-submit" onclick="checkAnswer(2, 'q2', '_blank')">ارسال پاسخ</button>
+			</div>
+		</div>
+
+		<div class="quiz">
+			<div class="quiz-title">آدرس تصویر را با چه ویژگی مشخص میکنیم؟</div>
+			<div class="quiz-text">
+				&lt;img <input id="q3" class="quiz-input" />="/images/sample.jpg" /&gt;
+				<button class="quiz-show" onclick="showAnswer(3, 'q3', 'src')">نمایش پاسخ</button>
+			</div>
+			<div class="quiz-footer">
+				<button class="quiz-submit" onclick="checkAnswer(3, 'q3', 'src')">ارسال پاسخ</button>
+			</div>
+		</div>
+
+
+		<div class="quiz">
+			<div class="quiz-title">لیبل دکمه را با چه ویژگی مشخص میکنیم؟</div>
+			<div class="quiz-text">
+				&lt;input type="submit" <input id="q4" class="quiz-input" />="ثبت نام" /&gt;
+				<button class="quiz-show" onclick="showAnswer(4, 'q4', 'value')">نمایش پاسخ</button>
+			</div>
+			<div class="quiz-footer">
+				<button class="quiz-submit" onclick="checkAnswer(4, 'q4', 'value')">ارسال پاسخ</button>
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+
+		var totalQuestions = 4;
+		var corrects = [];
+		var wrongs = [];
+
+		function showAnswer(id, inputId, realAnswer) {
+			if (!wrongs.includes(id) && !corrects.includes(id)) {
+				wrongs.push(id)
+			}
+
+			document.getElementById(inputId).value = realAnswer;
+		}
+
+		function checkAnswer(id, inputId, realAnswer) {
+			if (corrects.includes(id) || wrongs.includes(id)) {
+				alert('شما قبلا به این سوال پاسخ داده اید.');
+				return
+			}
+
+			var userAnswer = document.getElementById(inputId).value;
+
+			if (realAnswer == userAnswer) {
+				alert("تبریک! پاسخ شما درست بود. ۱ امتیاز");
+				corrects.push(id)
+			} else {
+				alert("اوه! متاسفانه پاسخ شما اشتباه بود. پاسخ صحیح: " + realAnswer);
+				wrongs.push(id);
+			}
+
+			if (corrects.length + wrongs.length >= totalQuestions) {
+				alert(`نتیجه: ${corrects.length} پاسخ درست و ${wrongs.length} پاسخ غلط.`);
+			}
+		}
+	</script>
+</body>
+</html>
