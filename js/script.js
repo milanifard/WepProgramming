@@ -43,7 +43,7 @@ const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
 const submitButton = document.getElementById('submit')
 const submit1Button = document.getElementById('submit1')
-const question = document.getElementById('qu1')
+const question = document.getElementById('long-question-text')
 let currentQuiz = 0
 let score = 0
 
@@ -86,17 +86,17 @@ submitButton.addEventListener('click', () => {
 })
 
 submit1Button.addEventListener('click', () => {
-  const answer = 4
-  if (question.value == 4)
-    if (answer) {
-      longQuiz.innerHTML = `  
-         <h2>Correct</h2>  
-         <button onclick="history.go(0)" class="btn btn-success">Quiz Again</button>  
+  console.log(question.value)
+  longQuiz.innerHTML = ''
+  if (question.value === 'title') {
+    longQuiz.innerHTML = `  
+         <h2 class="text-success text-center">پاسخ صحیح است</h2>  
+         <button onclick="history.go(0)" class="btn btn-success my-2">Quiz Again</button>  
        `
-    } else {
-      longQuiz.innerHTML = `  
-         <h2>Incorrect</h2>  
-         <button onclick="history.go(0)" class="btn btn-success">Quiz Again</button>  
+  } else {
+    longQuiz.innerHTML = `  
+         <h2 class="text-danger text-center">پاسخ صحیح نمی باشد</h2>  
+         <button onclick="history.go(0)" class="btn btn-success my-2">Quiz Again</button>  
        `
-    }
+  }
 })
