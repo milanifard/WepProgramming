@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>name</title>
+        <meta charset="UTF-8">
+        <meta name ="author" content="SARA SAFAEE">
+        <meta name ="viewport" content="width=device-width">
+        <!-- <link rel ="stylesheet" href="css/bootstrap.min.css"> -->
+        <title>.gitignore</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body  style="text-align: center;position: relative; font-family: 'IRANSans';background-color: burlywood;" >
+        <div >
+            <a href="" >خانه/</a>
+            <a href="">آموزش گیت/</a>
+            <a  href="" >ششم</a>
+            <i class="fa fa-home"></i>
+        </div>
+        <h1 style="color: brown;text-align: center; margin: 10%;background-color: rgb(219, 163, 143);">.gitignore</h1>
+        <div >
+        <img  class="img-responsive img-thumbnail" src="images/16 GIT.PNG">
+        </div>
+        <pre >
+        اغلب، شما دسته‌ای از فایل‌ها خواهید داشت که نمی‌خواهید گیت به‌طور خودکار آنها را اضافه کند یا حتی به شما نشان دهد که ردیابی نشده‌اند
+        اینها معمولاً فایل‌هایی هستند که به طور خودکار تولید می‌شوند، مانند فایل‌های گزارش یا فایل‌هایی که توسط سیستم ساخت شما تولید می‌شوند
+        در چنین مواردی، می توانید فایلی به نام الگوهای لیست .gitignore ایجاد کنید تا با آنها مطابقت داشته باشد
+        </pre>
+        <pre>
+            ازاین قابلیت گیت زمانی استفاده میشود که میخواهید فایل های خاصی را <input type="text" id="s"> بگیرید
+            
+            در فایل گیت ایگنور میتوانیم برای نادیده گرفتن فایل هایی با الگوی خاص از چه چیزی استفاده کنیم؟
+            <label class="radio-inline"><input type="radio" name="optradio" checked>regular expresion</label><label class="radio-inline"><input type="radio" name="optradio">label</label><label class="radio-inline"><input type="radio" name="optradio">Options</label>
+        </pre>
+        <button onclick="javascript :test(); ">ثبت شود</button>
+
+    </body>
+    <script language="JavaScript">
+
+        function test(){
+            var obj = document.getElementById("s")
+            if(obj.ariaValueText=="نادیده")
+            obj.style.backgroundColor="green";
+            else
+            obj.style.backgroundColor="red";
+        }
+            function check_answer(){
+            const A = document.getElementById('a')
+            const B = document.getElementById('b')
+            const C = document.getElementById('c')
+
+            if(A.checked === true){
+                A.style.backgroundColor = "green";
+            }
+            else {
+                A.style.backgroundColor = "red";
+                }
+            }
+    </script>
+</html>
