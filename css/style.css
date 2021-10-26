@@ -4,9 +4,9 @@
 }
 
 @font-face {
-    font-family: "IRANSans";
-    src: url("/font/IRANSans.ttf") format("woff2");
-  }
+  font-family: 'IRANSans';
+  src: url('/font/IRANSans.ttf') format('ttf');
+}
 
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'IRANSans', serif;
@@ -61,6 +61,24 @@ body {
   transition: all 0.5s;
   border-radius: 4px;
 }
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.banner-word {
+  background-color: yellow;
+  margin: 20px 0 20px 0;
+  padding: 0px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s;
+  border-radius: 4px;
+}
+
 .tag-word:hover {
   color: #444;
   background-color: #ddd;
@@ -81,4 +99,23 @@ body {
 }
 .img img:hover {
   transform: scale(1.1);
+}
+
+.map li {
+  display: inline-block;
+  color: #444;
+}
+ul.info li > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul{
+    list-style: none;
 }
