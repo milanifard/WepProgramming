@@ -5,15 +5,29 @@
     width: 125px;
     border-radius: 20px;
     background-color: orange;
+    padding: 4px;
+    margin: 4px;
 }
 .header{
     display: flex;
     text-align: justify;
+    justify-content: space-between;
 }
+
 .image{
     height: 500px;
-    width: 600px;
+    width: 100%;
 }
 .form{
     background-color: darkgrey;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.mona{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
 }
