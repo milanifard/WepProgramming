@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git-section-2</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/13.css" rel="stylesheet">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/fontiran.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container blog">
+        <div class="row">
+            <div class="col-lg">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <li class="breadcrumb-item"><a href="#">خانه</a></li>
+                        <li class="breadcrumb-item"><a href="#">آموزش گیت</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">بخش دوم</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <span class="badge rounded-pill bg-warning">آموزش GIT</span>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="blog-title">آموزش گیت بخش دوم</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg publisher">
+                <div class="author">
+                    <img class="thumbnail" src="./images//13-author.jpg" alt="Fateme.nouri">
+                    <span>فاطمه نوری مقدم</span>
+                </div>
+                <span class="publish-date">۱۴۰۰/۰۸/۰۴</span>
+                <span class="update-date"> آخرین به روزرسانی ۱۴۰۰/۰۸/۰۴ </span>
+            </div>
+            <div class="col-lg statistics">
+                <div>
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                    <span>0</span>
+                </div>
+                <div>
+                    <i class="fa fa-bookmark" aria-hidden="true"></i>
+                    <span>خواندن این مطلب ۱ دقیقه زمان میبرد</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <img class="blog-image" src="./images/13-postpic.png" alt="git basics">
+        </div>
+        <div class="row">
+            <div class="post-body">
+
+                <h2>مبانی پایه git</h2>
+                <p>
+                    گیت (Git) مشهورترین و پرکاربردترین سیستم کنترل نسخه یا ورژن کنترل، در جهان است. درست است که بدون گیت
+                    می شود برنامه نویسی
+                    کرد ولی می توان با اطمینان، مدعی شد که هیچ برنامه بزرگی در جهان بدون استفاده از یک ورژن کنترل، نوشته
+                    نشده است و همچنان
+                    می شود گفت که گیت، محبوب ترین و پر استفاده ترین ورژن کنترل حال حاضر جهان است. در این فرادرس بعد از
+                    معرفی گیت به سراغ
+                    کاربردهای ابتدایی آن رفته و سپس با بحث در مورد شاخه ها، مرج کردن (Merge) و نحوه مشارکت در یک پروژه
+                    گیت، به سمت بحث های
+                    پیشرفته تر حرکت می کنیم. دقیقا چیزی که شما مستقیما برای همکاری در یک تیم و در گیت هاب (GitHub) و گیت
+                    لب (GitLab) نیاز
+                    دارید.
+                </p>
+                <div style="text-align: center;">
+                    <img src="./images/13-body.png" alt="git branches">
+                </div>
+                <h2>توضیحات تکمیلی</h2>
+                <p>
+                    گیت (Git) مشهورترین و پرکاربردترین سیستم کنترل نسخه یا ورژن کنترل، در جهان است. درست است که بدون گیت می شود برنامه نویسی
+                    کرد ولی می توان با اطمینان، مدعی شد که هیچ برنامه بزرگی در جهان بدون استفاده از یک ورژن کنترل، نوشته نشده است و همچنان
+                    می شود گفت که گیت، محبوب ترین و پر استفاده ترین ورژن کنترل حال حاضر جهان است. در این فرادرس بعد از معرفی گیت به سراغ
+                    کاربردهای ابتدایی آن رفته و سپس با بحث در مورد شاخه ها، مرج کردن (Merge) و نحوه مشارکت در یک پروژه گیت، به سمت بحث های
+                    پیشرفته تر حرکت می کنیم. دقیقا چیزی که شما مستقیما برای همکاری در یک تیم و در گیت هاب (GitHub) و گیت لب (GitLab) نیاز
+                    دارید.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <form action="#" class="questions" id="questions">
+                <h2>سوالات تستی</h2>
+                <div class="question">
+                    <p>سوال اول متنش شبیه این چنین چیزی باید باشه شاید البته.</p>
+                    <div>
+                        <input type="radio" id="test11" name="test-1" value="test1">
+                        <label for="test11">گیت یکی</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="test12" name="test-1" value="test2">
+                        <label for="test12">گیت دو تا</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="test13" name="test-1" value="test3">
+                        <label for="test13">گیت سه تا</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="test14" name="test-1" value="test4">
+                        <label for="test14">گیت چهار تا</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>سوال اول متنش شبیه این چنین چیزی باید باشه شاید البته.</p>
+                    <div>
+                        <input type="radio" id="test21" name="test-2" value="test1">
+                        <label for="test21">گیت یکی</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="test22" name="test-2" value="test2">
+                        <label for="test22">گیت دو تا</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="test23" name="test-2" value="test3">
+                        <label for="test23">گیت سه تا</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="test24" name="test-2" value="test4">
+                        <label for="test24">گیت چهار تا</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>سوال اول متنش شبیه این چنین چیزی باید باشه شاید البته.</p>
+                    <div>
+                        <input type="radio" id="test31" name="test-3" value="test1">
+                        <label for="test31">گیت یکی</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="test32" name="test-3" value="test2">
+                        <label for="test32">گیت دو تا</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="test33" name="test-3" value="test3">
+                        <label for="test33">گیت سه تا</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="test34" name="test-3" value="test4">
+                        <label for="test34">گیت چهار تا</label>
+                    </div>
+                </div>
+                <button id="submit-form" type="button" class="btn btn-primary">ارزیابی پاسخ ها</button>
+                <span id="score"></span>
+            </form>
+        </div>
+    </div>
+    <script>
+        console.log($('input[name="test-1"]:checked').val());
+        $('#submit-form').click(() => {
+            let score = 3;
+            ;
+            if ($('input[name="test-1"]:checked').val() !== 'test1') {
+                score--;
+            }
+            if ($('input[name="test-2"]:checked').val() !== 'test1') {
+                score--;
+            }
+            if ($('input[name="test-3"]:checked').val() !== 'test1') {
+                score--;
+            }
+            $('#score').text(`امتیاز شما از این آزمون برابر ${score} از ۳ است.`);
+        })
+    </script>
+</body>
+
+</html>
