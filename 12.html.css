@@ -1,8 +1,16 @@
+@font-face {
+  font-family: Vazir;
+  src: url("Vazir.eot");
+  src: url("Vazir.eot?#iefix") format("embedded-opentype"),
+    url("Vazir.woff") format("woff"), url("Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+
 body {
   display: flex;
   margin: 1rem;
   justify-content: space-between;
-
+  font-family: Vazir;
   flex-direction: column;
 }
 .route {
@@ -19,6 +27,17 @@ body {
   text-align: center;
   border-radius: 0.5rem;
 }
+.me {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
 
 .cover-img {
   display: flex;
@@ -33,4 +52,18 @@ body {
   background-color: gray;
   padding: 1rem;
   height: 3rem;
+}
+button{
+  width: 6rem;
+  height: 2rem;
+  border: 0;
+  color: white;
+  border-radius: 1rem;
+}
+.see{
+  background-color: blue;
+}
+.send{
+  background-color: green;
+  margin-top: 1rem;
 }
