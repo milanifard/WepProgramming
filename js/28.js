@@ -1,110 +1,40 @@
-var myQuestions = [
-    {
-      question: "کدامیک از رنگ های زیر نشان دهنده هشدار برای danger button است؟",
-      answers: {
-        a: 'btn btn-secondary',
-        b: 'btn btn-warning',
-        c: 'btn btn-dark',
-        d: 'btn btn-light'
-      },
-      correctAnswer: 'b'
-    },
-    {
-      question: "چطور میتوان یک basic list group ساخت؟",
-      answers: {
-        a: '.grouped-list',
-        b: '.list-group',
-        c: '.group-list',
-        d: '.listed'
-      },
-      correctAnswer: 'c'
+function evaluation() {
+    var score = 0;
+    if (document.getElementById('r1').checked) {
+            document.getElementById('q1').style.backgroundColor = "green";
+            score++;
+    } else {
+            document.getElementById('q1').style.backgroundColor = "rgb(195, 76, 76)";
     }
-  ];
-  
-  var quizContainer = document.getElementById('quiz');
-  var resultsContainer = document.getElementById('results');
-  var submitButton = document.getElementById('submit');
-  
-  generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
-  
-  function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
-  
-    function showQuestions(questions, quizContainer){
-      // we'll need a place to store the output and the answer choices
-      var output = [];
-      var answers;
-  
-      // for each question...
-      for(var i=0; i<questions.length; i++){
+    if (document.getElementById('rr4').checked) {
+            document.getElementById('q2').style.backgroundColor = "green";
+            score++;
+    } else {
+            document.getElementById('q2').style.backgroundColor = "rgb(195, 76, 76)";
+    }
+    if (document.getElementById('rrr2').checked) {
+            document.getElementById('q3').style.backgroundColor = "green";
+            score++;
+    } else {
+            document.getElementById('q3').style.backgroundColor = "rgb(195, 76, 76)";
+    }
+    document.getElementById('d1').style.opacity = "100%";
+    document.getElementById('d2').style.opacity = "100%";
+    document.getElementById('d3').style.opacity = "100%";
+    let text = "امتیاز شما " + String(score) + "/3" + " میباشد.";
+    alert(text);
+}
+
+function show(){
+        alert("پاسخ btn-warning میباشد.");
+}
+
+function checkquestion(){
+        if (document.querySelector('input').value === "btn-warning")
+                alert(".پاسخ صحیح است")
+
+        else
+                alert("پاسخ شما صحیح نیست")
         
-        // first reset the list of answers
-        answers = [];
-  
-        // for each available answer...
-        for(letter in questions[i].answers){
-  
-          // ...add an html radio button
-          answers.push(
-            '<label>'
-              + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-              + letter + ': '
-              + questions[i].answers[letter]
-            + '</label>'
-          );
-        }
-  
-        // add this question and its answers to the output
-        output.push(
-          '<div class="question">' + questions[i].question + '</div>'
-          + '<div class="answers">' + answers.join('') + '</div>'
-        );
-      }
-  
-      // finally combine our output list into one string of html and put it on the page
-      quizContainer.innerHTML = output.join('');
-    }
-  
-  
-    function showResults(questions, quizContainer, resultsContainer){
-      
-      // gather answer containers from our quiz
-      var answerContainers = quizContainer.querySelectorAll('.answers');
-      
-      // keep track of user's answers
-      var userAnswer = '';
-      var numCorrect = 0;
-      
-      // for each question...
-      for(var i=0; i<questions.length; i++){
-  
-        // find selected answer
-        userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
-        
-        // if answer is correct
-        if(userAnswer===questions[i].correctAnswer){
-          // add to the number of correct answers
-          numCorrect++;
-          
-          // color the answers green
-          answerContainers[i].style.color = 'lightgreen';
-        }
-        // if answer is wrong or blank
-        else{
-          // color the answers red
-          answerContainers[i].style.color = 'red';
-        }
-      }
-  
-      // show number of correct answers out of total
-      resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
-    }
-  
-    // show questions right away
-    showQuestions(questions, quizContainer);
-    
-    // on submit, show results
-    submitButton.onclick = function(){
-      showResults(questions, quizContainer, resultsContainer);
-    }
-  
-  }
+}
+
