@@ -7,7 +7,7 @@ var myQuestions = [
       c: "method",
       d: "meta",
     },
-    correctAnswer: "b",
+    correctAnswer: "a",
   },
   {
     question:
@@ -17,7 +17,7 @@ var myQuestions = [
       b: "css",
       c: "js",
     },
-    correctAnswer: "c",
+    correctAnswer: "b",
   },
   
   {
@@ -28,7 +28,7 @@ var myQuestions = [
       c: "text",
       d: "action",
     },
-    correctAnswer: "c",
+    correctAnswer: "b",
   }
 
 ];
