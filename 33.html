@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/33.css" rel="stylesheet">
+    <link href="./js/33.js" rel="script">
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <link href="./css/font-awesome.min.css" rel="stylesheet">
@@ -147,23 +148,6 @@
 
     </div>
 </div>
-<script>
-    console.log($('input[name="test-1"]:checked').val());
-    $('#submit-form').click(() => {
-        let score = 3;
-        ;
-        if ($('input[name="test-1"]:checked').val() !== 'test1') {
-            score--;
-        }
-        if ($('input[name="test-2"]:checked').val() !== 'test1') {
-            score--;
-        }
-        if ($('input[name="test-3"]:checked').val() !== 'test1') {
-            score--;
-        }
-        $('#score').text(`امتیاز شما از این آزمون برابر ${score} از ۳ است.`);
-    })
-</script>
 </body>
 
 </html>
