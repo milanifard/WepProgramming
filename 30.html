@@ -139,9 +139,21 @@
         سوالات زیر را بادقت پاسخ دهید.
         <br>
         <br>
+        <div class="jumbotron">
+                ۱. برای متن زیر یک سرتیتر به نام "London" وارد کنید که اولیت آن بالا باشد
 
+
+                عنوان: <input dir="ltr" type="text" name="t1" id="t1">
+                <p>لندن پایتخت اینگلیس میباشد. شهری با جمعیت ۱۳ میلیونی که دارای بیشترین ساکن در این کشور است.
+                </p>
+
+        </div>
+        <div class="container-fluid" style="align-self: center;">
+                <a onclick="javascript: evaluation2();" class="btn btn-info" role="button">ثبت پاسخ سوال تستی</a>
+        </div>
+        <br>
         <div class="jumbotron" id="q1">
-                ۱. از کدام سرتگ برای سرتیتر با بالاترین مقدار اهمیت استفاده میشود؟
+                ۲. از کدام سرتگ برای سرتیتر با بالاترین مقدار اهمیت استفاده میشود؟
                 <br>
                 <input type="radio" name="qq1" id="r1"><code>&#60h1&#62</code>
                 <br>
@@ -153,7 +165,7 @@
                 <div id="d1" style="opacity: 0%;">گزینه یک پاسخ درست است.</div></input>
         </div>
         <div class="jumbotron" id="q2">
-                ۲. برای نوشتن یک پاراگراف از کدام تگ استفاده میکنیم؟
+                ۳. برای نوشتن یک پاراگراف از کدام تگ استفاده میکنیم؟
                 <br>
                 <input type="radio" name="qq2" id="rr1"><code>&#60br&#62</code></input>
                 <br>
@@ -166,7 +178,7 @@
 
         </div>
         <div class="jumbotron" id="q3">
-                ۳. برای عوض کردن متن به رنگ آبی کدام گزینه درست است
+                ۴. برای عوض کردن متن به رنگ آبی کدام گزینه درست است
                 <br>
                 <input type="radio" name="qq3" id="rrr1"><code>style="font-family:verdana;"</code></input>
                 <br>
@@ -182,8 +194,22 @@
                 <a onclick="javascript: evaluation();" class="btn btn-info" role="button">ثبت تمام پاسخ ها</a>
         </div>
         <script lang="JavaScript">
+                function evaluation2() {
+                        var textfield1 = document.getElementById("t1");
+                        if (textfield1.value == "<h1>London</h1>") {
+                                let text = "درست جواب دادی!";
+                                alert(text);
+                                console.log("Worked");
+                                document.getElementById("t1").style.backgroundColor = "green";
+                        } else {
+                                let text = "خب بیشتر تلاش کن درست جواب بده دیگه!";
+                                alert(text);
+                                document.getElementById("t1").style.backgroundColor = "red";
+                        }
+                }
                 function evaluation() {
                         var score = 0;
+
                         if (document.getElementById('r1').checked) {
                                 document.getElementById('q1').style.backgroundColor = "green";
                                 score++;
