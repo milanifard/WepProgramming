@@ -116,19 +116,45 @@
             </form>
             <p id="solve3"></p>
         </div>
+        <div style="background-color:rgb(196, 210, 240); padding: 30px; margin-top: 10px; width: 100wh">
 
+            <p>برای ایجاد سطر از چه تگی استفاده میکنیم</p>
+            <div class="show">
+                <div style="direction: ltr">
+                    <input type="text" name="e1" id="e1" size="5">
+                </div>
+                <button class="show-button" onclick="javascript: show_ans();"> نمایش پاسخ</button>
+            </div>
+            <button class="send-button" onclick="javascript: send_ans();"> ارسال پاسخ</button>
+
+        </div>
     </div>
 
 </body>
 <script>
+    function $(id) {
+        return document.getElementById(id);
+    }
+    function show_ans() {
+        $("e1").value = "tr";
+    }
+
+    function send_ans() {
+        if ($("e1").value === "tr") {
+            alert("right ans");
+        } else {
+            alert("wrong ans")
+        }
+
+    }
     function exer1() {
-        document.getElementById("solve1").innerHTML = "آفرین .گزینه اول درست است";
+        $("solve1").innerHTML = "آفرین .گزینه اول درست است";
     }
     function exer2() {
-        document.getElementById("solve2").innerHTML = "آفرین .گزینه دوم درست است";
+        $("solve2").innerHTML = "آفرین .گزینه دوم درست است";
     }
     function exer3() {
-        document.getElementById("solve3").innerHTML = "آفرین .گزینه اول درست است";
+        $("solve3").innerHTML = "آفرین .گزینه اول درست است";
     }
 </script>
 
