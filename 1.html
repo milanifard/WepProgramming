@@ -23,20 +23,22 @@
             <a class="nav-link" href="#">آموزش /</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">ویدئو 10 HTML</a>
+            <a class="nav-link" href="#">HTML /</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">ویدئو 10 </a>
         </li>
     </ul>
 </nav>
 <span class="badge badge-pill badge-warning" style="padding: 8px;">آموزش HTML</span>
 <br>
-<br>
+
 
 <h1 style="font-size: 40px;">تگ HEAD و responsive web page</h1>
 <br>
 <div class="row">
     <div class="col-sm-2">هادی تمیمی</div>
     <div class="col-sm-2">آخرین به روزرسانی: ۱۴۰۰/۸/۳</div>
-    <div class="col-sm-2"><span class="glyphicon glyphicon-comment"></span> 1 </div>
     <div class="col-sm-4"><span class="glyphicon glyphicon-bookmark"></span>خواندن این مطلب 3 دقیقه زمان
         میبرد.</div>
 
@@ -44,6 +46,7 @@
 <br>
 <br>
 <h2>در این آموزش به بررسی تگ HEAD در HTML و responsive web page میپردازیم .</h2>
+<br>
 <hr>
 <h2>تگ HEAD</h2>
 برای تعریف سرتیتر در html
@@ -59,14 +62,13 @@
 <br>
 <br>
 <h2>responsive web page</h2>
-برای بازخورد دا کردن متن ها از علامت
+برای بازخورد دار کردن متن ها از علامت
 <code>vw</code>
 استفاده میکنیم که باعث میشود با تغییر اندازه ی صفحه اندازه ی فونت ها نیز به نسبت بزرگ یا کوچک شود.
 <hr>
-<hr>
 <br>
-
-<H2>سوالات</H2>
+<br>
+<H2>کوییز</H2>
 به سوالات زیر پاسخ دهید.
 <br>
 <br>
@@ -74,65 +76,66 @@
 <div class="jumbotron" id="q1">
     ۱. آیا متاداده ها تاثیری در ظاهر صفحه دارند؟
     <br>
-    <input type="radio" name="qq1" id="r1"> خیر
+    <input type="radio"  id="r2"> بله
     <br>
-    <input type="radio" name="qq1" id="r2"> بله
+    <input type="radio"  id="r1"> خیر
 
-    <div id="d1" style="opacity: 0%;">گزینه یک پاسخ درست است.</div></input>
+    <br>
+    <div id="d1" style="display: none;">گزینه دو پاسخ درست است.</div></input>
 </div>
 <div class="jumbotron" id="q2">
-    ۲. برای responsive کردن متن ها از کدام علامت ........... استفاده میکنیم.
+    ۲. برای responsive کردن متن ها از  علامت  <input type="text"  id="e1" size="3"> استفاده میکنیم.
     <br>
-    <input type="radio" name="qq2" id="rr1"><code>&#60p&#62</code></input>
-    <br>
-    <input type="radio" name="qq2" id="rr2"><code>px</code></input>
-    <br>
-    <input type="radio" name="qq2" id="rr3"><code>&#60hr&#62</code></input>
-    <br>
-    <input type="radio" name="qq2" id="rr4"><code>vw</code></input>
-    <div id="d2" style="opacity: 0%;">گزینه چهار پاسخ درست است.</div></input>
+
+    <div id="d2" style="display: none;"><code>vw</code> پاسخ درست است.</div></input>
 
 </div>
 <div class="jumbotron" id="q3">
     ۳. متاداده در داخل کدام تگ قرار میگیرند؟
     <br>
-    <input type="radio" name="qq3" id="rrr1"><code>&#60hr&#62</code></input>
+    <input type="radio" id="rrr1"><code>&#60hr&#62</code></input>
     <br>
-    <input type="radio" name="qq3" id="rrr2"><code>&#60head&#62</code></input>
+    <input type="radio" id="rrr2"><code>&#60head&#62</code></input>
     <br>
-    <input type="radio" name="qq3" id="rrr3"><code>&#60h&#62</code></input>
+    <input type="radio" id="rrr3"><code>&#60h&#62</code></input>
     <br>
-    <input type="radio" name="qq3" id="rrr4"><code>&#60p&#62</code></input>
-    <div id="d3" style="opacity: 0%;">گزینه دو پاسخ درست است.</div></input>
+    <input type="radio" id="rrr4"><code>&#60p&#62</code></input>
+    <br>
+
+    <div id="d3" style="display: none;">گزینه دو پاسخ درست است.</div></input>
 
 </div>
 <div class="container-fluid" style="align-self: center;">
-    <a onclick="javascript: evaluation();" class="btn btn-info" >ثبت پاسخ ها</a>
+    <a style="font-size: 16px;" onclick="javascript: checkanswer();" class="btn btn-info" >ثبت و بررسی پاسخ ها</a>
 </div>
 <script lang="JavaScript">
-    function evaluation() {
+    function checkanswer() {
+        function $(id) {
+            return document.getElementById(id);
+        }
         var score = 0;
-        if (document.getElementById('r1').checked) {
-            document.getElementById('q1').style.backgroundColor = "green";
+        if ($('r1').checked) {
+            $('q1').style.backgroundColor = "green";
             score++;
         } else {
-            document.getElementById('q1').style.backgroundColor = "rgb(195, 76, 76)";
+            $('q1').style.backgroundColor = "red";
         }
-        if (document.getElementById('rr4').checked) {
-            document.getElementById('q2').style.backgroundColor = "green";
+        if ($('e1').value.toLowerCase() === "vw"){
+            $('q2').style.backgroundColor = "green";
             score++;
         } else {
-            document.getElementById('q2').style.backgroundColor = "rgb(195, 76, 76)";
+            $('q2').style.backgroundColor = "red";
         }
-        if (document.getElementById('rrr2').checked) {
-            document.getElementById('q3').style.backgroundColor = "green";
+        if ($('rrr2').checked) {
+            $('q3').style.backgroundColor = "green";
             score++;
         } else {
-            document.getElementById('q3').style.backgroundColor = "rgb(195, 76, 76)";
+            $('q3').style.backgroundColor = "red";
         }
-        document.getElementById('d1').style.opacity = "100%";
-        document.getElementById('d2').style.opacity = "100%";
-        document.getElementById('d3').style.opacity = "100%";
+        $('d1').style.display = "block";
+        $('d2').style.display = "block";
+        $('d3').style.display = "block";
+
         let text = "نمره شما " + String(score) + " از 3" + " میباشد.";
         alert(text);
     }
