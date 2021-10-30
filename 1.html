@@ -1,61 +1,169 @@
+<html>
 
-
-
-
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
- <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="12.html.css" />
-<title>Page Title</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--local files were old and didn't show icons   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
+          integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe"
+          crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
-<body>
+<body dir="rtl" style="padding: 8px; padding-bottom: 10%; font-size: 16px;">
+<nav class="navbar navbar-expand-sm bg-light">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#"><span class="glyphicon glyphicon-home"></span>خانه /</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">آموزش /</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">HTML /</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">ویدئو 10 </a>
+        </li>
+    </ul>
+</nav>
+<span class="badge badge-pill badge-warning" style="padding: 8px;">آموزش HTML</span>
+<br>
 
-<div id="mainDiv">
-<pre id="profile">Behrad Rajaee  - 1400-08-04 last update: 1400-08-04</pre>
-<p>text/color/font</p>
-<h1>text</h1>
-<p>The color property is used to set the color of the text.
-The text-align property is used to set the horizontal alignment of a text (left,
-right, center, justify). When the text-align property is set to "justify", each line
-is stretched so that every line has equal width, and the left and right margins are
-straight
-</p>
 
-<img src="img_girl.jpg" alt="Girl in a jacket">
-
-<h2>Font</h2>
-<p>The CSS font properties define the font family, boldness, size, and the style of
-a text.
-</p>
-</div>
-  </div>
-  </div>
- <div>
-    <div id="codeCheckWarning">
-      <div id="closeCodeCheckWarning" onclick="codeCheckWarningClose()">&times;</div>
-      <div id="codeCheckWarningText" class="checkText"></div>
-    </div>
-    <div id="codeCheckCorrect">
-      <div id="closeCodeCheckCorrect" onclick="codeCheckCorrectClose()">&times;</div>
-      <div class="checkText">Correct!</div>
-    </div>
-    <h1>Exercise:</h1>
-    <div id="assignmenttext" style='display:none'>
-      <p>print hello.</p>
-
-<div id="assignmentcode">
-&lt;p @(5)="About us">hello.&lt;/p>
-</div>
-
-<div id="correctcode">
-&lt;p title="About us">hello.&lt;/p>
-</div>
+<h1 style="font-size: 40px;">تگ HEAD و responsive web page</h1>
+<br>
+<div class="row">
+    <div class="col-sm-2">هادی تمیمی</div>
+    <div class="col-sm-2">آخرین به روزرسانی: ۱۴۰۰/۸/۳</div>
+    <div class="col-sm-4"><span class="glyphicon glyphicon-bookmark"></span>خواندن این مطلب 3 دقیقه زمان
+        میبرد.</div>
 
 </div>
+<br>
+<br>
+<h2><b>در این آموزش به بررسی تگ HEAD در HTML و responsive web page میپردازیم .</b></h2>
+<br>
+<hr>
+<h2><b>تگ HEAD</b></h2>
+برای تعریف سرتیتر در html
+از تگ
+<code>&#60head&#62</code>
+استفاده میکنیم.
 
- 
+هد یا Head یا یکی از مهمترین و اساسی ترین بخش یک صفحه ی وب و یا بطور کلی یک صفحه ی HTML می باشد،
+بطور کلی میتونیم بگیم که Head یک صفحه ی وب مغز آن صفحه می باشد،
+که در این Head یا سَر یکسری اطلاعات مربوط به صفحه ی وبمان قرار میگیرد، مثلا عنوان صفحه ما برای نمایش در مرورگرها در قسمت هد قرار میگیرد.
+<br>
+همچنین متاداده ها یا metadata مانند <code>&#60meta name="author"&#62</code> نیز در قسمت Head یک صفحه ی وب قرار میگیرند، متاداده ها در HTML در واقع اطلاعاتی را در مورد یک صفحه وب به مرورگرها و موتورهای جستجوگر ارائه می دهند اما تاثیری در شکل ظاهری ندارند.
+<br>
+<br>
+<h2><b>responsive web page</b></h2>
+برای بازخورد دار کردن متن ها از علامت
+<code>vw</code>
+استفاده میکنیم که باعث میشود با تغییر اندازه ی صفحه اندازه ی فونت ها نیز به نسبت بزرگ یا کوچک شود.
+<hr>
+<br>
+<br>
+<H2><b>کوییز</b></H2>
+به سوالات زیر پاسخ دهید.
+<br>
+<br>
+
+<div class="jumbotron" id="q1">
+    ۱. آیا متاداده ها تاثیری در ظاهر صفحه دارند؟
+    <br>
+    <br>
+    <input type="radio"  id="r2"> بله
+    <br>
+    <input type="radio"  id="r1"> خیر
+
+    <br>
+    <br>
+    <div id="d1" style="display: none;">گزینه دو پاسخ درست است.✓</div></input>
+</div>
+<div class="jumbotron" id="q2">
+    ۲. برای responsive کردن متن ها از  علامت  <input type="text"  id="e1" size="3"> استفاده میکنیم.
+    <br>
+    <br>
+    <div id="d2" style="display: none;"><code>vw</code> پاسخ درست است.✓</div></input>
+
+</div>
+<div class="jumbotron" id="q3">
+    ۳. متاداده در داخل کدام تگ قرار میگیرند؟
+    <br>
+    <br>
+    <input type="radio" id="rrr1"><code>&#60hr&#62</code></input>
+    <br>
+    <input type="radio" id="rrr2"><code>&#60head&#62</code></input>
+    <br>
+    <input type="radio" id="rrr3"><code>&#60h&#62</code></input>
+    <br>
+    <input type="radio" id="rrr4"><code>&#60p&#62</code></input>
+    <br>
+    <br>
+    <div id="d3" style="display: none;">گزینه دو پاسخ درست است.✓</div></input>
+
+</div>
+</div>
+<div class="jumbotron" id="q4">
+    ۴. تفاوت <code>vw</code> و<code>px</code> در چه است؟
+    <br>
+    <br>
+    <input type="radio" id="r4_1">تفاوت در واحد اندازگیری</input>
+    <br>
+    <input type="radio" id="r4_2">تفاوت در تغییر اندازه متن در هنگام تغییر سایز صفحه</input>
+    <br>
+    <input type="radio" id="r4_3">تفاوتی ندارند</input>
+    <br>
+    <input type="radio" id="r4_4">هیچ کدام</input>
+    <br>
+    <br>
+    <div id="d4" style="display: none;">گزینه دو پاسخ درست است.✓</div></input>
+
+</div>
+<div class="container-fluid" style="align-self: center;">
+    <a style="font-size: 16px;" onclick="javascript: checkanswer();" class="btn btn-info" >ثبت و بررسی پاسخ ها</a>
+</div>
+<script lang="JavaScript">
+    function checkanswer() {
+        function $(id) {
+            return document.getElementById(id);
+        }
+        var score = 0;
+        if ($('r1').checked) {
+            $('q1').style.backgroundColor = "green";
+            score++;
+        } else {
+            $('q1').style.backgroundColor = "red";
+        }
+        if ($('e1').value.toLowerCase() === "vw"){
+            $('q2').style.backgroundColor = "green";
+            score++;
+        } else {
+            $('q2').style.backgroundColor = "red";
+        }
+        if ($('rrr2').checked) {
+            $('q3').style.backgroundColor = "green";
+            score++;
+        } else {
+            $('q3').style.backgroundColor = "red";
+        }
+        if ($('r4_2').checked) {
+            $('q4').style.backgroundColor = "green";
+            score++;
+        } else {
+            $('q4').style.backgroundColor = "red";
+        }
+        $('d1').style.display = "block";
+        $('d2').style.display = "block";
+        $('d3').style.display = "block";
+        $('d4').style.display = "block";
+        let text = "نمره شما " + String(score) + " از 4" + " میباشد.";
+        alert(text);
+    }
+</script>
 </body>
-</html>

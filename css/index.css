@@ -1,0 +1,52 @@
+.bg-navy {
+  background-color: #0c2461;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+ul li label {
+  cursor: pointer;
+}
+.map li {
+  display: inline-block;
+  color: #444;
+}
+ul.info li {
+  display: inline-block;
+  margin: 0 8px;
+}
+ul.info li > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.float-end {
+  float: left;
+}
+.gallery li {
+  margin: 20px 0;
+  text-align: center;
+}
+.gallery li img {
+  width: 40%;
+  height: 300px;
+}
+
+.gallery h5 {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+}
+.gallery p {
+  text-align: right;
+}
+.text-white {
+  color: #fff;
+}

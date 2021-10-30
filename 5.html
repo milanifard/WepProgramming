@@ -2,127 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/ff2f64d95b.js" crossorigin="anonymous"></script>
-    <title>Javascript 5</title>
-    <script src="./js/5.js"></script>
+    <title>پروژه</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <style>
+        * {
+            direction: rtl;
+        }
+
+        ul {
+            padding: 0;
+            font-size: 14px;
+        }
+        ul li{
+            padding: 0 !important;
+        }
+
+        .mybtn {
+            display: inline-block;
+            background-color: #dddd48;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 50px;
+            font-size: 10pt;
+        }
+        .myrow{
+            margin: 0 15px;
+            background-color: #c1d1f2;
+            border-radius: 5px;
+            padding: 15px;
+            height: 170px;
+        }
+        .mybtn2{
+            display: block;
+            width: 99px;
+            float: left;
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 10pt;
+            margin-left: 15px;
+            margin-top: 20px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 10px;
+        }
+        .mybtn1 {
+            display: block;
+            width: 99px;
+            float: left;
+            background-color: #4f9f39;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 10pt;
+            margin-left: 15px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .myp{
+            margin:7px;padding-right: 20px; font-size: 15pt;
+        }
+
+
+    </style>
 </head>
-<body dir="rtl">
-    <div class="container">
-        <div class="text-secondary">
-            <i class="fa fa-home"></i> <a href="" class="text-secondary">خانه</a> 
-            / <a href="" class="text-secondary">آموزش JS</a> 
-            / <a href="" class="text-secondary">Exception Handling</a>
-        </div>
-        <div class="row mt-4 mb-4">
-            <div class="col">
-                <span class="rounded-3 bg-warning p-2 text-white">
-                    آموزش JS
-                </span>
-            </div>
-        </div>
-        <div class="row">
-            <h2>Exception Handling</h2>
-        </div>
-        <div class="row justify-content-between">
-            <div class="col-3">
-                امید میلانی فرد 10/26/2021
-            </div>
-            <div class="col-4 text-start">
-                <i class="fa fa-comment"></i> 0 &nbsp;
-                <i class="fa fa-bookmark"></i> خواندن این مطلب ۱۰ دقیقه زمان میبرد.
-            </div>
-        </div>
-        <div class="row justify-content-center mt-4">
-            <div class="col-12">
-                <p>
-                    جاوا اسکریپت برای مدیریت خطا ها از exception استفاده می‌کند.<br>
-                    مدیریت خطاها با کلمات کلیدی زیر انجام می‌شود:
-                    <ul>
-                        <li><strong>try</strong>: بلوکی که در آن می توانید خطا هایی که رخ میدهند را دریفات کنید.</li>
-                        <li><strong>catch</strong>: بلوکی کی در آن خطا را مدیریت می کنید.</li>
-                        <li><strong>throw</strong>: کلمه کلیدی که با آن یک خطا ایجاد می کنید.</li>
-                        <li><strong>finally</strong>: کد های موجود در این بلوک بعد از اتمام ترای و کچ اجرا می شوند.</li>
-                    </ul>
-                </p>
-                <img src="./images/code.png" alt="" class="max-width:100%">
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col">
-                <div class="h3">کوییز!</div>
-            </div>
-        </div>
-        <div class="bg-primary p-4 text-white">
-            <div class="row">
-                <div class="col">
-                    برای ایجاد خطای زیر از کدام کلمه کلیدی باید استفاده شود؟
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-start" dir="ltr">
-                    <span class="bg-light text-primary p-2" id="a1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> new Error("Wrong input!");
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="ul">
-                        <div class="li"><input type="radio" name="q-1">try</div>
-                        <div class="li"><input type="radio" name="q-1">finally</div>
-                        <div class="li"><input type="radio" name="q-1">catch</div>
-                        <div class="li"><input type="radio" name="q-1">throw</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    برای مدیریت خطای زیر از کدام کلمه کلیدی باید استفاده شود؟
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-start" dir="ltr">
-                    try { throw new Error() } <span class="bg-light text-primary p-2" id="a2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> (e) { console.log(e.message) }
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="ul">
-                        <div class="li"><input type="radio" name="q-2">try</div>
-                        <div class="li"><input type="radio" name="q-2">finally</div>
-                        <div class="li"><input type="radio" name="q-2">catch</div>
-                        <div class="li"><input type="radio" name="q-2">throw</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    برای نوشته شدن bye در هر حالتی از کدام کلمه کلیدی باید استفاده کرد؟
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-start" dir="ltr">
-                    try { throw new Error() } catch (e) { console.log(e.message) } <span id="a3" class="p-2 bg-light text-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> {console.log('bye!')}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="ul">
-                        <div class="li"><input type="radio" name="q-3">try</div>
-                        <div class="li"><input type="radio" name="q-3">finally</div>
-                        <div class="li"><input type="radio" name="q-3">catch</div>
-                        <div class="li"><input type="radio" name="q-3">throw</div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-center">
-                <button type="button" class="btn btn-dark" onclick="test()">بررسی</button> <button type="button" class="ms-2 btn btn-dark" onclick="asnwers()">نمایش حواب</button>
-            </div>
-            <div class="row">
-                <div class="col" id="result"></div>
-            </div>
+<body>
+
+<div class="container " style="border: 2px solid #7d7d7d;border-radius: 10px; margin: 20px auto; padding: 15px">
+    <div class="row">
+        <div class="col-lg-4">
+            <ul class="list-inline">
+                <li><a href="#">
+                    <i class="glyphicon glyphicon-bishop"></i>
+                    <b>خانه/</b></a>
+                </li>
+                <li><a href="#"><b>آموزش HTML</b><b>/</b></a></li>
+                <li><a href="#"><b>جدول</b></a></li>
+            </ul>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <span class="mybtn">آموزش HTML</span>
+        </div>
+    </div>
+    <div class="row">
+        <h2 style="margin:7px;padding-right: 10px; font-size: 40pt;">جدول</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-7">
+
+            <img class="img-circle" height="50px" src="image/rainbows13.jpg" width="50px"/>
+            <span style="font-size: 11pt;font-weight: bold;padding-right: 10px;">کنعان باقری</span>
+            <span style="font-size: 11pt;font-weight: bold;padding-right: 10px;">2018-11-20</span>
+            <span style="font-size: 11pt;font-weight: bold;padding-right: 10px;">آخرین بروز رسانی:</span>
+            <span style="font-size: 11pt;font-weight: bold;padding-right: 5px;"><24-06-2014</span>
+        </div>
+        <div class="col-lg-4">
+            <span style="display: inline-block; font-size: 11pt; margin-top:10px"><i class="glyphicon glyphicon-adjust"></i>0</span>
+            <span style="display: inline-block; font-size: 11pt; margin-top:10px;font-weight: bold;"><i class="glyphicon glyphicon-adjust"></i>خواندن این مطلب 1 دقیق زمان میبرد</span>
+        </div>
+    </div>
+    <div class="row">
+        <img src="image/photo_2021-10-26_18-34-00.jpg" style="margin: 5px auto; display: block; width: 100%"/>
+    </div>
+    <div class="row">
+        <h2 style="margin:7px;padding-right: 20px; font-size: 27pt;">قسمت اول Css</h2>
+    </div>
+    <div class="row">
+        <p  class="myp">
+            Syntax (Cont.)
+            • CSS Comments
+            Comments are used to explain the code, and may help when you edit the source
+            code at a later date.
+        </p>
+        <p class="myp">
+            Selectors
+            CSS Selectors
+            CSS selectors are used to "find" (or select) the HTML elements you want to style.
+            CSS selectors divided into five categories:
+            • Simple selectors (select elements based on name, id, class)
+            • Combinator selectors (select elements based on a specific relationship between them)
+            • Pseudo-class selectors (select elements based on a certain state)
+            • Pseudo-elements selectors (select and style a part of an element)
+            • Attribute selectors (select elements based on an attribute or attribute value)
+        </p>
+        <p class="myp">
+            Simple Selectors
+            Element selector: selects HTML elements based on the element name.
+            P { color:red; }
+            id selector: uses the id attribute of an HTML element to select a specific element.
+            #para { color:red; }
+            class selector: selects HTML elements with a specific class attribute.
+            .center { text-align: center; }
+            You can also specify that only specific HTML elements should be affected by a class:
+            p.center { text-align: center }
+        </p>
+        <p class="myp">
+            Kanan.ba, [26.10.21 18:54]
+            Simple Selectors (Cont.)
+            Universal selector: selects all HTML elements on the page.
+            * { color: blue; }
+            grouping selector: selects all the HTML elements with the same style
+            definitions.
+            h1, h2, p { color: red; }
+        </p>
+        <p class="myp">
+            Combinators
+            A combinator is something that explains the relationship between the selectors.
+            There are four different combinators in CSS:
+            • descendant selector (space)
+            • child selector (>)
+            • adjacent sibling selector (+)
+            • general sibling selector (~)
+        </p>
+        <p class="myp">
+            ادامه متن ....
+        </p>
+        <br><br>
+        <p class="myp" style="font-size: 10pt">
+            یک tooltip به پاراگراف زیر اضافه کنید که متن "سلام" را نشان دهد.
+        </p>
+    </div>
+
+    <div class="row myrow" style="position: relative" >
+        <img src="image/Capture.PNG" style="float: left">
+        <span class="mybtn2">نمایش پاسخ</span>
+    </div>
+    <span class="mybtn1">ارسال پاسخ</span>
+</div>
+
+<script language="JavaScript" type="javascript"></script>
 </body>
 </html>

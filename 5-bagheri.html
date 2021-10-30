@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>پروژه</title>
+    <link href="./css/5-bagheri.css" rel="stylesheet"/>
+    <style>
+        * {
+            direction: rtl;
+        }
+
+        ul {
+            padding: 0;
+            font-size: 14px;
+        }
+        ul li{
+            padding: 0 !important;
+        }
+
+        .mybtn {
+            display: inline-block;
+            background-color: #dddd48;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 50px;
+            font-size: 10pt;
+        }
+        .myrow{
+            margin: 0 15px;
+            background-color: #c1d1f2;
+            border-radius: 5px;
+            padding: 15px;
+            height: 170px;
+        }
+        .mybtn2{
+            display: block;
+            width: 99px;
+            float: left;
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 10pt;
+            margin-left: 15px;
+            margin-top: 20px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 10px;
+        }
+        .mybtn1 {
+            display: block;
+            width: 99px;
+            float: left;
+            background-color: #4f9f39;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 10pt;
+            margin-left: 15px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .myp{
+            margin:7px;padding-right: 20px; font-size: 15pt;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container " style="border: 2px solid #7d7d7d;border-radius: 10px; margin: 20px auto; padding: 15px">
+    <div class="row">
+        <div class="col-lg-4">
+            <ul class="list-inline">
+                <li><a href="#">
+                    <i class="glyphicon glyphicon-bishop"></i>
+                    <b>خانه/</b></a>
+                </li>
+                <li><a href="#"><b>آموزش HTML</b><b>/</b></a></li>
+                <li><a href="#"><b>جدول</b></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <span class="mybtn">آموزش HTML</span>
+        </div>
+    </div>
+    <div class="row">
+        <h2 style="margin:7px;padding-right: 10px; font-size: 40pt;">جدول</h2>
+    </div>
+    <div class="row">
+        <div class="col-lg-7">
+
+            <img class="img-circle" height="50px" src="./images/5-3.jpg" width="50px"/>
+            <span style="font-size: 11pt;font-weight: bold;padding-right: 10px;">کنعان باقری</span>
+            <span style="font-size: 11pt;font-weight: bold;padding-right: 10px;">2018-11-20</span>
+            <span style="font-size: 11pt;font-weight: bold;padding-right: 10px;">آخرین بروز رسانی:</span>
+            <span style="font-size: 11pt;font-weight: bold;padding-right: 5px;"><24-06-2014</span>
+        </div>
+        <div class="col-lg-4">
+            <span style="display: inline-block; font-size: 11pt; margin-top:10px"><i class="glyphicon glyphicon-adjust"></i>0</span>
+            <span style="display: inline-block; font-size: 11pt; margin-top:10px;font-weight: bold;"><i class="glyphicon glyphicon-adjust"></i>خواندن این مطلب 1 دقیق زمان میبرد</span>
+        </div>
+    </div>
+    <div class="row">
+        <img src="./images/5-2.jpg" style="margin: 5px auto; display: block; width: 100%"/>
+    </div>
+    <div class="row">
+        <h2 style="margin:7px;padding-right: 20px; font-size: 27pt;">قسمت اول Css</h2>
+    </div>
+    <div class="row">
+        <p  class="myp">
+            Syntax (Cont.)
+            • CSS Comments
+            Comments are used to explain the code, and may help when you edit the source
+            code at a later date.
+        </p>
+        <p class="myp">
+            Selectors
+            CSS Selectors
+            CSS selectors are used to "find" (or select) the HTML elements you want to style.
+            CSS selectors divided into five categories:
+            • Simple selectors (select elements based on name, id, class)
+            • Combinator selectors (select elements based on a specific relationship between them)
+            • Pseudo-class selectors (select elements based on a certain state)
+            • Pseudo-elements selectors (select and style a part of an element)
+            • Attribute selectors (select elements based on an attribute or attribute value)
+        </p>
+        <p class="myp">
+            Simple Selectors
+            Element selector: selects HTML elements based on the element name.
+            P { color:red; }
+            id selector: uses the id attribute of an HTML element to select a specific element.
+            #para { color:red; }
+            class selector: selects HTML elements with a specific class attribute.
+            .center { text-align: center; }
+            You can also specify that only specific HTML elements should be affected by a class:
+            p.center { text-align: center }
+        </p>
+        <p class="myp">
+            Kanan.ba, [26.10.21 18:54]
+            Simple Selectors (Cont.)
+            Universal selector: selects all HTML elements on the page.
+            * { color: blue; }
+            grouping selector: selects all the HTML elements with the same style
+            definitions.
+            h1, h2, p { color: red; }
+        </p>
+        <p class="myp">
+            Combinators
+            A combinator is something that explains the relationship between the selectors.
+            There are four different combinators in CSS:
+            • descendant selector (space)
+            • child selector (>)
+            • adjacent sibling selector (+)
+            • general sibling selector (~)
+        </p>
+        <p class="myp">
+            ادامه متن ....
+        </p>
+        <br><br>
+        <p class="myp" style="font-size: 10pt">
+            یک tooltip به پاراگراف زیر اضافه کنید که متن "سلام" را نشان دهد.
+        </p>
+    </div>
+
+    <div class="row myrow" style="position: relative" >
+        <img src="./images/5-4.PNG" style="float: left">
+        <span class="mybtn2">نمایش پاسخ</span>
+    </div>
+    <span class="mybtn1">ارسال پاسخ</span>
+</div>
+
+<script language="JavaScript" type="javascript"></script>
+</body>
+</html>

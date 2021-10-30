@@ -1,0 +1,65 @@
+*{
+    font-family: IRANSans;
+}
+
+h2{
+    margin-top: 50px;
+    color: lightskyblue;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tutorial{
+    text-align: center;
+    height: 35px;
+    width: 200px;
+    font-size: 21px;
+    margin: 20px 10px;
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+.info{
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.sample{
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.firstHeader a{
+    font-size: 13px;
+    color: #808080;
+}
+
+.color{
+    width: 20%;
+    height: auto;
+    text-align: center;
+    margin-left: 50px 50px;
+}
+
+.info span{
+    margin-left: 10px;
+}
+
+.link {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: seagreen;
+}
+
+.fill-the-blank {
+    background-color: cornflowerblue;
+    margin-bottom: 20px;
+}
+
+.container-fluid{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

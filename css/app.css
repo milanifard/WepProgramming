@@ -1,0 +1,118 @@
+body {
+    direction: rtl;
+    box-sizing: border-box;
+}
+
+.main-bar {
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.btn1 {
+    background-color: yellow;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.chart {
+    margin-top: 14px;
+}
+
+.img-bar {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
+.bar-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.img2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.p-text {
+    margin-left: 5px;
+}
+
+.main-img {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-text {
+    width: 60%;
+    height: 150px;
+    background-color: silver;
+    border: none;
+}
+
+.border-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-1 {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.text-1 {
+    margin-top: 30px;
+}
+
+.img-hasan {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.text-2 {
+    font-size: 15px;
+}
+
+.text-3 {
+    background-color: #007ACC;
+    color: black;
+}
+
+.button-2 {
+    width: 100px;
+    height: 30px;
+    background-color: #00BC22;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center center;
+}
+
+.log-box {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

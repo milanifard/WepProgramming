@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+<!--    <meta dir="ltr">-->
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/20.css">
+
+</head>
+<body>
+<div class="row">
+
+
+</div>
+
+    <div class="container" >
+        <div>
+            <span><a href="20.html" title="آموزش لینک و تگ a در HTML">لینک در HTML</a> </span>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <div class="tag_title">آموزش HTML </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <h1  class="prm_title">لینک ها در HTML</h1>
+            </div>
+        </div>
+        <div class="row-cols-12" >
+            <picture class="profPic">
+                <img class="rounded-circle" src="images/download.png" alt="profile picture">
+            </picture>
+            &nbsp;&nbsp;
+            <span class="small">عادل جلال احمدی</span>
+            &nbsp;&nbsp;&nbsp;
+            <span class="small">1400/08/04</span>
+            &nbsp;&nbsp;&nbsp;
+            <span class="small">آخرین بروزرسانی : هرگز</span>
+            &nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="row" dir="rtl">
+            <p class="first-paraghrap">ما در html میتوانی با استفاده از تگ a یک لینک ایجاد کنیم</p>
+        </div>
+        <p class="tutorial1">ابتدا تگ a را قرار می دهیم</p>
+        <picture >
+            <img class="img1_tutorial" src="images/20.png">
+        </picture>
+        <br>
+        <p>و در گام بعدی متن دلخواهی که قرار است به جایی لینک دهد را مینویسیم</p>
+        <br><br>
+        <picture >
+            <img src="images/20_2.png">
+        </picture>
+        <fieldset>
+            <legend>تست</legend>
+            <p class="questions" id="question1">
+                1- آیا تگ a خود بسته شونده است؟</p>
+            <input type="radio" name="answer1" value="wrong">yes <br>
+            <input type="radio" name="answer1" value="correct">no <br>
+            <hr>
+
+            <p class="questions" id="question2">
+                2- تگ a اتربیوتی به نام href دارد؟</p>
+            <input type="radio" name="answer2" value="wrong">خیر <br>
+            <input type="radio" name="answer2" value="correct">بله <br>
+            <hr>
+
+            <p class="questions" id="question3">
+                3-کدام تگ برای لینک است؟</p>
+            <input type="radio" name="answer3" value="wrong"> &ltp&gt <br>
+            <input type="radio" name="answer3" value="correct">&lta&gt <br>
+            <hr>
+            <p id="results"></p>
+            <div class="jumbotron">
+                از کدام attribute برای ارجاع به لینک در تگ a  استفاده می شود؟
+
+                عنوان: <input dir="ltr" type="text" name="t1" id="t1">
+
+
+            </div>
+            <button class="submit" onclick="return getResults();" type="submit">
+                ثبت جواب
+            </button>
+
+            <h2 id="results-h"></h2>
+        </fieldset>
+        <script> function getResults() {
+
+            var amountCorrect = 0;
+            var textfield1 = document.getElementById("t1");
+                        if (textfield1.value == "href") {
+                                let text = "آفرین";
+                                alert(text);
+                                amountCorrect++;
+                                document.getElementById("t1").style.backgroundColor = "green";
+                                document.getElementById('results').innerHTML =
+                                "جای خالی رو درست گفتی";
+                        } else {
+                                let text = "\nنه این چه جوابیه\n!";
+                                alert(text);
+                                document.getElementById("t1").style.backgroundColor = "red";
+                                document.getElementById('results').innerHTML =
+                                "\nجای خالی اشتباه گفتی\n";
+
+                        }
+            for(var i = 1; i <= 5; i++) {
+                var radiosName = document.getElementsByName('answer'+i);
+
+                for(var j = 0; j < radiosName.length; j++) {
+                    var radiosValue = radiosName[j];
+                    if(radiosValue.value == "correct" && radiosValue.checked) {
+                        amountCorrect++;
+                        radiosValue.style.color = "green";
+                    }
+                }
+            }
+            document.getElementById('results').innerHTML +=
+                "\n\nتعداد پاسخ صحیح\n\n" + amountCorrect;
+            document.getElementById("results-h").innerHTML =
+                "\n\nنتیجه آزمون\n\n";
+            if(amountCorrect>=2){
+                document.getElementById("results").className = "text-success"
+            }else{
+                document.getElementById("results").className = "text-danger"
+            }
+        }
+        </script>
+    </div>
+</body>
+</html>
