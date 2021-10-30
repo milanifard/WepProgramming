@@ -25,10 +25,25 @@ function check_answer_2(){
 
     if(rd21.value.trim() === "clear" && rd22.value.trim() === "both"){
         question_div_2.classList.remove("bg-dark");
-        question_div_2.style.backgroundColor = "greengi"
+        question_div_2.style.backgroundColor = "green"
     }
     else {
         question_div_2.classList.remove("bg-dark");
         question_div_2.style.backgroundColor = "red"
+    }
+}
+
+function check_answer_3(){
+    const rd31 = document.getElementById('rd31')
+    const question_div_3 = document.getElementById("question_div_3");
+    const answers = rd31.value.split(" ")
+
+    if(answers.length === 3 && answers.includes('none') && answers.includes('left') && answers.includes('right')){
+        question_div_3.classList.remove("bg-dark");
+        question_div_3.style.backgroundColor = "green"
+    }
+    else {
+        question_div_3.classList.remove("bg-dark");
+        question_div_3.style.backgroundColor = "red"
     }
 }
