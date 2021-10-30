@@ -74,18 +74,39 @@
             <input type="radio" name="answer3" value="wrong"> &ltp&gt <br>
             <input type="radio" name="answer3" value="correct">&lta&gt <br>
             <hr>
+            <p id="results"></p>
+            <div class="jumbotron">
+                از کدام attribute برای ارجاع به لینک در تگ a  استفاده می شود؟
+
+                عنوان: <input dir="ltr" type="text" name="t1" id="t1">
+
+
+            </div>
             <button class="submit" onclick="return getResults();" type="submit">
                 ثبت جواب
             </button>
 
             <h2 id="results-h"></h2>
-            <p id="results"></p>
-
         </fieldset>
         <script> function getResults() {
 
             var amountCorrect = 0;
+            var textfield1 = document.getElementById("t1");
+                        if (textfield1.value == "href") {
+                                let text = "آفرین";
+                                alert(text);
+                                amountCorrect++;
+                                document.getElementById("t1").style.backgroundColor = "green";
+                                document.getElementById('results').innerHTML =
+                                "جای خالی رو درست گفتی";
+                        } else {
+                                let text = "\nنه این چه جوابیه\n!";
+                                alert(text);
+                                document.getElementById("t1").style.backgroundColor = "red";
+                                document.getElementById('results').innerHTML =
+                                "\nجای خالی اشتباه گفتی\n";
 
+                        }
             for(var i = 1; i <= 5; i++) {
                 var radiosName = document.getElementsByName('answer'+i);
 
@@ -97,10 +118,10 @@
                     }
                 }
             }
-            document.getElementById('results').innerHTML =
-                "تعداد پاسخ صحیح " + amountCorrect;
+            document.getElementById('results').innerHTML +=
+                "\n\nتعداد پاسخ صحیح\n\n" + amountCorrect;
             document.getElementById("results-h").innerHTML =
-                "نتیجه آزمون";
+                "\n\nنتیجه آزمون\n\n";
             if(amountCorrect>=2){
                 document.getElementById("results").className = "text-success"
             }else{
