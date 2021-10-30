@@ -60,6 +60,10 @@
                 </span>
                 <br><br>
                 Quiz:
+                <br>
+                Type the stage file will reside in when it has been staged but has not been commited yet:<br>
+                <input type="text" id="testquiz">
+                <br>
                 <ol title="Quiz">
                     <li>Where to install GIT?</li>
                     <input type="radio" name="q1" value="vu">https://vu.um.ac.ir/<br>
@@ -91,6 +95,7 @@
                 var qone = document.getElementsByName("q1");
                 var qtwo = document.getElementsByName("q2");
                 var qthree = document.getElementsByName("q3");
+                var textq = document.getElementById("testquiz");
                 if(qone[1].checked){
                     counter++;
                 }
@@ -100,6 +105,14 @@
                 if(qthree[2].checked){
                     counter++;
                 }
+                
+                if(textq.value == "Staged" || textq.value == "staged"){
+                    textq.style.backgroundColor = "green";
+                    counter++;
+                }else{
+                    textq.style.backgroundColor = "red";
+                }
+
                 if(counter==0){
                     alert("Try more");
                 }
@@ -113,12 +126,16 @@
                 if(counter==3){
                     alert("perfect");
                 }
+                if(counter==4){
+                    alert("Excellent! Can't be better");
+                }
             }    
             
             function reset(){
                 var qone = document.getElementsByName("q1");
                 var qtwo = document.getElementsByName("q2");
                 var qthree = document.getElementsByName("q3");         
+                var textq = document.getElementById("testquiz");
                 var i = 0;
                 for(i=0;i<qone.length;i++){
                     if(qone[i].checked){
@@ -135,6 +152,8 @@
                         qthree[i].checked = false;
                     }
                 }
+                textq.value = "";
+                textq.style.backgroundColor = "white";
             }
 
         </script>
