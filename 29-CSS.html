@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
     <link rel="stylesheet" href="css/29-CSS.css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -14,7 +14,7 @@
     <h3 class="header-3"> <i class="fas fa-home"></i> Home \ CSS Tutorial \ Section 6</h3>
     <span class="rounded-span text-center bg-warning">CSS Tutorial</span>
     <br/>
-    <h5><i class="fas fa-user"></i>Mohammad Saeed Kzemi - 10/26/2021</h5>
+    <h5><img src="images/download.png" class="img-comp">Mohammad Saeed Kazemi - Last Updated: 10/26/2021 - It takes 10 minutes to read this article</h5>
     <h1 class="text-center">Icons</h1>
     <p>The simplest way to add an icon to your HTML page, is with an <b>icon library</b>, such as Font Awesome. Add the name of the specified <b>icon class</b> to any inline HTML element (like &lt;i&gt; or &lt;span&gt;).</p>
     <p>All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)</p>
@@ -106,9 +106,8 @@
     </div>
     
     <script>
-        var choice = $('input[name=radio-choice]:checked').val();
         function showAnswer1() {
-            if(choice === document.getElementById('option-1-2').value){
+            if(document.getElementById('option-1-2').checked){
                 alert("Correct!");
             }
             else {
@@ -118,7 +117,7 @@
         }
 
         function showAnswer2() {
-            if(choice === document.getElementById('option-2-3').value){
+            if(document.getElementById('option-2-3').checked){
                 alert("Correct!");
             }
             else {
@@ -128,7 +127,7 @@
         }
 
         function showAnswer3() {
-            if(choice === document.getElementById('option-3-4').value){
+            if(document.getElementById('option-3-4').checked){
                 alert("Correct!");
             }
             else {
