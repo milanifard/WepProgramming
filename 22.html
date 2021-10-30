@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="row-cols-sm-1" id="nav">
+            <span class="fas fa-home pull-right"></span>
             <span class="text-end float-sm-end">
                 <a href="index.html">خانه/ </a>
                 <a href="index2.html">جاوا اسکریپت/ </a>
                 <a href="22.html">توابع/ </a>
             </span>
         </div>
-        <div class="row-cols-sm-1 float-sm-end">
+        <div class="row-cols-lg float-sm-end">
             <div class="float-md-end">
                 آموزش جاوا اسکریپت
             </div>
@@ -27,44 +29,69 @@
             </span>
             
         </div>
-        <div class="row-cols-sm-1">
-            <div class="col-sm-1 float-sm-end">            
-                <img src="images/Vahid_pic.jpg" alt="profile-pic" class="img-fluid  rounded-circle">
-                <span>
-                    وحید رمضانی
-                </span>
+
+        <!-- <div class="col-md-2 float-md-end">
+            <span class="col-md float-sm-end">            
+                <img src="images/22-1.jpg" alt="profile-pic" class="img-fluid  rounded-circle">
+            </span>
+            <span class="col-md float-md-end">
+                وحید رمضانی
+            </span>
+        </div> -->
+        <div class="description">
+            <div class="pull-right">
+                <img src="images/22-1.jpg" alt="profile-pic" class="img-fluid  rounded-circle col-sm-1 float-sm-end">
+                <i class="fa fa-user">وحید رمضانی</i>
+                <span class="date">2018-11-28</span>
+                <span class="last-change">اخرین به روز رسانی: 24-06-2021</span>
+            </div>
+            <div class="pull-left">
+              <i class="fa fa-comments" style="font-size:12px;"><span>0</span></i>
+              <i class="fa fa-tag" style="font-size:12px;"><span>خواندن این مطلب ۱ دقیقه زمان میبرد</span></i>
             </div>
         </div>
-        <div class="img-fluid row-cols-1">
-            <img src="images/js.jpg" alt="js functions">
+
+        <div class="border-info row-cols-md-1">
+            <div class="img-fluid row-cols-1">
+                <img src="images/22.jpg" alt="js functions">
+            </div>
+            <div>
+                <h2 class="align-content-end" style="text-align: right;">کار با توابع در جاوا اسکریپت</h2>
+                <p class="col-lg-5 pull-right float-lg-end">
+                    سینتکس توابع در جاوا اسکریپت مانند سینتکس توابع در زبان <a href="https://www.tutorialspoint.com/cprogramming/c_functions.htm">سی</a> است.
+                </p>
+            </div>
         </div>
-        <div class="row">
-            <h2 class="align-content-end" style="text-align: right;">کار با توابع در جاوا اسکریپت</h2>
-            <p>
-                سینتکس توابع در جاوا اسکریپت مانند سینتکس توابع در زبان <a href="https://www.tutorialspoint.com/cprogramming/c_functions.htm">سی</a> است.
-            </p>
-        </div>
-        <div>
+        <div class="pull-right float-lg-end">
             <fieldset>
                 <legend>آزمونک</legend>
-                <p class="questions" id="question1">
-                    1- آیا توابع در جاوا اسکریپت شی هستند؟</p>
+                <p class="questions float-md-end" id="question1">
+                    آیا توابع در جاوا اسکریپت شی هستند؟</p>
+                    <br>
                 <input type="radio" name="answer1" value="wrong">خیر <br>
                 <input type="radio" name="answer1" value="correct">بله <br>
+                <input type="radio" name="answer1" value="wrong">در شرایط خاص <br>
+                <input type="radio" name="answer1" value="wrong">گاهی <br>
                 <hr>
           
-                <p class="questions" id="question2">
-                    2- آیا جاوا اسکریپت تابع دارد؟</p>
+                <p class="questions float-md-end"  id="question2">
+                    آیا جاوا اسکریپت تابع دارد؟</p>
+                    <br>
                 <input type="radio" name="answer2" value="wrong">خیر <br>
                 <input type="radio" name="answer2" value="correct">بله <br>
+                <input type="radio" name="answer1" value="wrong">در شرایط خاص <br>
+                <input type="radio" name="answer1" value="wrong">گاهی <br>
                 <hr>
           
-                <p class="questions" id="question3">
-                    3- توابع در جاوا اسکریپت مشابه چه زبانی هستند؟</p>
+                <p class="questions float-md-end"  id="question3">
+                    توابع در جاوا اسکریپت مشابه چه زبانی هستند؟</p>
+                    <br>
                 <input type="radio" name="answer3" value="wrong">پایتون <br>
                 <input type="radio" name="answer3" value="correct">سی <br>
+                <input type="radio" name="answer1" value="wrong">وریلاگ <br>
+                <input type="radio" name="answer1" value="wrong">هیچکدام <br>
                 <hr>
-                <button class="submit" onclick="return getResults();" type="submit">
+                <button class="submit float-md-end" onclick="return getResults();" type="submit">
                     ثبت جواب
                 </button>
                 
