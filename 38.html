@@ -12,8 +12,9 @@
           crossorigin="anonymous">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script></head>
-<body dir="rtl"  id="mainDiv">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body dir="rtl"  id="mainDiv" class="container blog" >
 <nav class="navbar navbar-expand-sm bg-light">
     <ul class="navbar-nav">
         <li class="nav-item">
@@ -27,11 +28,11 @@
         </li>
     </ul>
 </nav>
-<div class="row">
+<div class="row" >
     <div  class="col-sm-2" style="font-size: 15px;"><a href="#T2" class="linkText">فواید سیستم کنترل ورژن</a></div>
     <div class="col-sm-2" style="font-size: 15px;"><a href="#T3" class="linkText">مقایسه کنترل ورژن ها</a></div>
     <div class="col-sm-2" style="font-size: 15px;"><a href="#T4" class="linkText" > کنترل ورژن توزیع شده</a> </div>
-    <div class="col-sm-4" style="font-size: 15px;"><a href="#Qu" class="linkText"> سوالات 4 گزینه ای</a></div>
+    <div class="col-sm-4" style="font-size: 15px;"><a href="#Qu" class="linkText"> سوالات </a></div>
 
 </div>
 <br>
@@ -134,13 +135,32 @@
     بنابراین کاربران می توانند به صورت همزمان روی یک پروژه کار کنند و مشکلی از این بابت وجود ندارد.
 </p>
 <br>
-<h2 id="Qu">سوالات 4 گزینه ای: </h2>
+<h2 id="Qu">سوالات : </h2>
 <br>
 <a href="#" class="linkText">برگشت به بالا</a>
 <br>
+<h2 >جاخالی: </h2>
+<br>
+<p>
+    جای خالی زیر را با کلمه ی مناسب پر کن :
+</p>
+<br>
+<div class="jumbotron">
+    <p>
+        گیت یک سیستم کنترل
+        <input type="text" name="gakhali" id="gakhali">
+        توزیع شده می باشد.
+    </p>
+</div>
+<div class="container-fluid" style="align-self: center;">
+    <a onclick="javascript: evaluation2();" class="btn btn-info" role="button" style="border: solid 1px; border-radius: 35px; padding: 5px">ثبت پاسخ</a>
+</div>
+
+<br>
+<h2>سوالات 4 گزینه ای: </h2>
+<br>
 <p>به سوالات زیر با دقت پاسخ دهید:</p>
 <br>
-
     <div class="jumbotron" id="q1">
       <P>
           ۱
@@ -207,11 +227,18 @@
             let text = "امتیاز شما " + String(score) + "/3" + " میباشد.";
             alert(text);
         }
+        function evaluation2() {
+            var textfield = document.getElementById("gakhali");
+            if (textfield.value === "ورژن") {
+                let text = "آفرین:)";
+                document.getElementById("gakhali").style.backgroundColor = "green";
+                alert(text);
+            } else {
+                let text = "جوابت اشتباهه:(";
+                document.getElementById("gakhali").style.backgroundColor = "red";
+                alert(text);
+            }
+        }
     </script>
-
-
-
-
-
 </body>
 </html>
