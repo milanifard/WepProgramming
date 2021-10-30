@@ -62,18 +62,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col text-start" dir="ltr">
-                    <span class="bg-light text-primary p-2" id="a1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> new Error("Wrong input!");
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="ul">
-                        <div class="li"><input type="radio" name="q-1">try</div>
-                        <div class="li"><input type="radio" name="q-1">finally</div>
-                        <div class="li"><input type="radio" name="q-1">catch</div>
-                        <div class="li"><input type="radio" name="q-1">throw</div>
-                    </div>
+                <div class="col text-start d-flex" dir="ltr">
+                    <input type="text" name="q-1" class="bg-light text-primary p-2 form-control" id="a1" style="width: 6em !important; margin-right: 1em"> new Error("Wrong input!");
                 </div>
             </div>
             <div class="row">
@@ -83,7 +73,7 @@
             </div>
             <div class="row">
                 <div class="col text-start" dir="ltr">
-                    try { throw new Error() } <span class="bg-light text-primary p-2" id="a2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> (e) { console.log(e.message) }
+                    try { throw new Error() } <span class="bg-light text-primary p-2 rounded" id="a2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> (e) { console.log(e.message) }
                 </div>
             </div>
             <div class="row">
@@ -103,7 +93,7 @@
             </div>
             <div class="row">
                 <div class="col text-start" dir="ltr">
-                    try { throw new Error() } catch (e) { console.log(e.message) } <span id="a3" class="p-2 bg-light text-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> {console.log('bye!')}
+                    try { throw new Error() } catch (e) { console.log(e.message) } <span id="a3" class="p-2 bg-light text-primary rounded">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> {console.log('bye!')}
                 </div>
             </div>
             <div class="row">
