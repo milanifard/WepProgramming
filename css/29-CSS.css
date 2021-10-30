@@ -45,3 +45,13 @@ span , i{
     border-radius: 50px;
     color: white;
 }
+
+a:link , a:visited {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.img-comp {
+  width: 60px;
+  border-radius: 100px;
+}
