@@ -45,3 +45,8 @@ span , i{
     border-radius: 50px;
     color: white;
 }
+
+a:link , a:visited {
+    text-decoration: none;
+    color: dodgerblue;
+}
