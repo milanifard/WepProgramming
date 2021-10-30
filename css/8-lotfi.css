@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "iran-sans";
+  src: url("./fonts/IRANSans.woff") format("woff");
+}
+button {
+  font-family: "iran-sans";
+  border: none;
+  outline: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+input {
+  border: none;
+  outline: none;
+}
+
+html {
+  direction: rtl;
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 100px;
+  font-family: "iran-sans";
+}
+
+.container {
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.container .endpoint {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container .endpoint .icon {
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .tag {
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  background-color: rgb(231, 195, 36);
+  border: none;
+  border-radius: 10px;
+  padding: 3px 8px;
+}
+
+.information {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information .right .profile {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: blue;
+  margin-left: 5px;
+}
+.information .right .profile img {
+  width: 100%;
+}
+
+.information .right .name {
+  margin-left: 10px;
+}
+
+.information .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information .left .chat {
+  display: flex;
+}
+
+.information .left .readthis {
+  display: flex;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+}
+
+.question .description {
+  color: #333333;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.question .text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.question .text input {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.question .box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 12px;
+  min-height: 100px;
+  width: 100%;
+  background-color: rgb(240, 240, 240, 0.7);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.question button.show {
+  display: flex;
+  align-self: flex-start;
+  color: white;
+  border: none;
+  padding: 5px 7px;
+  background-color: rgb(33, 33, 43);
+  border-radius: 7px;
+}
+
+.question button.submit {
+  display: flex;
+  align-self: flex-end;
+  color: white;
+  border: none;
+  padding: 5px 7px;
+  background-color: rgb(19, 177, 72);
+  border-radius: 7px;
+}
