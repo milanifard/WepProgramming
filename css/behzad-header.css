@@ -1,0 +1,41 @@
+.container {
+  
+}
+
+.header {
+  padding: 50px;
+  min-width: 600px;
+  border-radius: 16px;
+  background-color: rgb(235, 246, 247);
+}
+
+h1 {
+  margin: 12px;
+}
+
+.breadcrumb {
+  color: rgb(121, 121, 121);
+  margin-bottom: 8px;
+}
+
+.home-icon {
+  margin: 5px;
+}
+
+.tag {
+  border-radius: 20px;
+  display: inline;
+  padding: 4px 12px;
+  background-color: rgb(255, 187, 0);
+  color: white;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right span {
+  margin-inline-start: 12px;
+}

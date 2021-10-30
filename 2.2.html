@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>name</title>
+        <meta charset="UTF-8">
+        <meta name ="author" content="SARA SAFAEE">
+        <meta name ="viewport" content="width=device-width">
+        <!-- <link rel ="stylesheet" href="css/bootstrap.min.css"> -->
+        <title>.gitignore</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body  style="text-align: center;position: relative; font-family: 'IRANSans';background-color: burlywood;" >
+        <div >
+            <a href="" >خانه/</a>
+            <a href="">آموزش گیت/</a>
+            <a  href="" >دوازدهم</a>
+            <i class="fa fa-home"></i>
+        </div>
+        <h1 style="color: brown;text-align: center; margin: 10%;background-color: rgb(219, 163, 143);">.gitignore</h1>
+        <div >
+        <img  class="img-responsive img-thumbnail" src="images/12GIT.PNG">
+        </div>
+        <pre >
+        مدیران ادغام مختلف مسئول بخش‌های خاصی از مخزن هستند.
+        به آنها ستوان می گویند همه ستوان ها یک مدیر ادغام دارند که به عنوان دیکتاتور خیرخواه شناخته می شود.
+        مخزن دیکتاتور خیرخواه به عنوان مخزن مرجع عمل می کند که همه همکاران باید از آن بیرون بکشند.
+        </pre>
+        <pre>
+            ازاین قابلیت گیت زمانی استفاده میشود که میخواهید فایل های خاصی را <input type="text" id="s"> بگیرید
+            
+            در فایل گیت ایگنور میتوانیم برای نادیده گرفتن فایل هایی با الگوی خاص از چه چیزی استفاده کنیم؟
+            <label class="radio-inline"><input id="a" type="radio" name="optradio" checked>regular expresion</label><label class="radio-inline"><input id="b" type="radio" name="optradio">label</label><label class="radio-inline"><input  id="c" type="radio" name="optradio">Options</label>
+        </pre>
+        <button onclick="javascript :test(); "> سوال1 ثبت شود</button>
+        <button onclick="javascript :check_answer(); "> سوال3گزینهای ثبت شود</button>
+
+
+    </body>
+    <script language="JavaScript">
+
+        function test(){
+            var obj = document.getElementById('s')
+            if(obj.ariaValueText=="نادیده")
+            obj.style.backgroundColor="green";
+            else
+            obj.style.backgroundColor="red";
+        }
+        function check_answer(){
+            const A = document.getElementById('a')
+            const B = document.getElementById('b')
+            const C = document.getElementById('c')
+
+            if(A.checked === true){
+                A.style.backgroundColor = "green";
+            }
+            else {
+                A.style.backgroundColor = "red";
+                }
+        }
+
+
+
+
+
+    </script>
+</html>
