@@ -107,3 +107,12 @@ body {
     flex-direction: column;
     justify-content: center center;
 }
+
+.log-box {
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
