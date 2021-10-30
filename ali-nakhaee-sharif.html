@@ -36,7 +36,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container d-flex flex-column">
         <div class="d-flex flex-row-reverse mt-5">
             <i class="fas fa-home d-inline" style="margin-left: 5px"></i>
             <span>
@@ -45,11 +45,12 @@
                 </p>
             </span>
         </div>
-        <button type="button" class="btn btn-warning btn-sm" style="color:white; direction: rtl; float: right">آموزش CSS</button>
-        <br>
-        <br>
+        <button type="button" class="btn btn-warning btn-sm fit" style="color:white; direction: rtl;width: fit-content;
+    align-self: flex-end;">آموزش CSS</button>
+<!--        <br>-->
+<!--        <br>-->
         <h3 style="direction: rtl">ویژگی های overflow، clear و float</h3>
-        <div class="d-inline-flex p-2 align-items-center justify-content-start flex-row-reverse float-end">
+        <div class="d-inline-flex p-2 align-items-center justify-content-start flex-row-reverse">
             <img src="./images/19-profile.jpg" class="rounded-circle" style="display: inline; width: 2em;" alt="profile image">
             <p class="small" style="margin-left: 10px">علی نخعی شریف</p>
             <p class="small" style="margin-left: 10px">21/21/2021</p>
@@ -58,13 +59,9 @@
             <p class="small text-end"> خواندن این مطلب ۱۰ دقیقه زمان می‌برد.<i class="fas fa-bookmark"></i></p>
         </div>
         <br>
-        <br>
-        <br>
         <h4 class="float-end" style="direction: rtl; margin-top: 5px"><a href="https://www.w3schools.com/css/css_overflow.asp">overflow</a></h4>
         <br>
-        <br>
         <p style="direction: rtl; text-align: right;">سرریز هنگامی اتفاق میافتد که content از container فضای بیشتری اشغال کند و container نتواند تمام آن را شامل شود</p>
-        <br>
         <p style="direction: rtl; text-align: right;">معمولا سرریز هنگامی اتفاق میافتد که ما برای container های خود، عرض یا ارتفاع ثابت تعیین کردیم.</p>
         <p style="direction: rtl; text-align: right;">به طور مثال جدول زیر یک ارتفاع ثابت 200 پیکسل دارد اما محتوای آن ارتفاع بیشتری را طلب میکند و مطالب روی هم ریخته میشوند.</p>
         <img src="images/19-1.png" class="rounded mx-auto d-block">
@@ -77,7 +74,6 @@
         <br>
         <h4 class="float-end" style="direction: rtl; margin-top: 5px"><a href="https://www.w3schools.com/css/css_float.asp">floating</a></h4>
         <br>
-        <br>
         <p style="direction: rtl; text-align: right;">این ویژگی برای تعیین شناور بودن یک المنت در صفحه است. با استفاده از این ویژگی ما میتوانیم مکان شیء و فرمت آن را نشان دهیم</p>
         <p style="direction: rtl; text-align: right;">مقادیری که برای این ویژگی میتوان ست کرد، left و right و none هستند و وقتی این مقادیر ست شود، آنگاه جای قبلی این المنت ها خالی میشود و بقیه المنت ها میتوانند در آن جا قرار بگیرند.</p>
         <p style="direction: rtl; text-align: right;">به طور مثال صفحه ای با مشخصات زیر را در نظر بگیرید:</p>
@@ -86,7 +82,6 @@
         <img src="images/19-5.png" class="rounded mx-auto d-block">
         <br>
         <h4 class="float-end" style="direction: rtl; margin-top: 5px"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_clear">clear</a></h4>
-        <br>
         <br>
         <p style="direction: rtl; text-align: right;">به وسیلۀ این ویژگی ما میتوانیم مشخص کنیم که عنصر از سمت چپ یا از سمت راست اجازۀ شناوری هیچ دستور دیگه ای را نداشته باشد</p>
         <p style="direction: rtl; text-align: right;">برای دیدن کارکرد دستور clear به این <span>
