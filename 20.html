@@ -55,6 +55,59 @@
         <picture >
             <img src="images/20_2.png">
         </picture>
+        <fieldset>
+            <legend>تست</legend>
+            <p class="questions" id="question1">
+                1- آیا تگ a خود بسته شونده است؟</p>
+            <input type="radio" name="answer1" value="wrong">yes <br>
+            <input type="radio" name="answer1" value="correct">no <br>
+            <hr>
+
+            <p class="questions" id="question2">
+                2- تگ a اتربیوتی به نام href دارد؟</p>
+            <input type="radio" name="answer2" value="wrong">خیر <br>
+            <input type="radio" name="answer2" value="correct">بله <br>
+            <hr>
+
+            <p class="questions" id="question3">
+                3-کدام تگ برای لینک است؟</p>
+            <input type="radio" name="answer3" value="wrong"> &ltp&gt <br>
+            <input type="radio" name="answer3" value="correct">&lta&gt <br>
+            <hr>
+            <button class="submit" onclick="return getResults();" type="submit">
+                ثبت جواب
+            </button>
+
+            <h2 id="results-h"></h2>
+            <p id="results"></p>
+
+        </fieldset>
+        <script> function getResults() {
+
+            var amountCorrect = 0;
+
+            for(var i = 1; i <= 5; i++) {
+                var radiosName = document.getElementsByName('answer'+i);
+
+                for(var j = 0; j < radiosName.length; j++) {
+                    var radiosValue = radiosName[j];
+                    if(radiosValue.value == "correct" && radiosValue.checked) {
+                        amountCorrect++;
+                        radiosValue.style.color = "green";
+                    }
+                }
+            }
+            document.getElementById('results').innerHTML =
+                "تعداد پاسخ صحیح " + amountCorrect;
+            document.getElementById("results-h").innerHTML =
+                "نتیجه آزمون";
+            if(amountCorrect>=2){
+                document.getElementById("results").className = "text-success"
+            }else{
+                document.getElementById("results").className = "text-danger"
+            }
+        }
+        </script>
     </div>
 </body>
 </html>
