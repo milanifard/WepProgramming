@@ -1,3 +1,19 @@
+const input = document.querySelector('input');
+const log = document.getElementById('log');
+
+input.addEventListener('change', submitans);
+
+function submitans(e) {
+ 
+  if ("password" == e.target.value) {
+    log.textContent="correct"
+    e.target.value=""
+  } else {
+    log.textContent="Wrong Answer";
+    e.target.value="";
+  }
+}
+
 var myQuestions = [
   {
     question: "کدام یک جز property های form نمی باشد؟",
