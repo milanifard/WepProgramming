@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Raziyeh Hashemi">
+    <meta name="keywords" content="HTML,tutorial">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML13</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/13html.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/8d3c106bfc.js" crossorigin="anonymous"></script>
+</head>
+<body dir="rtl" style="padding: 8px; padding-bottom: 10%; font-size: 16px;">
+<main>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="glyphicon glyphicon-home"></span>خانه /</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">آموزش /</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ورودی در HTML</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="badge badge-pill badge-warning" style="margin: 2vw 2vw 2vw 2vw">آموزش HTML</span>
+        <br>
+        <div class="row" style="margin: 2vw 2vw 2vw 2vw">
+            <div class="col-sm-2">راضیه سادات هاشمی</div>
+            <div class="col-sm-2">آخرین به روزرسانی: ۱۴۰۰/۸/۳</div>
+            <div class="col-sm-2"><span class="glyphicon glyphicon-comment"></span> 0</div>
+            <div class="col-sm-4"><span class="glyphicon glyphicon-bookmark"></span>خواندن این مطلب یک دقیقه زمان
+                میبرد.
+            </div>
+
+        </div>
+        <br>
+        <div id="firstTitle" class="row">
+            <h2 style="font-size: 41px;">کار با input</h2>
+            <p id="p1">در این آموزش با input ها آشنا میشویم. هرزمان که بخواهیم از کاربر ورودی دریافت کنیم از تگ
+                input استفاده میکنیم. در استفاده از این تگ میتوان از کلاس های موجود در bootstrap نیز بهره برد. حال به
+                شروع آموزش میپردازیم.</p>
+            <details>
+                <summary>ادامه متن ...</summary>
+                <p id="p2">فرض کنید میخواهیم از کاربر نام کاربری و رمز عبور اش را دریافت کنیم. برای اینکار نیاز به یک
+                    فرم
+                    داریم؛ برای اینکار میتوان از تگ form استفاده نمود. قطعه کدی مانند کد زیر مینویسیم:</p>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1"></div>
+                    <img src="images/13-html-1.JPG" id="img1" class="col-lg-10 col-md-10 col-sm-12">
+                    <div class="col-lg-1 col-md-1"></div>
+                </div>
+                <p id="p3">مشاهده میکنیم که خروجی بصورت زیر است:</p>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1"></div>
+                    <img src="images/13-html-2.JPG" id="img2" class="col-lg-10 col-md-10 col-sm-12">
+                    <div class="col-lg-1 col-md-1"></div>
+                </div>
+                <p id="p4">در خصیصه type مقدار های متفاوتی میتوان گذاشت مانند عدد و رمز. این خصیصه همانطور که از اسمش
+                    مشخص است، برای مشخص کردن نوع ورودی بکار میرود. برای گذاشتن یک عنوان هم میتوان از تگ legend استفاده
+                    کرد.</p>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1"></div>
+                    <img src="images/13-html-3.JPG" id="img3" class="col-lg-10 col-md-10 col-sm-12">
+                    <div class="col-lg-1 col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1"></div>
+                    <img src="images/13-html-4.JPG" id="img4" class="col-lg-10 col-md-10 col-sm-12">
+                    <div class="col-lg-1 col-md-1"></div>
+                </div>
+                <p id="p5">حال با داشتن ورودی میتوان از طریق اسکریپت نویسی عملیات هایی انجام داد در این مورد. در انتها
+                    نیز به بررسی type های مختلف میپردازیم:</p>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1"></div>
+                    <img src="images/5.JPG" id="img5" class="col-lg-10 col-md-10 col-sm-12">
+                    <div class="col-lg-1 col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1"></div>
+                    <img src="images/6.JPG" id="img6" class="col-lg-10 col-md-10 col-sm-12">
+                    <div class="col-lg-1 col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1 col-md-1"></div>
+                    <img src="images/7.JPG" id="img7" class="col-lg-10 col-md-10 col-sm-12">
+                    <div class="col-lg-1 col-md-1"></div>
+                </div>
+            </details>
+        </div>
+        <div id="test" class="row">
+            <h2 style="font-size: 25px;">سوال های 4 گزینه ای</h2>
+            <form id="q1">
+                <p id="qt1">کدام type در input برای انتخاب یک گزینه بکار میرود؟</p>
+                <input id="qo11" type="radio" name="type" value="text">text<br>
+                <input id="qo12" type="radio" name="type" value="password">password<br>
+                <input id="qo13" type="radio" name="type" value="radio">radio<br>
+                <input id="qo14" type="radio" name="type" value="checkbox">checkbox<br>
+            </form>
+            <br>
+            <form id="q2">
+                <p id="qt2">کدام type در input برای انتخاب چند گزینه بکار میرود؟</p>
+                <input id="qo21" type="radio" name="type" value="text">text<br>
+                <input id="qo22" type="radio" name="type" value="password">password<br>
+                <input id="qo23" type="radio" name="type" value="radio">radio<br>
+                <input id="qo24" type="radio" name="type" value="checkbox">checkbox<br>
+            </form>
+            <br>
+            <form id="q3">
+                <p id="qt3">کدام type در input برای تایید بکار میرود؟</p>
+                <input id="qo31" type="radio" name="type" value="submit">submit<br>
+                <input id="qo32" type="radio" name="type" value="password">password<br>
+                <input id="qo33" type="radio" name="type" value="radio">radio<br>
+                <input id="qo34" type="radio" name="type" value="checkbox">checkbox<br>
+            </form>
+            <br>
+            <form id="q4">
+                <p id="qt4">برای گرفتن متن از کاربر از type
+                    <input id="txt" type="text" name="type">استفاده میکنیم.<br></p>
+            </form>
+            <form id="answerBtn">
+                <input id="answer" type="button" value="نمایش پاسخ" class="btn-dark"
+                       onclick="javascript: Answer();">
+            </form>
+            <br>
+            <div id="answers" style="display: none;"></div>
+            <input id="submit" type="button" value="ثبت تمام پاسخ ها" class="btn-success"
+                   style="align-self: center;" onclick="javascript: Evaluation();">
+            <script>
+
+                function $(id) {
+                    return document.getElementById(id);
+                }
+
+                function Evaluation() {
+                    let score = 0;
+                    if ($("qo13").checked) {
+                        $("qo13").style.backgroundColor = "green";
+                        score++;
+                    } else {
+                        $("qt1").style.backgroundColor = "red";
+                    }
+                    if ($("qo24").checked) {
+                        $("qo24").style.backgroundColor = "green";
+                        score++;
+                    } else {
+                        $("qt2").style.backgroundColor = "red";
+                    }
+                    if ($("qo31").checked) {
+                        $("qt3").style.backgroundColor = "green";
+                        score++;
+                    } else {
+                        $("qt3").style.backgroundColor = "red";
+                    }
+                    if ($("txt").value == "text" || $("txt").value == "متن") {
+                        $("qt4").style.backgroundColor = "green";
+                        score++;
+                    } else {
+                        $("qt4").style.backgroundColor = "red";
+                    }
+                    let text = "امتیاز شما " + String(score) + "/4" + " میباشد.";
+                    alert(text);
+                }
+
+                function Answer() {
+                    let str = "سوال 1 : radio\n سوال 2 : checkbox\n سوال 3 : submit  سوال 4 : متن یا text";
+                    $("answers").innerHTML = str;
+                    $("answers").style.display = "block";
+                }
+            </script>
+        </div>
+    </div>
+</main>
+</body>
+</html>
