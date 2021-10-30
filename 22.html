@@ -79,8 +79,8 @@
                     <br>
                 <input type="radio" name="answer2" value="wrong">خیر <br>
                 <input type="radio" name="answer2" value="correct">بله <br>
-                <input type="radio" name="answer1" value="wrong">در شرایط خاص <br>
-                <input type="radio" name="answer1" value="wrong">گاهی <br>
+                <input type="radio" name="answer2" value="wrong">در شرایط خاص <br>
+                <input type="radio" name="answer2" value="wrong">گاهی <br>
                 <hr>
           
                 <p class="questions float-md-end"  id="question3">
@@ -88,10 +88,17 @@
                     <br>
                 <input type="radio" name="answer3" value="wrong">پایتون <br>
                 <input type="radio" name="answer3" value="correct">سی <br>
-                <input type="radio" name="answer1" value="wrong">وریلاگ <br>
-                <input type="radio" name="answer1" value="wrong">هیچکدام <br>
+                <input type="radio" name="answer3" value="wrong">وریلاگ <br>
+                <input type="radio" name="answer3" value="wrong">هیچکدام <br>
                 <hr>
-                <button class="submit float-md-end" onclick="return getResults();" type="submit">
+                <div class="pull-right">
+                    <p class="questions float-md-end"  id="question3">
+                        این آموزش مربوط به چه قسمت از زبان جاوا اسکریپت بود؟
+                    </p>
+                    <input type="text" id="textQ">
+                </div>
+                <br>
+                    <button class="submit float-md-end" onclick="return getResults();" type="submit">
                     ثبت جواب
                 </button>
                 
@@ -106,7 +113,7 @@
 
             var amountCorrect = 0;
 
-            for(var i = 1; i <= 5; i++) {
+            for(var i = 1; i <= 3; i++) {
                 var radiosName = document.getElementsByName('answer'+i);
 
                 for(var j = 0; j < radiosName.length; j++) {
@@ -116,6 +123,13 @@
                         radiosValue.style.color = "green";
                     }
                 }
+            }
+            var textQ = document.getElementById("textQ");
+            if(textQ.value === "توابع" || textQ.value === "تابع"){
+                textQ.style.backgroundColor = "green";
+                amountCorrect++;
+            }else{
+                textQ.style.backgroundColor = "red";
             }
             document.getElementById('results').innerHTML =
             "تعداد پاسخ صحیح " + amountCorrect;
