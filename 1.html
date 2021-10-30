@@ -54,9 +54,9 @@
 <code>&#60head&#62</code>
 استفاده میکنیم.
 
-هد یا Head یا سَر یکی از مهمترین و اساسی ترین بخش یک صفحه ی وب و یا بطور کلی یک صفحه ی HTML می باشد،
+هد یا Head یا یکی از مهمترین و اساسی ترین بخش یک صفحه ی وب و یا بطور کلی یک صفحه ی HTML می باشد،
 بطور کلی میتونیم بگیم که Head یک صفحه ی وب مغز آن صفحه می باشد،
-که در این Head یا سَر یکسری اطلاعات مربوط به صفحه ی وبمان قرار میگیرد، مثلا عنوان صفحه ما برای نمایش در مرورگرها در قسمت هِد قرار میگیرد.
+که در این Head یا سَر یکسری اطلاعات مربوط به صفحه ی وبمان قرار میگیرد، مثلا عنوان صفحه ما برای نمایش در مرورگرها در قسمت هد قرار میگیرد.
 <br>
 همچنین متاداده ها یا metadata مانند <code>&#60meta name="author"&#62</code> نیز در قسمت Head یک صفحه ی وب قرار میگیرند، متاداده ها در HTML در واقع اطلاعاتی را در مورد یک صفحه وب به مرورگرها و موتورهای جستجوگر ارائه می دهند اما تاثیری در شکل ظاهری ندارند.
 <br>
@@ -76,22 +76,25 @@
 <div class="jumbotron" id="q1">
     ۱. آیا متاداده ها تاثیری در ظاهر صفحه دارند؟
     <br>
+    <br>
     <input type="radio"  id="r2"> بله
     <br>
     <input type="radio"  id="r1"> خیر
 
     <br>
-    <div id="d1" style="display: none;">گزینه دو پاسخ درست است.</div></input>
+    <br>
+    <div id="d1" style="display: none;">گزینه دو پاسخ درست است.✓</div></input>
 </div>
 <div class="jumbotron" id="q2">
     ۲. برای responsive کردن متن ها از  علامت  <input type="text"  id="e1" size="3"> استفاده میکنیم.
     <br>
-
-    <div id="d2" style="display: none;"><code>vw</code> پاسخ درست است.</div></input>
+    <br>
+    <div id="d2" style="display: none;"><code>vw</code> پاسخ درست است.✓</div></input>
 
 </div>
 <div class="jumbotron" id="q3">
     ۳. متاداده در داخل کدام تگ قرار میگیرند؟
+    <br>
     <br>
     <input type="radio" id="rrr1"><code>&#60hr&#62</code></input>
     <br>
@@ -101,8 +104,25 @@
     <br>
     <input type="radio" id="rrr4"><code>&#60p&#62</code></input>
     <br>
+    <br>
+    <div id="d3" style="display: none;">گزینه دو پاسخ درست است.✓</div></input>
 
-    <div id="d3" style="display: none;">گزینه دو پاسخ درست است.</div></input>
+</div>
+</div>
+<div class="jumbotron" id="q4">
+    ۴. تفاوت <code>vw</code> و<code>px</code> در چه است؟
+    <br>
+    <br>
+    <input type="radio" id="r4_1">تفاوت در واحد اندازگیری</input>
+    <br>
+    <input type="radio" id="r4_2">تفاوت در تغییر اندازه متن در هنگام تغییر سایز صفحه</input>
+    <br>
+    <input type="radio" id="r4_3">تفاوتی ندارند</input>
+    <br>
+    <input type="radio" id="r4_4">هیچ کدام</input>
+    <br>
+    <br>
+    <div id="d4" style="display: none;">گزینه دو پاسخ درست است.✓</div></input>
 
 </div>
 <div class="container-fluid" style="align-self: center;">
@@ -132,11 +152,17 @@
         } else {
             $('q3').style.backgroundColor = "red";
         }
+        if ($('r4_2').checked) {
+            $('q4').style.backgroundColor = "green";
+            score++;
+        } else {
+            $('q4').style.backgroundColor = "red";
+        }
         $('d1').style.display = "block";
         $('d2').style.display = "block";
         $('d3').style.display = "block";
-
-        let text = "نمره شما " + String(score) + " از 3" + " میباشد.";
+        $('d4').style.display = "block";
+        let text = "نمره شما " + String(score) + " از 4" + " میباشد.";
         alert(text);
     }
 </script>
