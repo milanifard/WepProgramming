@@ -1,0 +1,52 @@
+.navbar, #firstTitle, #test {
+    text-align: right;
+    direction: rtl;
+    font-family: IRANSans B Nazanin Serif;
+    margin: 2vw 2vw 2vw 2vw;
+}
+
+#navbar {
+    margin-top: 1vw;
+    font-size: 13px;
+}
+
+#homeFa {
+    alignment: left;
+}
+
+#p1, #p2, #p3, #p4, #p5, #qt1, #qt2, #qt3, #qt4, input{
+    font-family: IRANSans B Nazanin Serif;
+    font-size: 15px;
+}
+#img1, #img2, #img3, #img4, #img5, #img6, #img7{
+    display: block;
+    margin: 3vw auto;
+}
+#img1{
+    mask-size: 560px;
+    width: 50vw;
+    height: 30vw;
+}
+#img3{
+    width: 40vw;
+    height: 20vw;
+}
+#img4{
+    width: 40vw;
+    height: 10vw;
+}
+#img5, #img6, #img7{
+    width: 50vw;
+    height: 30vw;
+
+}
+#q1, #q2, #q3, #q4, #answerBtn{
+    background-color: #bcbebf;
+}
+#answer{
+    width: 10vw;
+}
+#submit{
+    margin: 1vw 2vw 2vw 2vw;
+    width: 10vw;
+}

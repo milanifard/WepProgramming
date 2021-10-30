@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="css/29-CSS.css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/29-CSS.js"></script>
     <title>بخش 6 - CSS</title>
 </head>
 <body>
     <h3 class="header-3"> <i class="fas fa-home"></i> Home \ CSS Tutorial \ Section 6</h3>
     <span class="rounded-span text-center bg-warning">CSS Tutorial</span>
     <br/>
-    <h5><img src="images/download.png" class="img-comp">Mohammad Saeed Kazemi - Last Updated: 10/26/2021 - It takes 10 minutes to read this article</h5>
+    <h5><i class="fas fa-user"></i> Saeed Kazemi - Last Updated: 10/26/2021 - It takes 10 minutes to read this article</h5>
     <h1 class="text-center">Icons</h1>
     <p>The simplest way to add an icon to your HTML page, is with an <b>icon library</b>, such as Font Awesome. Add the name of the specified <b>icon class</b> to any inline HTML element (like &lt;i&gt; or &lt;span&gt;).</p>
     <p>All the icons in the icon libraries below, are scalable vectors that can be customized with CSS (size, color, shadow, etc.)</p>
@@ -104,37 +105,5 @@
             <button class="btn bg-success" onclick="showAnswer3()">Submit Answer</button>
         </div>
     </div>
-    
-    <script>
-        function showAnswer1() {
-            if(document.getElementById('option-1-2').checked){
-                alert("Correct!");
-            }
-            else {
-                alert("wrong!");
-                document.getElementById('answer-1').style.backgroundColor = "green";
-            }
-        }
-
-        function showAnswer2() {
-            if(document.getElementById('option-2-3').checked){
-                alert("Correct!");
-            }
-            else {
-                alert("wrong!");
-                document.getElementById('answer-2').style.backgroundColor = "green";
-            }
-        }
-
-        function showAnswer3() {
-            if(document.getElementById('option-3-4').checked){
-                alert("Correct!");
-            }
-            else {
-                alert("wrong!");
-                document.getElementById('answer-3').style.backgroundColor = "green";
-            }
-        }
-    </script>
 </body>
 </html>
