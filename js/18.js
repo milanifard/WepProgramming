@@ -111,3 +111,16 @@ function generateQuiz(
     showResults(questions, quizContainer, resultsContainer);
   };
 }
+
+const input = document.querySelector("input");
+const log = document.getElementById("log");
+
+input.addEventListener("change", updateValue);
+
+function updateValue(e) {
+  if ("git diff" == e.target.value) {
+    log.textContent="پاسخ صحیح"
+  } else {
+    log.textContent="اشتباه است";
+  }
+}
