@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67aa39a2-0b1b-47da-86e6-c9115026585a" name="Changes" comment="" />
+    <list default="true" id="67aa39a2-0b1b-47da-86e6-c9115026585a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.html" beforeDir="false" afterPath="$PROJECT_DIR$/8.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,15 +32,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Borna\WepProgramming\css" />
+      <recent name="C:\Users\Borna\WepProgramming\img" />
       <recent name="C:\Users\Borna\WepProgramming\js" />
+      <recent name="C:\Users\Borna\WepProgramming\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Borna\WepProgramming\images" />
+      <recent name="C:\Users\Borna\WepProgramming\8-randomUser" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -53,6 +61,8 @@
       <workItem from="1635600215709" duration="375000" />
       <workItem from="1635600613551" duration="42000" />
       <workItem from="1635600661993" duration="3456000" />
+      <workItem from="1635606470295" duration="24000" />
+      <workItem from="1635606839805" duration="1696000" />
     </task>
     <servers />
   </component>

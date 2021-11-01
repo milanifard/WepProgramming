@@ -1,19 +1,24 @@
 *{
-    font-family: 'Open Sans', sans-serif;
+    font-family: IRANSans;
 }
 
 h2{
-    margin: 50px 0;
+    margin-top: 50px;
+    color: lightskyblue;
+}
+
+a{
+    text-decoration: none;
 }
 
 .tutorial{
     text-align: center;
-    height: 40px;
-    width: 80px;
+    height: 35px;
+    width: 200px;
     font-size: 21px;
     margin: 20px 10px;
     background-color: yellow;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .info{
@@ -29,12 +34,11 @@ h2{
 .firstHeader a{
     font-size: 13px;
     color: #808080;
-    text-decoration: none;
 }
 
 .color{
     width: 20%;
-    height: 350px;
+    height: auto;
     text-align: center;
     margin-left: 50px 50px;
 }
@@ -43,27 +47,19 @@ h2{
     margin-left: 10px;
 }
 
-.question{
-    font-weight: 600;
-  }
-  .answers {
-      margin-bottom: 20px;
-  }
-  #submit{
-    font-family: sans-serif;
-    font-size: 20px;
-    background-color: #297;
-    color: #fff;
-    border: 0px;
-    border-radius: 3px;
-    padding: 20px;
-    cursor: pointer;
+.link {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: seagreen;
+}
+
+.fill-the-blank {
+    background-color: cornflowerblue;
     margin-bottom: 20px;
-  }
-  #submit:hover{
-    background-color: #3a8;
-  }
+}
 
-
-
-
+.container-fluid{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
